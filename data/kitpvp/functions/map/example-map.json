@@ -1,0 +1,12 @@
+{
+    "id": 0,
+    "name": "Test",
+    "corner1": [0, 0, 0],
+    "corner2": [100, 0, 100],
+    "gamemodes": {
+        "test-gamemode": true,
+        "king-of-the-hill": {
+            "point-location": [50, 0, 50]
+        }
+    }
+}

@@ -7,7 +7,7 @@ scoreboard objectives add info dummy
 scoreboard objectives remove readyDisplay
 scoreboard objectives add readyDisplay dummy {"text":"Ready","color":"gold"}
 
-function kitpvp:load/scoreboard-setup
+function kitpvp:load/binary-scoreboards
 
 scoreboard objectives remove itemData
 scoreboard objectives add itemData dummy
