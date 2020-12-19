@@ -1,0 +1,1 @@
+data merge storage gamemode-01 {Id:1,Name:"Deathmatch"}
