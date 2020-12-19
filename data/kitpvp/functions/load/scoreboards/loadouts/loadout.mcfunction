@@ -35,3 +35,8 @@ scoreboard objectives add s.ability1 dummy
 scoreboard objectives add s.ability2 dummy
 
 scoreboard objectives add s.utility dummy
+
+# Lodout editing
+
+scoreboard objectives remove slotEdit
+scoreboard objectives add slotEdit dummy
