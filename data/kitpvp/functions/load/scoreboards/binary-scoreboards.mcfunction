@@ -1,0 +1,1 @@
+# Binary scoreboards spam zone
