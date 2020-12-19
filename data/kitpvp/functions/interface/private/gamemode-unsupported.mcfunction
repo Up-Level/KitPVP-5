@@ -1,1 +1,0 @@
-tellraw @a "Gamemode unsupported"

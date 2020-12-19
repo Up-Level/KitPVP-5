@@ -22,7 +22,7 @@ schedule function kitpvp:tick-per-min 60s
 team remove none
 team add none "No Team"
 team modify none friendlyFire true
-team modify none nametagVisibility always
+team modify none nametagVisibility never
 team modify none seeFriendlyInvisibles false
 
 tellraw @a {"text":"KitPVP Datapack Reloaded.","color":"gold"}
