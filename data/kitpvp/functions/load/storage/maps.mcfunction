@@ -1,0 +1,1 @@
+data merge storage map-01 {Id:1,Name:"Test",Corner1:[-75, 64, -75],Corner2:[75, 64, 75],Gamemodes:{1: true}}

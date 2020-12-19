@@ -4,10 +4,14 @@ scoreboard objectives add config dummy
 scoreboard objectives remove info
 scoreboard objectives add info dummy
 
+scoreboard objectives remove temp
+scoreboard objectives add temp dummy
+
 scoreboard objectives remove readyDisplay
 scoreboard objectives add readyDisplay dummy {"text":"Ready","color":"gold"}
 
 function kitpvp:load/scoreboard-setup
+function kitpvp:load/storage-setup
 
 scoreboard objectives remove itemData
 scoreboard objectives add itemData dummy
