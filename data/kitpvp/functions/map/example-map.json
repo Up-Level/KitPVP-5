@@ -3,6 +3,7 @@
     "name": "Test",
     "corner1": [0, 0, 0],
     "corner2": [100, 0, 100],
+    "chunk": [1,1,1],
     "gamemodes": {
         "test-gamemode": true,
         "king-of-the-hill": {
