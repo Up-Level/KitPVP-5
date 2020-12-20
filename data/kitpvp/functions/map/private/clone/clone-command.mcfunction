@@ -9,6 +9,7 @@ execute store result entity @e[tag=cloneChunkerNew,limit=1] Pos[2] double 1 run 
 fill 0 16 10000 15 31 10015 air
 
 execute at @s run forceload add ~ ~ ~ ~
+
 execute at @s run clone ^ ^ ^ ^15 ^15 ^15 0 16 10000 replace force
 
 execute as @e[tag=cloneChunkerNew,limit=1] at @s run clone 0 16 10000 15 31 10015 ~ ~ ~ replace force
