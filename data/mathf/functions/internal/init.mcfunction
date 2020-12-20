@@ -11,6 +11,7 @@ scoreboard players set #3 mathf.const 3
 scoreboard players set #5 mathf.const 5
 scoreboard players set #6 mathf.const 6
 scoreboard players set #10 mathf.const 10
+scoreboard players set #16 mathf.const 16
 scoreboard players set #100 mathf.const 100
 scoreboard players set #120 mathf.const 120
 scoreboard players set #180 mathf.const 180
