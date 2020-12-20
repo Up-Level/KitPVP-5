@@ -11,5 +11,7 @@ function kitpvp:map/private/clone/clone-command
 
 tellraw @a [{"score": {"objective": "temp","name": "posX"}}, " ", {"score": {"objective": "temp","name": "posY"}}, " ", {"score": {"objective": "temp","name": "posZ"}}]
 
+tellraw @a [{"score": {"objective": "temp","name": "posXNew"}}, " ", {"score": {"objective": "temp","name": "posYNew"}}, " ", {"score": {"objective": "temp","name": "posZNew"}}]
+
 execute if score chunkZ temp < chunkZMax temp run scoreboard players add chunkZ temp 1
 execute if score chunkZ temp < chunkZMax temp run function kitpvp:map/private/clone/chunk-z
