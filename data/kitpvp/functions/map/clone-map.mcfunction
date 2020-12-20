@@ -18,7 +18,11 @@ execute store result score chunkXMax temp run data get storage current-map Map.C
 execute store result score chunkYMax temp run data get storage current-map Map.Chunks[1]
 execute store result score chunkZMax temp run data get storage current-map Map.Chunks[2]
 
+forceload add -1 9999 0 10000
+
 function kitpvp:map/private/clone/chunk-x
+
+forceload remove -1 9999 0 10000
 
 kill @e[tag=cloneChunker]
 kill @e[tag=cloneChunkerNew]
