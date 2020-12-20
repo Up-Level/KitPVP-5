@@ -7,6 +7,7 @@ execute store result entity @e[tag=cloneChunker,limit=1] Pos[1] double 1 run sco
 execute store result entity @e[tag=cloneChunker,limit=1] Pos[2] double 1 run scoreboard players get posZ temp
 
 # Clone stuff here
+function kitpvp:map/private/clone/clone-command
 
 tellraw @a [{"score": {"objective": "temp","name": "posX"}}, " ", {"score": {"objective": "temp","name": "posY"}}, " ", {"score": {"objective": "temp","name": "posZ"}}]
 
