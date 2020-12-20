@@ -8,5 +8,5 @@ execute store result entity @e[tag=cloneChunkerNew,limit=1] Pos[2] double 1 run 
 
 fill 0 16 10000 15 31 10015 air
 
-execute as @e[tag=cloneChunker,limit=1] at @s run clone ~ ~ ~ ~15 ~15 ~15 0 16 10000
+clone ~ ~ ~ ~15 ~15 ~15 0 16 10000
 execute as @e[tag=cloneChunkerNew,limit=1] at @s run clone 0 16 10000 15 31 10015 ~ ~ ~

@@ -11,7 +11,7 @@ execute store result entity @e[tag=cloneChunker,limit=1] Pos[2] double 1 run sco
 #execute as @e[tag=cloneChunker,limit=1] at @s run summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b}
 
 # Clone stuff here
-function kitpvp:map/private/clone/clone-command
+execute as @e[tag=cloneChunker,limit=1] at @s run function kitpvp:map/private/clone/clone-command
 
 tellraw @a [{"score": {"objective": "temp","name": "posX"}}, " ", {"score": {"objective": "temp","name": "posY"}}, " ", {"score": {"objective": "temp","name": "posZ"}}]
 

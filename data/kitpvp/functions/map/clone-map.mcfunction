@@ -1,4 +1,5 @@
 kill @e[tag=cloneChunker]
+kill @e[tag=cloneChunkerNew]
 kill @e[tag=mapPoint1]
 
 summon minecraft:area_effect_cloud 0 64 0 {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["cloneChunker"]}
