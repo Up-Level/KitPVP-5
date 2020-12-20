@@ -1,4 +1,4 @@
-scoreboard players operation offsetZ temp = chunkX temp
+scoreboard players operation offsetZ temp = chunkZ temp
 scoreboard players operation offsetZ temp *= #16 mathf.const
 scoreboard players operation posZ temp += offsetZ temp
 
