@@ -8,6 +8,8 @@ execute store result entity @s Pos[0] double 1 run scoreboard players get posX t
 execute store result entity @s Pos[1] double 1 run scoreboard players get posY temp
 execute store result entity @s Pos[2] double 1 run scoreboard players get posZ temp
 
+execute store result score TetTheGreedy temp run data get entity @s Pos[0]
+
 #execute as @e[tag=cloneChunker,limit=1] at @s run summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b}
 
 # Clone stuff here
