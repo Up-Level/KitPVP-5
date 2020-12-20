@@ -1,1 +1,3 @@
-scoreboard players set gamemodeActive info 0
+tag @a[tag=inGame,scores={gm.kills-copy=0}] add winner
+
+function kitpvp:gamemode/end

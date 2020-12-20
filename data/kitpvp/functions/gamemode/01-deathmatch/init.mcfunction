@@ -1,3 +1,8 @@
-tellraw @a "Deathmatch initialised"
+tellraw @a[tag=inGame] [{"text":"Gamemode: Deathmatch","color": "gold","italic": true}, {"text": "\nGet the most kills within ","italic": false}, {"storage": "current-gamemode","nbt": "Gamemode.Settings.Duration","italic": false}, {"text":" seconds.","italic": false}]
 
-schedule function kitpvp:gamemode/01-deathmatch/end 30s
+scoreboard objectives remove gm.kills-copy
+scoreboard objectives add gm.kills-copy dummy
+
+scoreboard objectives setdisplay sidebar gm.kills
+
+execute store result score timeRemaining gm.general run data get storage current-gamemode Gamemode.Settings.Duration

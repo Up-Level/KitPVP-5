@@ -6,6 +6,7 @@
 scoreboard objectives remove mathf.const
 scoreboard objectives add mathf.const dummy
 scoreboard players set #-1 mathf.const -1
+scoreboard players set #1 mathf.const 1
 scoreboard players set #2 mathf.const 2
 scoreboard players set #3 mathf.const 3
 scoreboard players set #5 mathf.const 5
