@@ -4,14 +4,19 @@ scoreboard players operation offsetZ temp *= #16 mathf.const
 execute store result score posZ temp run data get storage current-map Map.Corner1[2]
 scoreboard players operation posZ temp += offsetZ temp
 
+say @s
+
 execute store result entity @s Pos[0] double 1 run scoreboard players get posX temp
 execute store result entity @s Pos[1] double 1 run scoreboard players get posY temp
 execute store result entity @s Pos[2] double 1 run scoreboard players get posZ temp
 
+say @s
 #execute as @e[tag=cloneChunker,limit=1] at @s run summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b}
 
 # Clone stuff here
 function kitpvp:map/private/clone/clone-command
+
+say @s
 
 tellraw @a [{"score": {"objective": "temp","name": "posX"}}, " ", {"score": {"objective": "temp","name": "posY"}}, " ", {"score": {"objective": "temp","name": "posZ"}}]
 
