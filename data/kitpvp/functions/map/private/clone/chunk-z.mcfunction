@@ -6,6 +6,8 @@ execute store result entity @e[tag=cloneChunker,limit=1] Pos[0] double 1 run sco
 execute store result entity @e[tag=cloneChunker,limit=1] Pos[1] double 1 run scoreboard players get posY temp
 execute store result entity @e[tag=cloneChunker,limit=1] Pos[2] double 1 run scoreboard players get posZ temp
 
+execute as @e[tag=cloneChunker,limit=1] at @s run summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b}
+
 # Clone stuff here
 function kitpvp:map/private/clone/clone-command
 
