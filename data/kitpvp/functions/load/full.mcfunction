@@ -36,3 +36,4 @@ scoreboard objectives add totalDamageTaken minecraft.custom:damage_taken
 # Forceload lobby
 forceload remove all
 forceload add 9976 -24 10024 24
+forceload add 0 0
