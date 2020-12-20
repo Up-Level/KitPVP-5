@@ -23,6 +23,8 @@ forceload add -1 9999 0 10000
 
 function kitpvp:map/private/clone/chunk-x
 
+schedule function kitpvp:map/unload 1s
+
 kill @e[tag=cloneChunker]
 kill @e[tag=cloneChunkerNew]
 kill @e[tag=mapPoint1]
