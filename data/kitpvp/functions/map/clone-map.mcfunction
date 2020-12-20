@@ -19,11 +19,11 @@ execute store result score chunkXMax temp run data get storage current-map Map.C
 execute store result score chunkYMax temp run data get storage current-map Map.Chunks[1]
 execute store result score chunkZMax temp run data get storage current-map Map.Chunks[2]
 
+forceload remove all
+
 forceload add -1 9999 0 10000
 
-function kitpvp:map/private/clone/chunk-x
-
-schedule function kitpvp:map/unload 1s
+schedule function kitpvp:map/private/clone/start 30t replace
 
 kill @e[tag=cloneChunker]
 kill @e[tag=cloneChunkerNew]
