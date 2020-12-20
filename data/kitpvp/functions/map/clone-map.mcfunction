@@ -23,7 +23,7 @@ forceload add -1 9999 0 10000
 
 function kitpvp:map/private/clone/chunk-x
 
-forceload remove -1 9999 0 10000
+# forceload remove -1 9999 0 10000
 
 kill @e[tag=cloneChunker]
 kill @e[tag=cloneChunkerNew]
