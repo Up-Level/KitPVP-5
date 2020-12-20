@@ -18,3 +18,6 @@ execute store result score chunkYMax temp run data get storage current-map Map.C
 execute store result score chunkZMax temp run data get storage current-map Map.Chunks[2]
 
 function kitpvp:map/private/clone/chunk-x
+
+kill @e[tag=cloneChunker]
+kill @e[tag=mapPoint1]
