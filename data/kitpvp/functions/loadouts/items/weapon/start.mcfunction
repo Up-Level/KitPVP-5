@@ -1,1 +1,10 @@
 execute if score @s weapon matches 1 run function kitpvp:loadouts/items/weapon/items/001/start
+execute if score @s weapon matches 2 run function kitpvp:loadouts/items/weapon/items/002/start
+execute if score @s weapon matches 3 run function kitpvp:loadouts/items/weapon/items/003/start
+execute if score @s weapon matches 4 run function kitpvp:loadouts/items/weapon/items/004/start
+execute if score @s weapon matches 5 run function kitpvp:loadouts/items/weapon/items/005/start
+execute if score @s weapon matches 6 run function kitpvp:loadouts/items/weapon/items/006/start
+execute if score @s weapon matches 7 run function kitpvp:loadouts/items/weapon/items/007/start
+execute if score @s weapon matches 8 run function kitpvp:loadouts/items/weapon/items/008/start
+execute if score @s weapon matches 9 run function kitpvp:loadouts/items/weapon/items/009/start
+execute if score @s weapon matches 10 run function kitpvp:loadouts/items/weapon/items/010/start
