@@ -13,23 +13,19 @@ scoreboard objectives add temp dummy
 
 scoreboard objectives remove ready
 scoreboard objectives add ready dummy {"text":"Ready","color":"gold"}
-
-function kitpvp:load/scoreboard-setup
-function kitpvp:load/storage-setup
-
 scoreboard objectives setdisplay sidebar ready
-scoreboard objectives setdisplay list wins
 
 scoreboard objectives remove itemData
 scoreboard objectives add itemData dummy
 
+scoreboard objectives setdisplay list wins
+
+function kitpvp:load/teams-setup
+function kitpvp:load/scoreboard-setup
+function kitpvp:load/storage-setup
+
 schedule function kitpvp:tick-per-sec 1s
 schedule function kitpvp:tick-per-min 60s
 
-team remove none
-team add none "No Team"
-team modify none friendlyFire true
-team modify none nametagVisibility never
-team modify none seeFriendlyInvisibles false
-
 tellraw @a {"text":"KitPVP Datapack Reloaded.","color":"gold"}
+playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1 1 1

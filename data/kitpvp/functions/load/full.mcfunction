@@ -34,6 +34,8 @@ scoreboard objectives add totalDeaths deathCount
 scoreboard objectives add totalDamageDealt minecraft.custom:damage_dealt
 scoreboard objectives add totalDamageTaken minecraft.custom:damage_taken
 
+scoreboard objectives setdisplay list wins
+
 # Forceload
 forceload remove all
 forceload add 0 0

@@ -6,4 +6,4 @@ scoreboard players operation secondsRemaining gm.general = ticksRemaining gm.gen
 scoreboard players operation secondsRemaining gm.general /= #20 mathf.const
 
 # Display overtime indicator
-execute if score ticksRemaining gm.general matches ..-1 run title @a[tag=inGame] actionbar {"text": "Overtime!","color": "gold"}
+execute if score ticksRemaining gm.general matches ..-1 run title @a[tag=inGame,tag=!respawning] actionbar {"text": "Overtime!","color": "gold"}

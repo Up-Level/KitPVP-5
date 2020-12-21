@@ -9,7 +9,7 @@ tp @a[tag=inGame] 0 64 0
 
 # Indicate gamemode has started
 title @a title "Go!"
-execute as @a at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 2
+execute as @a at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 2 1
 scoreboard players set gamemodeActive info 1
 
 # Initialise common scoreboards
@@ -24,6 +24,9 @@ scoreboard objectives add gm.general dummy
 
 scoreboard objectives remove gm.respawn-timer
 scoreboard objectives add gm.respawn-timer dummy
+
+scoreboard objectives remove gm.respawn-secs
+scoreboard objectives add gm.respawn-secs dummy
 
 scoreboard objectives remove gm.sidebar
 scoreboard objectives add gm.sidebar dummy
