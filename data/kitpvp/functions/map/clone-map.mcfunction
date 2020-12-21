@@ -23,7 +23,7 @@ execute store result score chunkZMax temp run data get storage current-map Map.C
 
 forceload remove all
 
-forceload add -1 9999
+forceload add -1 9999 32 10032
 
 execute as @e[tag=cloneChunker,limit=1] at @s run function kitpvp:map/private/clone/first-load
 
