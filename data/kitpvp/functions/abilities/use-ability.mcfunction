@@ -7,8 +7,8 @@ execute store success score isHotbar itemData run data get entity @s SelectedIte
 execute if score isHotbar itemData matches 1 run function kitpvp:abilities/get-item-data/mainhand-data
 execute if score isHotbar itemData matches 0 run function kitpvp:abilities/get-item-data/offhand-data
 
-execute if score type itemData matches 1 run scoreboard players operation TetTheGreedy ability1CDC = @s ability1CD
-execute if score type itemData matches 2 run scoreboard players operation TetTheGreedy ability2CDC = @s ability2CD
+
+# execute if score type itemData matches 2 run scoreboard players operation TetTheGreedy ability2CDC = @s ability2CD
 
 # Effect Spam
 
