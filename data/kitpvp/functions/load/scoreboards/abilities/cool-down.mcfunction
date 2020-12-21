@@ -1,9 +1,9 @@
 # Cooldowns
-scoreboard objectives remove ability1CD
-scoreboard objectives add ability1CD dummy
-
 scoreboard objectives remove a1.CD
 scoreboard objectives add a1.CD dummy
+
+scoreboard objectives remove a2.CD
+scoreboard objectives add a2.CD dummy
 
 
 scoreboard objectives remove a1.CDCount
