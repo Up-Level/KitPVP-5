@@ -11,7 +11,7 @@ execute store result entity @s Pos[2] double 1 run scoreboard players get posZ t
 execute store result score TetTheGreedy temp run data get entity @s Pos[0]
 tellraw @a [{"score": {"objective": "temp","name": "TetTheGreedy"}}]
 
-execute as @e[tag=cloneChunker,limit=1] at @s run summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b}
+# execute as @e[tag=cloneChunker,limit=1] at @s run summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b}
 
 # Clone stuff here
 function kitpvp:map/private/clone/clone-command
