@@ -1,6 +1,6 @@
-execute if score @s ability1CDC matches 0.. unless score @s ability1ChargeC = @s ability1ChargeC run scoreboard players remove @s ability1CDC 1
-execute if score @s ability1CDC matches 0 run scoreboard players add @s Charges 1
-execute if score @s ability1CDC matches 0 run scoreboard players operation @s ability1CDC = @s ability1CD
+execute if score @s a1.CDCount matches 0.. unless score @s a1.ChargeMax = @s a1.ChargeCount run scoreboard players remove @s a1.CDCount 1
+execute if score @s a1.CDCount matches 0 run scoreboard players add @s a1.ChargeCount 1
+execute if score @s a1.CDCount matches 0 run scoreboard players operation @s a1.CDCount = @s a1.CD
 
 execute if score @s ability1 matches 1 run function kitpvp:loadouts/items/ability1/items/001/tick
 execute if score @s ability1 matches 2 run function kitpvp:loadouts/items/ability1/items/002/tick

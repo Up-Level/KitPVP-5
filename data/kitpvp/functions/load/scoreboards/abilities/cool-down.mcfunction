@@ -2,25 +2,25 @@
 scoreboard objectives remove ability1CD
 scoreboard objectives add ability1CD dummy
 
-scoreboard objectives remove ability2CD
-scoreboard objectives add ability2CD dummy
+scoreboard objectives remove a1.CD
+scoreboard objectives add a1.CD dummy
 
 
-scoreboard objectives remove ability1CDC
-scoreboard objectives add ability1CDC dummy
+scoreboard objectives remove a1.CDCount
+scoreboard objectives add a1.CDCount dummy
 
-scoreboard objectives remove ability2CDC
-scoreboard objectives add ability2CDC dummy
+scoreboard objectives remove a2.CDCount
+scoreboard objectives add a2.CDCount dummy
 
 # Charges
-scoreboard objectives remove ability1Charge
-scoreboard objectives add ability1Charge dummy
+scoreboard objectives remove a1.ChargeMax
+scoreboard objectives add a1.ChargeMax dummy
 
-scoreboard objectives remove ability2Charge
-scoreboard objectives add ability2Charge dummy
+scoreboard objectives remove a2.ChargeMax
+scoreboard objectives add a2.ChargeMax dummy
 
-scoreboard objectives remove ability1ChargeC
-scoreboard objectives add ability1ChargeC dummy
+scoreboard objectives remove a1.ChargeCount
+scoreboard objectives add a1.ChargeCount dummy
 
-scoreboard objectives remove ability2ChargeC
-scoreboard objectives add ability2ChargeC dummy
+scoreboard objectives remove a2.ChargeCount
+scoreboard objectives add a2.ChargeCount dummy
