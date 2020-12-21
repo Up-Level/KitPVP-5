@@ -1,3 +1,8 @@
+tellraw @a[scores={ready=1}] {"text": "Loading Map... (This may take a while)","color": "light_purple"}
+
+function kitpvp:map/clone-map
+
+# Countdown
 scoreboard players set countdown temp 3
 
 function kitpvp:interface/private/display-countdown
