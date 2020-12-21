@@ -1,2 +1,2 @@
 function kitpvp:loadouts/items/all/start
-scoreboard players set @s giveLoudout 1
+scoreboard players set @s giveLoadout 1

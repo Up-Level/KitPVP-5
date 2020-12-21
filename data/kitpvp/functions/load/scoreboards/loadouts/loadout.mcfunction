@@ -39,7 +39,7 @@ scoreboard objectives add s.utility dummy
 # Lodout editing
 
 scoreboard objectives remove giveLoadout
-scoreboard objectives add giveLoudout dummy
+scoreboard objectives add giveLoadout dummy
 
 scoreboard objectives remove slotEdit
 scoreboard objectives add slotEdit dummy
