@@ -6,11 +6,11 @@ execute store result entity @e[tag=cloneChunkerNew,limit=1] Pos[0] double 1 run 
 execute store result entity @e[tag=cloneChunkerNew,limit=1] Pos[1] double 1 run scoreboard players get posYNew temp
 execute store result entity @e[tag=cloneChunkerNew,limit=1] Pos[2] double 1 run scoreboard players get posZNew temp
 
-fill 0 16 10000 15 31 10015 air
+fill 0 16 10000 31 37 10031 air
 
 execute at @s run forceload add ~ ~
-execute at @s run clone ^ ^ ^ ^15 ^15 ^15 0 16 10000 replace force
+execute at @s run clone ^ ^ ^ ^21 ^21 ^21 0 16 10000 replace force
 
-execute as @e[tag=cloneChunkerNew,limit=1] at @s run clone 0 16 10000 15 31 10015 ~ ~ ~ replace force
+execute as @e[tag=cloneChunkerNew,limit=1] at @s run clone 0 16 10000 31 47 10031 ~ ~ ~ replace force
 
 tp @s 0 16 0
