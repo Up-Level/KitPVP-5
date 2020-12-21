@@ -5,6 +5,6 @@ scoreboard objectives add gm.kills-copy dummy
 
 scoreboard objectives setdisplay sidebar gm.kills
 
-execute store result score secondsRemaining gm.general run data get storage current-gamemode Gamemode.Settings.Duration
-scoreboard players operation ticksRemaining gm.general = secondsRemaining gm.general
-scoreboard players operation ticksRemaining gm.general *= #20 mathf.const
+function kitpvp:gamemode/utility/timer-init
+function kitpvp:gamemode/utility/bossbar
+bossbar set timer players @a[tag=inGame]

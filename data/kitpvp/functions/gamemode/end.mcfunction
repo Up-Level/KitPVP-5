@@ -7,6 +7,8 @@ scoreboard objectives remove gm.general
 scoreboard players set gamemodeActive info 0
 # Tet remove ability stuff here
 
+bossbar set timer players
+
 scoreboard players add @a[tag=winner] wins 1
 tellraw @a[tag=inGame] [{"selector": "@a[tag=winner]","color": "gold"}, " has Won!"]
 execute as @a[tag=winner] at @s run playsound ui.toast.challenge_complete master @s ~ ~ ~ 1 1 1

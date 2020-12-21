@@ -1,6 +1,9 @@
-scoreboard players operation ticksRemaining gm.general -= #1 mathf.const
+function kitpvp:gamemode/utility/timer-tick
 
-particle happy_villager 0 65 0.1 0.1 0.1 0.1 1 10 force
+execute store result bossbar timer value run scoreboard players get ticksRemaining gm.general
+bossbar set timer name [{"text":"Time Remaining: ","color":"gold"},{"score":{"objective":"gm.general","name":"secondsRemaining"},"color":"gold"},{"text":" seconds","color":"gold"}]
+
+particle happy_villager 0.5 65 0.5 0.1 0.1 0.1 1 10 force
 
 execute as @a[tag=inGame] run scoreboard players operation @s gm.kills-copy = @s gm.kills
 scoreboard players set highest gm.kills-copy 0
