@@ -1,1 +1,1 @@
-tellraw @s "i am ticking weapon"
+tellraw @s "i am ticking weapon axe"
