@@ -1,3 +1,3 @@
 tag @s remove respawning
 
-tp @s 0 64 0
+tp @s 10 5 10

@@ -5,6 +5,7 @@ scoreboard players set gamemodeSupported info 0
 scoreboard players set playersReady info 0
 
 execute if score gamemode info matches 1 if data storage current-map Map.Gamemodes.1 run scoreboard players set gamemodeSupported info 1
+execute if score gamemode info matches 2 if data storage current-map Map.Gamemodes.2 run scoreboard players set gamemodeSupported info 1
 
 execute store result score playersReady info if entity @a[scores={ready=1}]
 

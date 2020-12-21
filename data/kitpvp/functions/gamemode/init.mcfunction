@@ -4,7 +4,7 @@ function kitpvp:gamemode/fetch-gamemode-info
 
 # Prepare players
 tag @a[scores={ready=1}] add inGame
-tp @a[tag=inGame] 0 64 0
+tp @a[tag=inGame] 10 5 10
 # Tet hook your loadout stuff here
 
 # Indicate gamemode has started
@@ -33,3 +33,4 @@ scoreboard objectives add gm.sidebar dummy
 
 # Run gamemode-specific initialisation commands
 execute if score gamemode info matches 1 run function kitpvp:gamemode/01-deathmatch/init
+execute if score gamemode info matches 2 run function kitpvp:gamemode/02-team-deathmatch/init
