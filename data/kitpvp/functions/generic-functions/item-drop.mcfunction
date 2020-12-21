@@ -1,4 +1,4 @@
-tp @s[tag=checked] @p
+execute as @e[tag=checked] at @s run tp @s @p
 
 execute as @e[type=item,tag=!checked] run data modify entity @s Owner set from entity @s Thrower
 execute as @e[type=item,tag=!checked] run data modify entity @s PickupDelay set value 0
