@@ -11,13 +11,13 @@ scoreboard players set playersReady info 0
 scoreboard objectives remove temp
 scoreboard objectives add temp dummy
 
-scoreboard objectives remove readyDisplay
-scoreboard objectives add readyDisplay dummy {"text":"Ready","color":"gold"}
+scoreboard objectives remove ready
+scoreboard objectives add ready dummy {"text":"Ready","color":"gold"}
 
 function kitpvp:load/scoreboard-setup
 function kitpvp:load/storage-setup
 
-scoreboard objectives setdisplay sidebar readyDisplay
+scoreboard objectives setdisplay sidebar ready
 scoreboard objectives setdisplay list wins
 
 scoreboard objectives remove itemData

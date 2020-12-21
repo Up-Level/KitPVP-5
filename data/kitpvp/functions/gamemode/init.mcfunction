@@ -3,7 +3,7 @@ function kitpvp:map/fetch-map-info
 function kitpvp:gamemode/fetch-gamemode-info
 
 # Prepare players
-tag @a[scores={readyDisplay=1}] add inGame
+tag @a[scores={ready=1}] add inGame
 tp @a[tag=inGame] 0 64 0
 # Tet hook your loadout stuff here
 
@@ -21,6 +21,9 @@ scoreboard objectives add gm.deaths deathCount {"text": "Deaths","color": "gold"
 
 scoreboard objectives remove gm.general
 scoreboard objectives add gm.general dummy
+
+scoreboard objectives remove gm.respawn-timer
+scoreboard objectives add gm.respawn-timer dummy
 
 scoreboard objectives remove gm.sidebar
 scoreboard objectives add gm.sidebar dummy

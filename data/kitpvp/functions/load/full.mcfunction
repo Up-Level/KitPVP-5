@@ -24,6 +24,7 @@ difficulty normal
 scoreboard objectives remove config
 scoreboard objectives add config dummy
 scoreboard players set spawnDistance config 15
+scoreboard players set respawnTime config 200
 
 # Stats
 scoreboard objectives add timePlayed dummy
@@ -33,7 +34,6 @@ scoreboard objectives add totalDeaths deathCount
 scoreboard objectives add totalDamageDealt minecraft.custom:damage_dealt
 scoreboard objectives add totalDamageTaken minecraft.custom:damage_taken
 
-# Forceload lobby
+# Forceload
 forceload remove all
-forceload add 9976 -24 10024 24
 forceload add 0 0
