@@ -1,3 +1,6 @@
+execute if score @s ability1CDC matches 0.. run scoreboard players remove @s ability1CDC 1
+execute if score @s ability1CDC matches -1 run function kitpvp:loadouts/items/ability1/start
+
 execute if score @s ability1 matches 1 run function kitpvp:loadouts/items/ability1/items/001/tick
 execute if score @s ability1 matches 2 run function kitpvp:loadouts/items/ability1/items/002/tick
 execute if score @s ability1 matches 3 run function kitpvp:loadouts/items/ability1/items/003/tick
