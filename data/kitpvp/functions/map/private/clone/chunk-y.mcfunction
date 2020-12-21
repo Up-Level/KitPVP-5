@@ -1,5 +1,5 @@
 scoreboard players operation offsetY temp = chunkY temp
-scoreboard players operation offsetY temp *= #132 mathf.const
+scoreboard players operation offsetY temp *= #32 mathf.const
 
 execute store result score posY temp run data get storage current-map Map.Corner1[1]
 scoreboard players operation posY temp += offsetY temp
