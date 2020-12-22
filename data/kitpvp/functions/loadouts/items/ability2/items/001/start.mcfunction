@@ -1,5 +1,3 @@
-function kitpvp:loadouts/items/ability2/generic-start
-
 execute if score @p a2.CD matches -1 run scoreboard players set @s a2.CD 60
 execute if score @p a2.CDCount matches -1 run scoreboard players set @s a2.CDCount 60
 execute if score @p a2.ChargeMax matches -1 run scoreboard players set @s a2.ChargeMax 3
