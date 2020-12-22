@@ -1,1 +1,1 @@
-scoreboard players set @s ability1CDC -1
+scoreboard players set @s a2.CDCountCount -1
