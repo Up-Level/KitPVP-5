@@ -1,4 +1,8 @@
 
+# Scoreboard for doing calculations on uuids
+scoreboard objectives remove uuid
+scoreboard objectives add uuid dummy
+
 # An entities UUID
 scoreboard objectives remove uuid.entity0
 scoreboard objectives add uuid.entity0 dummy
