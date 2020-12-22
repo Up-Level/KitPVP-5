@@ -48,6 +48,20 @@ scoreboard objectives add editLoadout dummy
 scoreboard objectives remove slotEdit
 scoreboard objectives add slotEdit dummy
 
+scoreboard objectives remove saveToT
+scoreboard objectives add saveToT trigger
+
+scoreboard objectives remove loadFromT
+scoreboard objectives add loadFromT trigger
+
+scoreboard objectives remove s.armorT
+scoreboard objectives remove s.weaponT
+
+scoreboard objectives remove s.ability1T
+scoreboard objectives remove s.ability2T
+
+scoreboard objectives remove s.utilityT
+
 scoreboard objectives add s.armorT trigger
 scoreboard objectives add s.weaponT trigger
 

@@ -5,3 +5,6 @@ execute unless score @s s.ability1T matches -1 run function kitpvp:loadouts/edit
 execute unless score @s s.ability2T matches -1 run function kitpvp:loadouts/edit/edit/triggers/ability2
 
 execute unless score @s s.utilityT matches -1 run function kitpvp:loadouts/edit/edit/triggers/utility
+
+execute unless score @s saveToT matches -1 run function kitpvp:loadouts/edit/edit/triggers/save-to
+execute unless score @s loadFromT matches -1 run function kitpvp:loadouts/edit/edit/triggers/load-from
