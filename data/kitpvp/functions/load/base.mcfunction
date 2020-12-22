@@ -1,5 +1,12 @@
 scoreboard objectives add config dummy
 
+# Declarations for vscode
+#declare score_holder gamemode
+#declare score_holder map
+#declare score_holder gamemodeSupported
+#declare score_holder gamemodeActive
+#declare score_holder playersReady
+
 scoreboard objectives remove info
 scoreboard objectives add info dummy
 scoreboard players set gamemode info 0

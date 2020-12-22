@@ -1,5 +1,7 @@
 # Executed as players not in game
 
+clear @s golden_carrot
+
 effect give @s saturation 1 255 true
 effect give @s resistance 1 255 true
 effect give @s weakness 1 255 true

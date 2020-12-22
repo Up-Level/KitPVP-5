@@ -21,6 +21,10 @@ gamerule doImmediateRespawn true
 difficulty normal
 
 # Config
+# Declarations for vscode
+#declare score_holder spawnDistance
+#declare score_holder respawnTime
+
 scoreboard objectives remove config
 scoreboard objectives add config dummy
 scoreboard players set spawnDistance config 15

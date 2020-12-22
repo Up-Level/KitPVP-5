@@ -8,4 +8,7 @@ scoreboard players set chunkY temp 0
 function kitpvp:map/private/clone/chunk-y
 
 execute if score chunkX temp < chunkXMax temp run scoreboard players add chunkX temp 1
+
+tellraw @a[scores={ready=1}] [{"text": "Loading ","color": "light_purple"},{"score": {"name": "chunkX","objective": "temp"}}, "/", {"score": {"name": "chunkXMax","objective": "temp"}}]
+
 execute if score chunkX temp < chunkXMax temp run function kitpvp:map/private/clone/chunk-x
