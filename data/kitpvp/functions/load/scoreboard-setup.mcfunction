@@ -1,6 +1,7 @@
 
 # Generic
 function kitpvp:load/scoreboards/binary-scoreboards
+function kitpvp:load/scoreboards/uuid
 
 # Abilities
 function kitpvp:load/scoreboards/abilities/binary
