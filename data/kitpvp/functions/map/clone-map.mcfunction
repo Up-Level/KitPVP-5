@@ -6,9 +6,6 @@ kill @e[tag=cloneChunkerNew]
 summon minecraft:area_effect_cloud 0 64 0 {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["cloneChunker"]}
 summon minecraft:area_effect_cloud 0 64 0 {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["cloneChunkerNew"]}
 
-# data modify entity @e[tag=cloneChunker,limit=1] Pos set from storage current-map Map.Corner1
-data modify entity @e[tag=mapPoint1,limit=1] Pos set from storage current-map Map.Corner1
-
 scoreboard players set chunkX temp 0
 
 execute store result score posX temp run data get storage current-map Map.Corner1[0]
