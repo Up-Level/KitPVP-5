@@ -36,10 +36,22 @@ scoreboard objectives add s.ability2 dummy
 
 scoreboard objectives add s.utility dummy
 
-# Lodout editing
+# Random stuff
 
 scoreboard objectives remove giveLoadout
 scoreboard objectives add giveLoadout dummy
 
+# Lodout editing
+scoreboard objectives remove editLoadout
+scoreboard objectives add editLoadout dummy
+
 scoreboard objectives remove slotEdit
 scoreboard objectives add slotEdit dummy
+
+scoreboard objectives add s.armorT trigger
+scoreboard objectives add s.weaponT trigger
+
+scoreboard objectives add s.ability1T trigger
+scoreboard objectives add s.ability2T trigger
+
+scoreboard objectives add s.utilityT trigger

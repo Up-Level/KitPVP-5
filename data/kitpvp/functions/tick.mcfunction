@@ -9,6 +9,8 @@ execute as @a[tag=!inGame,gamemode=adventure] positioned 10000 64 0 run function
 
 execute as @a[scores={giveLoadout=1}] run function kitpvp:loadouts/items/all/tick
 
+execute as @a[scores={editLoadout=1}] run function kitpvp:loadouts/edit/edit/trigger-tick
+
 execute as @e[scores={carrotStickBin=1..}] at @s run function kitpvp:abilities/use-ability
 
 scoreboard players set @a dead 0
