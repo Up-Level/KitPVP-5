@@ -1,4 +1,4 @@
-tellraw @a[scores={ready=1}] {"text": "Loading Map... (This may take a while)","color": "light_purple"}
+tellraw @a {"text": "Loading Map... (This may take a while)","color": "light_purple"}
 
 kill @e[tag=cloneChunker]
 kill @e[tag=cloneChunkerNew]

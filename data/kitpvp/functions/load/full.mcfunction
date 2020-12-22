@@ -17,6 +17,7 @@ gamerule randomTickSpeed 0
 gamerule showDeathMessages false
 gamerule spawnRadius 0
 gamerule doImmediateRespawn true
+gamerule doTileDrops false
 
 difficulty normal
 
