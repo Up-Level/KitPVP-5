@@ -6,4 +6,7 @@ trigger s.ability2T set -2
 
 trigger s.utilityT set -2
 
+trigger saveToT set -2
+trigger loadFromT set -2
+
 scoreboard players set @s editLoadout 0
