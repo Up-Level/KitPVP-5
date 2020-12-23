@@ -4,6 +4,6 @@ effect give @e[tag=temp,tag=blockBox] minecraft:invisibility 999999 0 true
 execute rotated 0 0 run tp @e[tag=blockPoint,tag=temp] ^ ^-0.375 ^
 
 data modify entity @e[tag=temp,tag=blockPoint,limit=1] Radius set value 0
-data modify entity @e[tag=temp,tag=blockPoint,limit=1] RadiusPerTick set value 0
+data modify entity @e[tag=temp,tag=blockPoint,limit=1] RadiusPerTick set value 0.01
 
 tag @e[tag=temp] remove temp
