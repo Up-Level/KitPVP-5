@@ -1,5 +1,5 @@
 #> mathf:internal/init
-# 
+#
 # Initialise scoreboards for the mathf datapack.
 # @internal
 
@@ -12,6 +12,8 @@ scoreboard players set #3 mathf.const 3
 scoreboard players set #5 mathf.const 5
 scoreboard players set #6 mathf.const 6
 scoreboard players set #10 mathf.const 10
+scoreboard players set #15 mathf.const 15
+scoreboard players set #19 mathf.const 19
 scoreboard players set #16 mathf.const 16
 scoreboard players set #20 mathf.const 20
 scoreboard players set #32 mathf.const 32
