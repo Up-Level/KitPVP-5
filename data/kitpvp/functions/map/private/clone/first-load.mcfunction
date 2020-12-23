@@ -12,6 +12,4 @@ execute at @s run forceload add 128 0 255 127
 execute at @s run forceload add 0 128 127 255
 execute at @s run forceload add 128 128 255 255
 
-execute as @e[tag=destroyerOfWorlds] at @s run function kitpvp:map/private/clone/destroy-map
-
 tp @s 0 16 0
