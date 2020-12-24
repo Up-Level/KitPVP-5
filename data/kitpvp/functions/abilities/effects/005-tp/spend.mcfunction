@@ -1,5 +1,5 @@
 
-particle minecraft:soul_fire_flame ~ ~1 ~ 0.4 0.4 0.4 0 100
+particle minecraft:soul_fire_flame ~ ~1 ~ 0.4 0.4 0.4 0 100 force
 
 playsound minecraft:ui.toast.out master @a ~ ~1 ~ 1
 playsound minecraft:block.chorus_flower.death master @a ~ ~1 ~ 1 1
