@@ -5,6 +5,8 @@ execute at @e[tag=temp] rotated 0 0 run playsound minecraft:item.flintandsteel.u
 
 scoreboard players set @e[tag=temp] entity.type 1
 scoreboard players set @e[tag=temp] entity.state 0
+scoreboard players set @e[tag=temp] entity.data 0
+scoreboard players set @e[tag=temp] entity.time 0
 
 tag @s add uuid0
 execute as @e[tag=temp] run function kitpvp:generic-functions/uuid/set/owner-from-entity

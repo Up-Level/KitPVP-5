@@ -7,3 +7,11 @@ scoreboard objectives add entity.state dummy
 
 scoreboard objectives remove entity.data
 scoreboard objectives add entity.data dummy
+
+scoreboard objectives remove entity.time
+scoreboard objectives add entity.time dummy
+
+# Singular
+
+scoreboard objectives remove blockTime
+scoreboard objectives add blockTime dummy
