@@ -1,5 +1,5 @@
 
-function kitpvp:entity/player-entities/001-tp/find
+function kitpvp:entity/player-entities/001-tp/get
 
 execute if score crouch itemData matches 1 run function kitpvp:entity/player-entities/001-tp/destroy
 
