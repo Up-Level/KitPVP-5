@@ -13,5 +13,8 @@ execute as @a[scores={editLoadout=1}] run function kitpvp:loadouts/edit/edit/tri
 
 execute as @e[scores={carrotStickBin=1..}] at @s run function kitpvp:abilities/use-ability
 
+function kitpvp:entity/player-entities/tick
+
 scoreboard players set @a dead 0
 scoreboard players set @a kill 0
+scoreboard players set @a crouch 0

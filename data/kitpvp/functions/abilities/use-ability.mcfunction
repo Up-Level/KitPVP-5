@@ -9,6 +9,8 @@ scoreboard players set success itemData 1
 execute if score isHotbar itemData matches 1 run function kitpvp:abilities/get-item-data/mainhand-data
 execute if score isHotbar itemData matches 0 run function kitpvp:abilities/get-item-data/offhand-data
 
+scoreboard players operation crouch itemData = @s crouch
+
 execute if score type itemData matches 1 if score @s a1.ChargeCount matches ..0 run scoreboard players set success itemData 0
 execute if score type itemData matches 1 if score success itemData matches 1 run scoreboard players remove @s a1.ChargeCount 1
 
