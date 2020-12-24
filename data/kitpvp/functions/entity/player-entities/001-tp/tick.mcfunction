@@ -1,1 +1,1 @@
-particle minecraft:soul_fire_flame ~ ~ ~ 0.1 0.1 0.1 0.0025 1
+particle minecraft:soul_fire_flame ~ ~.5 ~ 0.2 0.4 0.2 0 1
