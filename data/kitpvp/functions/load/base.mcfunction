@@ -22,6 +22,9 @@ scoreboard objectives remove ready
 scoreboard objectives add ready dummy {"text":"Ready","color":"gold"}
 scoreboard objectives setdisplay sidebar ready
 
+scoreboard objectives remove menuTriggers
+scoreboard objectives add menuTriggers trigger
+
 scoreboard objectives remove itemData
 scoreboard objectives add itemData dummy
 

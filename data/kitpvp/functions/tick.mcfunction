@@ -18,3 +18,4 @@ function kitpvp:entity/player-entities/tick
 scoreboard players set @a dead 0
 scoreboard players set @a kill 0
 scoreboard players set @a crouch 0
+scoreboard players set @a useFungusStick 0
