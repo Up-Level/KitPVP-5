@@ -28,3 +28,20 @@ scoreboard objectives add uuid.owner2 dummy
 
 scoreboard objectives remove uuid.owner3
 scoreboard objectives add uuid.owner3 dummy
+
+
+# Reset
+scoreboard players set 0.0 uuid 0
+scoreboard players set 0.1 uuid 0
+scoreboard players set 0.2 uuid 0
+scoreboard players set 0.3 uuid 0
+
+scoreboard players set 1.0 uuid 0
+scoreboard players set 1.1 uuid 0
+scoreboard players set 1.2 uuid 0
+scoreboard players set 1.3 uuid 0
+
+scoreboard players set out.0 uuid 0
+scoreboard players set out.1 uuid 0
+scoreboard players set out.2 uuid 0
+scoreboard players set out.3 uuid 0
