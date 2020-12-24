@@ -10,6 +10,12 @@ scoreboard players set @e[tag=temp,tag=blockVisual] entity.type 2
 scoreboard players set @e[tag=temp,tag=blockVisual] entity.state -32
 
 tag @s add uuid0
-execute as @e[tag=temp] run function kitpvp:generic-functions/uuid/set/owner-from-entity
+execute as @e[tag=temp,tag=blockPoint] run function kitpvp:generic-functions/uuid/set/owner-from-entity
+
+tag @s add uuid0
+execute as @e[tag=temp,tag=blockBox] run function kitpvp:generic-functions/uuid/set/owner-from-entity
+
+tag @s add uuid0
+execute as @e[tag=temp,tag=blockVisual] run function kitpvp:generic-functions/uuid/set/owner-from-entity
 
 tag @e remove temp
