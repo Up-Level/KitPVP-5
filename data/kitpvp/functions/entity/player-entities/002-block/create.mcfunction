@@ -6,6 +6,9 @@ execute rotated 0 0 run tp @e[tag=blockPoint,tag=temp] ^ ^-0.375 ^
 scoreboard players set @e[tag=temp,tag=blockPoint] entity.type 2
 scoreboard players set @e[tag=temp,tag=blockPoint] entity.state 0
 
+scoreboard players set @e[tag=temp,tag=blockVisual] entity.type 2
+scoreboard players set @e[tag=temp,tag=blockVisual] entity.state -32
+
 tag @s add uuid0
 execute as @e[tag=temp] run function kitpvp:generic-functions/uuid/set/owner-from-entity
 
