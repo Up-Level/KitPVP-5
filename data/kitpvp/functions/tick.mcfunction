@@ -5,6 +5,8 @@ kill @e[type=spectral_arrow,nbt={inGround:1b}]
 function kitpvp:generic-functions/item-drop
 
 execute if score gamemodeActive info matches 1 run function kitpvp:gamemode/tick
+
+execute as @a[tag=!inGame,gamemode=!adventure] run tag @s remove hasMainMenuToggle
 execute as @a[tag=!inGame,gamemode=adventure] positioned 10000 64 0 run function kitpvp:tick-spawn
 
 execute as @a[scores={giveLoadout=1}] run function kitpvp:loadouts/items/all/tick
