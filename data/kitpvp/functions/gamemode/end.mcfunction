@@ -19,5 +19,6 @@ execute as @a[tag=inGame] at @s run playsound entity.firework_rocket.launch mast
 team leave @a[tag=inGame]
 execute as @a[tag=inGame] run function kitpvp:loadouts/revoke-items
 tp @a[tag=inGame] 10000 64 0
+execute as @a[scores={ready=1}] run function kitpvp:interface/menus/give/main-menu
 
 tag @a[tag=inGame] remove inGame
