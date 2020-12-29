@@ -5,7 +5,7 @@ function kitpvp:gamemode/fetch-gamemode-info
 # Prepare players
 tag @a[scores={ready=1}] add inGame
 tp @a[tag=inGame] 10 5 10
-# Tet hook your loadout stuff here
+execute as @a[tag=inGame] run function kitpvp:loadouts/grant-items-selected
 
 # Indicate gamemode has started
 title @a title "Go!"

@@ -17,6 +17,7 @@ tag @a[tag=winner] remove winner
 execute as @a[tag=inGame] at @s run playsound entity.firework_rocket.launch master @s ~ ~ ~ 1 1 1
 
 team leave @a[tag=inGame]
+execute as @a[tag=inGame] run function kitpvp:loadouts/revoke-items
 tp @a[tag=inGame] 10000 64 0
 
 tag @a[tag=inGame] remove inGame
