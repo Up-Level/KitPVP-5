@@ -1,4 +1,4 @@
-execute if score @p a2.CD matches -1 run scoreboard players set @s a2.CD 20
+execute if score @p a2.CD matches -1 run scoreboard players set @s a2.CD 140
 execute if score @p a2.CDCount matches -1 run scoreboard players operation @s a2.CDCount = @s a2.CD
 execute if score @p a2.ChargeMax matches -1 run scoreboard players set @s a2.ChargeMax 6
 execute if score @p a2.ChargeCount matches -1 run scoreboard players operation @s a2.ChargeCount = @s a2.ChargeMax
