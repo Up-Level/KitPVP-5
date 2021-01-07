@@ -1,1 +1,1 @@
-clear @s minecraft:stone_sword{weapon:1b}
+clear @s minecraft:iron_sword{weapon:1b}
