@@ -3,7 +3,7 @@ give @s written_book
 [
 
 "[\"\",
-{\"text\":\"Knights armor\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"A medium defence armor set.\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger s.armorT set 1\"}},
+{\"text\":\"Knights Armor\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"A medium defence armor set.\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger s.armorT set 1\"}},
 {\"text\":\"\\n\"},{\"text\":\"\\n\"},
 {\"text\":\"Scouts Animal Hide\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Low defence but grants a 20% speed increase.\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger s.armorT set 2\"}},
 {\"text\":\"\\n\"},{\"text\":\"\\n\"},
