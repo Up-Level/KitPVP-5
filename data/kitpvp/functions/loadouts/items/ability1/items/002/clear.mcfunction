@@ -1,1 +1,1 @@
-clear @s minecraft:carrot_on_a_stick{ability1:1b}
+clear @s minecraft:totem_of_undying{ability1:1b}

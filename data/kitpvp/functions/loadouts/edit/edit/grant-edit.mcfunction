@@ -10,3 +10,5 @@ scoreboard players enable @s s.utilityT
 
 scoreboard players enable @s saveToT
 scoreboard players enable @s loadFromT
+
+function kitpvp:loadouts/edit/edit/edit-items/give

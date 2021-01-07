@@ -1,7 +1,7 @@
-execute if score @p a2.CD matches -1 run scoreboard players set @s a2.CD 60
-execute if score @p a2.CDCount matches -1 run scoreboard players operation @s a2.CDCount = @s a2.CD
-execute if score @p a2.ChargeMax matches -1 run scoreboard players set @s a2.ChargeMax 3
-execute if score @p a2.ChargeCount matches -1 run scoreboard players operation @s a2.ChargeCount = @s a2.ChargeMax
-execute if score @p a2.Mode matches -1 run scoreboard players set @s a2.Mode 0
+execute if score @p a1.CD matches -1 run scoreboard players set @s a1.CD 200
+execute if score @p a1.CDCount matches -1 run scoreboard players operation @s a1.CDCount = @s a1.CD
+execute if score @p a1.ChargeMax matches -1 run scoreboard players set @s a1.ChargeMax 1
+execute if score @p a1.ChargeCount matches -1 run scoreboard players operation @s a1.ChargeCount = @s a1.ChargeMax
+execute if score @p a1.Mode matches -1 run scoreboard players set @s a1.Mode 0
 
-give @s minecraft:carrot_on_a_stick{Unbreakable:1b,ability2:1b,type:2b,effect:4b} 1
+give @s minecraft:carrot_on_a_stick{Unbreakable:1b,ability2:1b,type:2b,effect:5b,CustomModelData:100} 1

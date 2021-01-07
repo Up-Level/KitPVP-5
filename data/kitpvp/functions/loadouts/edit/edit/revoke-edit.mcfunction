@@ -1,3 +1,5 @@
+function kitpvp:loadouts/edit/edit/edit-items/clear
+
 trigger s.armorT set -2
 trigger s.weaponT set -2
 
