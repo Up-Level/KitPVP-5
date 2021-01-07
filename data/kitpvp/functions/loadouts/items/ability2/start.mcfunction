@@ -1,5 +1,5 @@
 execute if score @s ability2 matches 0 run scoreboard players set @s a2.CD 0
-execute if score @s ability2 matches 0 un scoreboard players operation @s a2.CDCount = @s a2.CD
+execute if score @s ability2 matches 0 run scoreboard players operation @s a2.CDCount = @s a2.CD
 execute if score @s ability2 matches 0 run scoreboard players set @s a2.ChargeMax 0
 execute if score @s ability2 matches 0 run scoreboard players operation @s a2.ChargeCount = @s a2.ChargeMax
 execute if score @s ability2 matches 0 run scoreboard players set @s a2.Mode 0
