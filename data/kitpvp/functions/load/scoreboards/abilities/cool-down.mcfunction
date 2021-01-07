@@ -33,8 +33,8 @@ scoreboard objectives remove a2.ChargeCount
 scoreboard objectives add a2.ChargeCount dummy
 
 # Using
-scoreboard objectives remove ability1Use
-scoreboard objectives add ability1Use dummy
+scoreboard objectives remove a1.useCD
+scoreboard objectives add a1.useCD dummy
 
-scoreboard objectives remove ability2Use
-scoreboard objectives add ability2Use dummy
+scoreboard objectives remove a2.useCD
+scoreboard objectives add a2.useCD dummy

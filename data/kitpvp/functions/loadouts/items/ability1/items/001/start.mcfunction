@@ -1,4 +1,4 @@
-scoreboard players set @s ability1Use 0
+scoreboard players set @s a1.useCD 0
 
 execute if score @p a1.CD matches -1 run scoreboard players set @s a1.CD 0
 execute if score @p a1.CDCount matches -1 run scoreboard players operation @s a1.CDCount = @s a1.CD
