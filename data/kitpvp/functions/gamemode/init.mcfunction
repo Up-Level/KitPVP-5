@@ -3,9 +3,12 @@ function kitpvp:map/fetch-map-info
 function kitpvp:gamemode/fetch-gamemode-info
 
 # Prepare players
+execute as @a[tag=inMenu] run function kitpvp:interface/menus/main-menu/disable
+execute as @a[tag=inMenu] run function kitpvp:loadouts/edit/edit/revoke-edit
+
 tag @a[scores={ready=1}] add inGame
 tp @a[tag=inGame] 10 5 10
-execute as @a[tag=inMenu] run function kitpvp:interface/menus/main-menu/disable
+
 execute as @a[tag=inGame] run function kitpvp:loadouts/grant-items-selected
 
 # Indicate gamemode has started
