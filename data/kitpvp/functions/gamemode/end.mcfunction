@@ -5,7 +5,6 @@ scoreboard objectives remove gm.deaths
 scoreboard objectives remove gm.general
 
 scoreboard players set gamemodeActive info 0
-# Tet remove ability stuff here
 
 bossbar set timer players
 
@@ -15,6 +14,8 @@ execute as @a[tag=winner] at @s run playsound ui.toast.challenge_complete master
 tag @a[tag=winner] remove winner
 
 execute as @a[tag=inGame] at @s run playsound entity.firework_rocket.launch master @s ~ ~ ~ 1 1 1
+
+execute as @a[tag=respawning] run function kitpvp:gamemode/private/end-respawn
 
 team leave @a[tag=inGame]
 execute as @a[tag=inGame] run function kitpvp:loadouts/revoke-items
