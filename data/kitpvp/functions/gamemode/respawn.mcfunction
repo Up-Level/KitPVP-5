@@ -5,7 +5,6 @@ scoreboard players operation @s gm.respawn-secs /= #20 mathf.const
 
 title @s actionbar [{"text": "Respawning in ","color": "gold"}, {"score": {"name": "@s","objective": "gm.respawn-secs"}}, " seconds..."]
 
-tp @s 10000 64 0
 effect give @s saturation 1 255 true
 effect give @s resistance 1 255 true
 effect give @s weakness 1 255 true

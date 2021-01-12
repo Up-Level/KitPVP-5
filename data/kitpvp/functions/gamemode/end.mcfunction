@@ -19,7 +19,9 @@ execute as @a[tag=respawning] run function kitpvp:gamemode/private/end-respawn
 
 team leave @a[tag=inGame]
 execute as @a[tag=inGame] run function kitpvp:loadouts/revoke-items
-tp @a[tag=inGame] 10000 64 0
+execute as @a[tag=inGame] run function kitpvp:generic-functions/coordinates/tp-spawn
+
+execute as @a[tag=inGame] run function kitpvp:interface/menus/main-menu/disable
 execute as @a[scores={ready=1}] run function kitpvp:interface/menus/give/main-menu-toggle
 
 tag @a[tag=inGame] remove inGame

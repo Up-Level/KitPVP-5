@@ -6,3 +6,6 @@ execute store success score successfulTeleport temp run tp @s @e[tag=validSpawn,
 
 # Otherwise, just teleport to any spawnpoint
 execute if score successfulTeleport temp matches 0 run tp @s @e[tag=spawnPoint,limit=1,sort=random]
+
+# Not functional for the time being so just tp anyway lol
+tp @s 0 3 0

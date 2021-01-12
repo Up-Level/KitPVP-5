@@ -8,6 +8,7 @@ execute as @a[tag=inMenu] run function kitpvp:loadouts/edit/edit/revoke-edit
 
 tag @a[scores={ready=1}] add inGame
 
+execute as @a[tag=inGame] run clear @s
 execute as @a[tag=inGame] run function kitpvp:loadouts/grant-items-selected
 
 # Indicate gamemode has started

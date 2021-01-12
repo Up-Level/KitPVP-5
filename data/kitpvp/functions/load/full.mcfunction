@@ -2,7 +2,7 @@ function kitpvp:load/base
 
 function kitpvp:load/scoreboards/loadouts/slots/create-slots
 
-setworldspawn 10000 64 0
+setworldspawn -10000 64 0
 
 # Gamerules
 gamerule announceAdvancements false
