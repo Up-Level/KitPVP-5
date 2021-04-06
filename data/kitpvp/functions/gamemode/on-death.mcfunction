@@ -1,14 +1,14 @@
+# Clear the player
 clear @s
 effect clear @s
 function kitpvp:loadouts/revoke-items
 
+# Fancy effects
 tellraw @a[tag=inGame] [{"selector":"@s","color":"red"},{"text":" has Died!","color":"red"}]
 execute at @s run playsound entity.lightning_bolt.thunder player @a[tag=inGame] ~ ~ ~ 1 1 1
 
-function kitpvp:generic-functions/coordinates/tp-respawnroom
-function kitpvp:loadouts/edit/edit/grant-edit
+# Make them goto repsawn room and do respawn stuff
+schedule function kitpvp:gamemode/private/start-respawn 1t replace
 
-scoreboard players operation @s gm.respawn-timer = respawnTime config
-tag @s add respawning
-
+# THIS MAN IS ALIVE
 scoreboard players set @s dead 0
