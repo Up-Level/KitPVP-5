@@ -3,10 +3,11 @@ function kitpvp:map/fetch-map-info
 function kitpvp:gamemode/fetch-gamemode-info
 
 # Prepare players
-execute as @a[tag=inMenu] run function kitpvp:interface/menus/main-menu/disable
-execute as @a[tag=inMenu] run function kitpvp:loadouts/edit/edit/revoke-edit
-
 tag @a[scores={ready=1}] add inGame
+
+execute as @a[tag=inGame,scores={inMenu=1..}] run function kitpvp:interface/menus/main-menu/disable
+execute as @a[tag=inGame] run function kitpvp:loadouts/edit/edit/revoke-edit
+
 
 execute as @a[tag=inGame] run clear @s
 execute as @a[tag=inGame] run function kitpvp:loadouts/grant-items-selected
