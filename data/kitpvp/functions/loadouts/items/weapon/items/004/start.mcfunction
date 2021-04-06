@@ -1,1 +1,1 @@
-give @s minecraft:trident{Unbreakable:1b,weapon:1b,Enchantments:[{id:loyalty,lvl:2b}]} 1
+give @s minecraft:trident{Unbreakable:1b,type:"weapon",Enchantments:[{id:loyalty,lvl:2b}]} 1

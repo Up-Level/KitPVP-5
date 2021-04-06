@@ -1,1 +1,1 @@
-clear @s minecraft:stone_axe{weapon:1b}
+clear @s minecraft:stone_axe{type:"weapon"}

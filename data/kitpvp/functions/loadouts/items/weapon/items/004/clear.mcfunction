@@ -1,1 +1,1 @@
-clear @s minecraft:trident{weapon:1b}
+clear @s minecraft:trident{type:"weapon"}

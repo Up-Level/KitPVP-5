@@ -1,1 +1,1 @@
-clear @s minecraft:totem_of_undying{ability1:1b}
+clear @s minecraft:totem_of_undying{type:"ability1"}
