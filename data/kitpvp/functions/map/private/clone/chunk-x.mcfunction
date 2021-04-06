@@ -11,4 +11,4 @@ execute if score chunkX temp < chunkXMax temp run scoreboard players add chunkX 
 
 tellraw @a [{"text": "Loading ","color": "light_purple"},{"score": {"name": "chunkX","objective": "temp"}}, "/", {"score": {"name": "chunkXMax","objective": "temp"}}]
 
-execute if score chunkX temp < chunkXMax temp run function kitpvp:map/private/clone/chunk-x
+execute if score chunkX temp < chunkXMax temp run schedule function kitpvp:map/private/clone/chunk-x 1t

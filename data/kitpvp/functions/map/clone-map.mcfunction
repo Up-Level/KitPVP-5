@@ -1,5 +1,3 @@
-tellraw @a {"text": "Loading Map... (This may take a while)","color": "light_purple"}
-
 kill @e[tag=cloneChunker]
 kill @e[tag=cloneChunkerNew]
 
