@@ -1,1 +1,1 @@
-clear @s minecraft:shield{type:"ability1"}
+clear @s minecraft:shield{itemType:"ability1"}

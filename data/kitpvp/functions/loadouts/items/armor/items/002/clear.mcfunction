@@ -1,3 +1,3 @@
-clear @s minecraft:leather_chestplate{type:"armor"}
-clear @s minecraft:leather_leggings{type:"armor"}
-clear @s minecraft:leather_boots{type:"armor"}
+clear @s minecraft:leather_chestplate{itemType:"armor"}
+clear @s minecraft:leather_leggings{itemType:"armor"}
+clear @s minecraft:leather_boots{itemType:"armor"}

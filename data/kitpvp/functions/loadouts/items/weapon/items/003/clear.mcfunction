@@ -1,2 +1,2 @@
-clear @s minecraft:bow{type:"weapon"}
-clear @s minecraft:arrow{type:"weapon"}
+clear @s minecraft:bow{itemType:"weapon"}
+clear @s minecraft:arrow{itemType:"weapon"}
