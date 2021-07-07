@@ -1,10 +1,10 @@
-summon minecraft:armor_stand ^ ^ ^ {NoGravity:1b,Invulnerable:1b,Silent:1b,Marker:1b,Invisible:1b,Tags:["blockPoint","temp","playerEntity"],Passengers:[{id:falling_block,Tags:["blockVisual","temp","playerEntity"],NoGravity:1b,NoAI:1b,Time:-2147483648,BlockState:{Name:"bricks"}},{id:shulker,Tags:["blockBox","temp","playerEntity"],NoAI:1b,Invulnerable:1b,Silent:1b}]}
+summon minecraft:area_effect_cloud ~ ~-0.375 ~ {Age: -2147483648, Duration: -1, WaitTime: -2147483648,NoGravity:1b,Invulnerable:1b,Silent:1b,Marker:1b,Invisible:1b,Tags:["blockPoint","temp","playerEntity"],Passengers:[{id:falling_block,Tags:["blockVisual","temp","playerEntity"],NoGravity:1b,NoAI:1b,Time:-2147483648,BlockState:{Name:"bricks"}},{id:shulker,Tags:["blockBox","temp","playerEntity"],NoAI:1b,Invulnerable:1b,Silent:1b}]}
 effect give @e[tag=temp,tag=blockBox] minecraft:invisibility 999999 0 true
 
 execute at @e[tag=temp,tag=blockPoint] run particle minecraft:block minecraft:bricks ^ ^.5 ^ .5 .5 .5 0. 10 force
 execute at @e[tag=temp,tag=blockPoint] run playsound minecraft:block.stone.place block @a ^ ^.5 ^ .5
 
-execute rotated 0 0 run tp @e[tag=blockPoint,tag=temp] ^ ^ ^
+execute rotated 0 0 run tp @e[tag=blockPoint,tag=temp] ^ ^-0.375 ^
 # 0.375
 scoreboard players set @e[tag=temp,tag=blockPoint] entity.type 2
 scoreboard players set @e[tag=temp,tag=blockPoint] entity.state 0
