@@ -1,5 +1,5 @@
 give @s written_book
-{ItemType:"editBook",Tags:["Bound"],pages:
+{ItemType:"edit",Tags:["Bound"],pages:
 [
 
 "[\"\",

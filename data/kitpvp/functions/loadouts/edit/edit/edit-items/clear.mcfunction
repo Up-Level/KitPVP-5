@@ -1,1 +1,1 @@
-clear @s minecraft:written_book{ItemType:"editBook"}
+clear @s minecraft:written_book{ItemType:"edit"}
