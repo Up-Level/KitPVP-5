@@ -1,0 +1,20 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:paper",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {"text":"You tried.","color":"aqua","italic":"false"}
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
