@@ -40,5 +40,12 @@ function kitpvp:load/storage-setup
 schedule function kitpvp:tick-per-sec 1s
 schedule function kitpvp:tick-per-min 60s
 
+clear @s minecraft:carrot_on_a_stick{ItemType:"armor"}
+clear @s minecraft:carrot_on_a_stick{ItemType:"weapon"}
+clear @s minecraft:carrot_on_a_stick{ItemType:"ability1"}
+clear @s minecraft:carrot_on_a_stick{ItemType:"ability2"}
+clear @s minecraft:carrot_on_a_stick{ItemType:"utility"}
+clear @s minecraft:carrot_on_a_stick{ItemType:"edit"}
+
 tellraw @a {"text":"KitPVP Datapack Reloaded.","color":"gold"}
 playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1 1 1
