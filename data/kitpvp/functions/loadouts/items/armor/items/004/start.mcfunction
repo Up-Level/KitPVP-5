@@ -1,7 +1,7 @@
-item replace entity @s armor.head with minecraft:glass{itemType:"armor",Tags:["Bound"],Enchantments:[{id:"binding_curse",lvl:1}]} 1
-item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1b,itemType:"armor",Tags:["Bound"],Enchantments:[{id:"binding_curse",lvl:1}]} 1
-item replace entity @s armor.legs with minecraft:iron_leggings{Unbreakable:1b,itemType:"armor",Tags:["Bound"],Enchantments:[{id:"binding_curse",lvl:1}]} 1
-item replace entity @s armor.feet with minecraft:leather_boots{Unbreakable:1b,itemType:"armor",Tags:["Bound"],Enchantments:[{id:"feather_falling",lvl:4},{id:"depth_strider",lvl:3},{id:"binding_curse",lvl:1}]} 1
+item replace entity @s armor.head with minecraft:glass{ItemType:"armor",Tags:["Bound"],Enchantments:[{id:"binding_curse",lvl:1}]} 1
+item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1b,ItemType:"armor",Tags:["Bound"],Enchantments:[{id:"binding_curse",lvl:1}]} 1
+item replace entity @s armor.legs with minecraft:iron_leggings{Unbreakable:1b,ItemType:"armor",Tags:["Bound"],Enchantments:[{id:"binding_curse",lvl:1}]} 1
+item replace entity @s armor.feet with minecraft:leather_boots{Unbreakable:1b,ItemType:"armor",Tags:["Bound"],Enchantments:[{id:"feather_falling",lvl:4},{id:"depth_strider",lvl:3},{id:"binding_curse",lvl:1}]} 1
 
 effect give @s minecraft:fire_resistance 999999 0 true
 effect give @s minecraft:water_breathing 999999 0 true

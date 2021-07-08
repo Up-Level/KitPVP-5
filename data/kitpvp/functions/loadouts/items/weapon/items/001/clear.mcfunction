@@ -1,1 +1,1 @@
-clear @s minecraft:iron_sword{itemType:"weapon"}
+clear @s minecraft:iron_sword{ItemType:"weapon"}

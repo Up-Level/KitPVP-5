@@ -1,1 +1,1 @@
-clear @s minecraft:trident{itemType:"weapon"}
+clear @s minecraft:trident{ItemType:"weapon"}
