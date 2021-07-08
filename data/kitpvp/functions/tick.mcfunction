@@ -2,7 +2,7 @@
 kill @e[type=arrow,nbt={inGround:1b}]
 kill @e[type=spectral_arrow,nbt={inGround:1b}]
 
-function kitpvp:generic-functions/item-drop
+execute as @e[type=item,tag=!checked] run function kitpvp:generic-functions/item-drop
 
 execute if score gamemodeActive info matches 1 run function kitpvp:gamemode/tick
 

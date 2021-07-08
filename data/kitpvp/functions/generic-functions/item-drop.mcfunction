@@ -1,5 +1,9 @@
-execute as @e[tag=checked] at @s run tp @s @p
+tag @s[nbt={Item:{tag:{Tags:["Bound"]}}}] add temp
 
-execute as @e[type=item,tag=!checked] run data modify entity @s Owner set from entity @s Thrower
-execute as @e[type=item,tag=!checked] run data modify entity @s PickupDelay set value 0
-tag @e[type=item] add checked
+execute at @s[tag=temp] run tp @s @p
+
+data modify entity @s[tag=temp] Owner set from entity @s[tag=temp] Thrower
+data modify entity @s[tag=temp] PickupDelay set value 0
+
+tag @s remove temp
+tag @s add checked

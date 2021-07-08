@@ -1,5 +1,5 @@
 give @s written_book
-{pages:
+{itemType:"editBook",Tags:["Bound"],pages:
 [
 
 "[\"\",
@@ -20,4 +20,4 @@ give @s written_book
 
 
 ],
-title:"Save/Load Loadout",author:Loadout,loadoutEditBook:1}
+title:"Save/Load Loadout",author:Loadout}

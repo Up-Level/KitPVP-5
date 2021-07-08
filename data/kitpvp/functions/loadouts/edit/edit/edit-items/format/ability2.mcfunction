@@ -1,5 +1,5 @@
 give @s written_book
-{pages:
+{itemType:"editBook",Tags:["Bound"],pages:
 [
 
 "[\"\",
@@ -18,4 +18,4 @@ give @s written_book
 
 
 ],
-title:"Select Mobility Ability",author:Loadout,loadoutEditBook:1}
+title:"Select Mobility Ability",author:Loadout}

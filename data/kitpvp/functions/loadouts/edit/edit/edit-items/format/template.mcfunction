@@ -1,5 +1,5 @@
 give @s written_book
-{pages:
+{itemType:"editBook",Tags:["Bound"],pages:
 [
 
 "[\"\",
@@ -18,7 +18,7 @@ give @s written_book
 
 
 ],
-title:"Select something",author:TodTheMighty,loadoutEditBook:1}
+title:"Select something",author:TodTheMighty}
 
 # Formatted like this because its super duper easy to edit.
 # Copy and paste the large blob to create a new page.
