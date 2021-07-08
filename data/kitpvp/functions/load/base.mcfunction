@@ -40,5 +40,7 @@ function kitpvp:load/storage-setup
 schedule function kitpvp:tick-per-sec 1s
 schedule function kitpvp:tick-per-min 60s
 
+clear @a minecraft:written_book{ItemType:"edit"}
+
 tellraw @a {"text":"KitPVP Datapack Reloaded.","color":"gold"}
 playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1 1 1
