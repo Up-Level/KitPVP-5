@@ -6,11 +6,11 @@ function kitpvp:gamemode/fetch-gamemode-info
 tag @a[scores={ready=1}] add inGame
 
 execute as @a[tag=inGame,scores={inMenu=1..}] run function kitpvp:interface/menus/main-menu/disable
-execute as @a[tag=inGame] run function kitpvp:loadouts/edit/edit/revoke-edit
+execute as @a[tag=inGame] run function kitpvp:loadout/edit/edit/revoke-edit
 
 
 execute as @a[tag=inGame] run clear @s
-execute as @a[tag=inGame] run function kitpvp:loadouts/grant-items-selected
+execute as @a[tag=inGame] run function kitpvp:loadout/grant-items-selected
 
 # Indicate gamemode has started
 title @a title "Go!"

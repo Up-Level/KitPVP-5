@@ -1,7 +1,7 @@
 # Clear the player
 clear @s
 effect clear @s
-function kitpvp:loadouts/revoke-items
+function kitpvp:loadout/revoke-items
 
 # Fancy effects
 tellraw @a[tag=inGame] [{"selector":"@s","color":"red"},{"text":" has Died!","color":"red"}]

@@ -7,6 +7,6 @@ playsound minecraft:item.flintandsteel.use master @a ~ ~1 ~ 1 1
 
 
 tp @s @e[tag=found,limit=1,sort=nearest]
-function kitpvp:entity/player-entities/001-tp/destroy
+function kitpvp:entity/player/001-tp/destroy
 
 function kitpvp:abilities/spend

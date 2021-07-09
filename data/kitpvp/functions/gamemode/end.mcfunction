@@ -18,8 +18,8 @@ execute as @a[tag=inGame] at @s run playsound entity.firework_rocket.launch mast
 execute as @a[tag=respawning] run function kitpvp:gamemode/private/end-respawn
 
 team leave @a[tag=inGame]
-execute as @a[tag=inGame] run function kitpvp:loadouts/revoke-items
-execute as @a[tag=inGame] run function kitpvp:generic-functions/coordinates/tp-spawn
+execute as @a[tag=inGame] run function kitpvp:loadout/revoke-items
+execute as @a[tag=inGame] run function kitpvp:generic/coordinates/tp-spawn
 
 execute as @a[tag=inGame] run function kitpvp:interface/menus/main-menu/disable
 execute as @a[scores={ready=1}] run function kitpvp:interface/menus/give/main-menu-toggle
