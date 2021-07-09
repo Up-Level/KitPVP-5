@@ -6,4 +6,4 @@ execute if score @p a1.ChargeMax matches -1 run scoreboard players set @s a1.Cha
 execute if score @p a1.ChargeCount matches -1 run scoreboard players operation @s a1.ChargeCount = @s a1.ChargeMax
 execute if score @p a1.Mode matches -1 run scoreboard players set @s a1.Mode 0
 
-give @s minecraft:carrot_on_a_stick{Unbreakable:1b,ItemType:"ability1",abilityType:1b,Tags:["Bound"],effect:7b} 1
+give @s minecraft:carrot_on_a_stick{Unbreakable:1b,ItemType:"ability1",AbilitySlot:1b,Tags:["Bound"],AbilityEffect:7b} 1
