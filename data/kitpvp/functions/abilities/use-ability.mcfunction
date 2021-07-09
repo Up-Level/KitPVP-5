@@ -1,7 +1,7 @@
 scoreboard players set @s carrotStickBin 0
 
 # Check if main or off hand
-execute store success score isHotbar itemData run data get entity @s SelectedItem.tag.effect
+execute store success score isHotbar itemData run data get entity @s SelectedItem.tag.AbilityEffect
 
 scoreboard players set success itemData 1
 
