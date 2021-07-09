@@ -4,7 +4,7 @@ effect give @e[tag=temp,tag=blockBox] minecraft:invisibility 999999 0 true
 execute at @e[tag=temp,tag=blockPoint] run particle minecraft:block minecraft:bricks ^ ^.5 ^ .5 .5 .5 0. 10 force
 execute at @e[tag=temp,tag=blockPoint] run playsound minecraft:block.stone.place block @a ^ ^.5 ^ .5
 
-execute rotated 0 0 run tp @e[tag=blockPoint,tag=temp] ^ ^-0.375 ^
+# execute rotated 0 0 run tp @e[tag=blockPoint,tag=temp] ^ ^-0.375 ^
 # 0.375
 scoreboard players set @e[tag=temp,tag=blockPoint] entity.type 2
 scoreboard players set @e[tag=temp,tag=blockPoint] entity.state 0
