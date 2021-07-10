@@ -18,7 +18,7 @@ give @s written_book
 
 
 ],
-title:"Select something",author:TodTheMighty}
+title:"Select something",author:Loadout}
 
 # Formatted like this because its super duper easy to edit.
 # Copy and paste the large blob to create a new page.
