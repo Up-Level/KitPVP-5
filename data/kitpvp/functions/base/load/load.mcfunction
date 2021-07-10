@@ -1,5 +1,6 @@
-execute as @a run function kitpvp:loadout/edit/edit/revoke-edit
 execute as @a run function kitpvp:loadout/revoke-items
+execute as @a run function kitpvp:loadout/edit/edit/revoke-edit
+# I honestly don't know why it doesnt remove loadout items, they should still have the relevant scoreboards at this point
 
 scoreboard objectives add config dummy
 
@@ -42,8 +43,6 @@ function kitpvp:base/load/storage-setup
 
 schedule function kitpvp:tick-per-sec 1s
 schedule function kitpvp:tick-per-min 60s
-
-clear @a minecraft:written_book{ItemType:"edit"}
 
 tellraw @a {"text":"KitPVP Datapack Reloaded.","color":"gold"}
 playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1 1 1
