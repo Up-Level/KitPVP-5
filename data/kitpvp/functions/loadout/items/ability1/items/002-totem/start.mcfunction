@@ -6,4 +6,4 @@ execute if score @p a1.ChargeMax matches -1 run scoreboard players set @s a1.Cha
 execute if score @p a1.ChargeCount matches -1 run scoreboard players operation @s a1.ChargeCount = @s a1.ChargeMax
 execute if score @p a1.Mode matches -1 run scoreboard players set @s a1.Mode 0
 
-item replace entity @s weapon.offhand with minecraft:totem_of_undying{ItemType:"ability1",Tags:["Bound"]} 1
+item replace entity @s weapon.offhand with minecraft:totem_of_undying{ItemType:"ability1",Tags:["Bound"],HideFlags:4} 1

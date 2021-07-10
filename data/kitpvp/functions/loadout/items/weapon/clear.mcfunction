@@ -1,10 +1,5 @@
-execute if score @s weapon matches 1 run function kitpvp:loadout/items/weapon/items/001/clear
-execute if score @s weapon matches 2 run function kitpvp:loadout/items/weapon/items/002/clear
-execute if score @s weapon matches 3 run function kitpvp:loadout/items/weapon/items/003/clear
-execute if score @s weapon matches 4 run function kitpvp:loadout/items/weapon/items/004/clear
-execute if score @s weapon matches 5 run function kitpvp:loadout/items/weapon/items/005/clear
-execute if score @s weapon matches 6 run function kitpvp:loadout/items/weapon/items/006/clear
-execute if score @s weapon matches 7 run function kitpvp:loadout/items/weapon/items/007/clear
-execute if score @s weapon matches 8 run function kitpvp:loadout/items/weapon/items/008/clear
-execute if score @s weapon matches 9 run function kitpvp:loadout/items/weapon/items/009/clear
-execute if score @s weapon matches 10 run function kitpvp:loadout/items/weapon/items/010/clear
+execute if score @s weapon matches 1 run function kitpvp:loadout/items/weapon/items/001-sword/clear
+execute if score @s weapon matches 2 run function kitpvp:loadout/items/weapon/items/002-shiv/clear
+execute if score @s weapon matches 3 run function kitpvp:loadout/items/weapon/items/003-battleaxe/clear
+execute if score @s weapon matches 4 run function kitpvp:loadout/items/weapon/items/004-bow/clear
+execute if score @s weapon matches 5 run function kitpvp:loadout/items/weapon/items/005-trident/clear
