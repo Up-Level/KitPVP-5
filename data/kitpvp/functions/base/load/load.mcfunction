@@ -1,3 +1,6 @@
+execute as @a run function kitpvp:loadout/edit/edit/revoke-edit
+execute as @a run function kitpvp:loadout/revoke-items
+
 scoreboard objectives add config dummy
 
 # Declarations for vscode
