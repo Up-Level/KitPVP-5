@@ -18,4 +18,4 @@ give @s written_book
 
 
 ],
-title:"Select Combat Ability",author:Loadout}
+title:"Select Primary Ability",author:Loadout}

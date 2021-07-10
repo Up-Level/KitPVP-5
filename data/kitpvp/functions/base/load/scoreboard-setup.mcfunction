@@ -2,7 +2,7 @@
 # Generic
 function kitpvp:base/load/scoreboards/binary-scoreboards
 function kitpvp:base/load/scoreboards/uuid
-function kitpvp:base/load/scoreboards/player
+function kitpvp:base/load/scoreboards/player-entities
 
 # Abilities
 function kitpvp:base/load/scoreboards/abilities/binary
