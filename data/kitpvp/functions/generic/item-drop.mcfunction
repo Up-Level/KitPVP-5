@@ -1,3 +1,4 @@
+kill @s[nbt={Item:{tag:{Tags:["Delete"]}}}]
 tag @s[nbt={Item:{tag:{Tags:["Bound"]}}}] add temp
 
 execute at @s[tag=temp] run tp @s @p
