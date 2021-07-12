@@ -1,24 +1,25 @@
-kill @e[tag=cloneChunker]
-kill @e[tag=cloneChunkerNew]
+# delete old map
+function kitpvp:map/remove-map
 
-summon minecraft:area_effect_cloud 0 64 10000 {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["cloneChunker"]}
-summon minecraft:area_effect_cloud 0 64 10000 {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["cloneChunkerNew"]}
+# Cloning to:
+scoreboard players set target.pos.x clone 0
+scoreboard players set target.pos.y clone 0
+scoreboard players set target.pos.z clone 0
 
-scoreboard players set chunkX temp 0
+# Cloning from:
+#scoreboard players set source.pos.x clone 0
+#scoreboard players set source.pos.y clone 16
+#scoreboard players set source.pos.z clone 0
+execute store result score source.pos.x clone run data get storage current-map Map.Corner1[0]
+execute store result score source.pos.y clone run data get storage current-map Map.Corner1[1]
+execute store result score source.pos.z clone run data get storage current-map Map.Corner1[2]
 
-execute store result score posX temp run data get storage current-map Map.Corner1[0]
-execute store result score posY temp run data get storage current-map Map.Corner1[1]
-execute store result score posZ temp run data get storage current-map Map.Corner1[2]
+# Scale in 32*32*32 areas
+#scoreboard players set source.scale.x clone 2
+#scoreboard players set source.scale.y clone 2
+#scoreboard players set source.scale.z clone 2
+execute store result score source.scale.x clone run data get storage current-map Map.Chunks[0]
+execute store result score source.scale.y clone run data get storage current-map Map.Chunks[1]
+execute store result score source.scale.z clone run data get storage current-map Map.Chunks[2]
 
-execute store result score chunkXMax temp run data get storage current-map Map.Chunks[0]
-execute store result score chunkYMax temp run data get storage current-map Map.Chunks[1]
-execute store result score chunkZMax temp run data get storage current-map Map.Chunks[2]
-
-# Jank ass solution but it works almost.
-
-forceload remove all
-forceload add -1 9999 32 10032
-
-execute as @e[tag=cloneChunker,limit=1] at @s run function kitpvp:map/private/clone/first-load
-
-schedule function kitpvp:map/private/clone/start 60t replace
+function bigclone:start-clone

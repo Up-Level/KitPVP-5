@@ -1,6 +1,3 @@
-# Don't need to load 4 more chunks for 20 blocks
-clone 43 26 0 31 14 0 31 14 64
-
 # They dont appear why
 fill 18 10 32 18 7 32 ladder[facing=west]
 fill 24 10 21 24 7 21 minecraft:ladder[facing=west]

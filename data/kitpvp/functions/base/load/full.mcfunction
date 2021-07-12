@@ -43,4 +43,6 @@ scoreboard objectives setdisplay list wins
 
 # Forceload
 forceload remove all
-forceload add 0 0
+forceload add -10000 0
+forceload add 32 10032 -1 9999
+execute positioned 0 0 0 run forceload add ~ ~ ~128 ~128
