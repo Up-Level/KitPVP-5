@@ -10,7 +10,7 @@ execute positioned -3 17 -6 run function kitpvp:map/spawn/new-spawnpoint
 # Containers, Containers are an even amount of blocks so we spawn the points in the middle of 2 blocks
 execute positioned -11 27 -24.0 run function kitpvp:map/spawn/new-spawnpoint
 execute positioned -11 27 -4.0 run function kitpvp:map/spawn/new-spawnpoint
-execute positioned -11 32 4.0 run function kitpvp:map/spawn/new-spawnpoint
+execute positioned -11 32 6.0 run function kitpvp:map/spawn/new-spawnpoint
 execute positioned -11 27 26.0 run function kitpvp:map/spawn/new-spawnpoint
 execute positioned -4 32 -25.0 run function kitpvp:map/spawn/new-spawnpoint
 execute positioned -4 27 -14.0 run function kitpvp:map/spawn/new-spawnpoint
