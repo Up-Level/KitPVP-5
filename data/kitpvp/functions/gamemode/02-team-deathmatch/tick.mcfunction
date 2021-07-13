@@ -5,10 +5,10 @@ execute store result bossbar timer value run scoreboard players get ticksRemaini
 execute if score ticksRemaining gm.general matches 0.. run bossbar set timer name [{"text":"Time Remaining: ","color":"gold"},{"score":{"objective":"gm.general","name":"secondsRemaining"},"color":"gold"},{"text":" seconds","color":"gold"}]
 execute if score ticksRemaining gm.general matches ..-1 run function kitpvp:gamemode/02-team-deathmatch/private/overtime
 
-execute as @a[tag=inGame,team=red] run scoreboard players operation Red gm.sidebar += @s kill
-execute as @a[tag=inGame,team=blue] run scoreboard players operation Blue gm.sidebar += @s kill
-execute as @a[tag=inGame,team=green] run scoreboard players operation Green gm.sidebar += @s kill
-execute as @a[tag=inGame,team=yellow] run scoreboard players operation Yellow gm.sidebar += @s kill
+execute as @a[tag=inGame,team=red] run scoreboard players operation Red gm.sidebar += @s bin.kill
+execute as @a[tag=inGame,team=blue] run scoreboard players operation Blue gm.sidebar += @s bin.kill
+execute as @a[tag=inGame,team=green] run scoreboard players operation Green gm.sidebar += @s bin.kill
+execute as @a[tag=inGame,team=yellow] run scoreboard players operation Yellow gm.sidebar += @s bin.kill
 
 scoreboard players operation red gm.kills-copy = Red gm.sidebar
 scoreboard players operation blue gm.kills-copy = Blue gm.sidebar

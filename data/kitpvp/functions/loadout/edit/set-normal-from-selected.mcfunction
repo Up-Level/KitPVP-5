@@ -1,7 +1,7 @@
-scoreboard players operation @s armor = @s s.armor
-scoreboard players operation @s weapon = @s s.weapon
+scoreboard players operation @s l.use.arm = @s l.sel.arm
+scoreboard players operation @s l.use.wep = @s l.sel.wep
 
-scoreboard players operation @s ability1 = @s s.ability1
-scoreboard players operation @s ability2 = @s s.ability2
+scoreboard players operation @s l.use.a1 = @s l.sel.a1
+scoreboard players operation @s l.use.a2 = @s l.sel.a2
 
-scoreboard players operation @s utility = @s s.utility
+scoreboard players operation @s l.use.util = @s l.sel.util

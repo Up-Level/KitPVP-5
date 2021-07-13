@@ -1,10 +1,10 @@
 tag @a remove found.team
 
-# execute if entity @s[team=none] as @a[team=none] if score @s giveLoadout matches 1 run tag @s add found.enemy
+# execute if entity @s[team=none] as @a[team=none] if score @s l.give matches 1 run tag @s add found.enemy
 
-execute if entity @s[team=red] as @a[team=red] if score @s giveLoadout matches 1 run tag @s add found.team
-execute if entity @s[team=green] as @a[team=green] if score @s giveLoadout matches 1 run tag @s add found.team
-execute if entity @s[team=blue] as @a[team=blue] if score @s giveLoadout matches 1 run tag @s add found.team
-execute if entity @s[team=yellow] as @a[team=yellow] if score @s giveLoadout matches 1 run tag @s add found.team
+execute if entity @s[team=red] as @a[team=red] if score @s l.give matches 1 run tag @s add found.team
+execute if entity @s[team=green] as @a[team=green] if score @s l.give matches 1 run tag @s add found.team
+execute if entity @s[team=blue] as @a[team=blue] if score @s l.give matches 1 run tag @s add found.team
+execute if entity @s[team=yellow] as @a[team=yellow] if score @s l.give matches 1 run tag @s add found.team
 
 tag @s remove found.team

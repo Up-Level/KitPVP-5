@@ -1,71 +1,71 @@
 # Currently Used
 # Remove
-scoreboard objectives remove armor
-scoreboard objectives remove weapon
+scoreboard objectives remove l.use.wep
+scoreboard objectives remove l.use.wep
 
-scoreboard objectives remove ability1
-scoreboard objectives remove ability2
+scoreboard objectives remove l.use.a1
+scoreboard objectives remove l.use.a2
 
-scoreboard objectives remove utility
+scoreboard objectives remove l.use.util
 
 # Add
-scoreboard objectives add armor dummy
-scoreboard objectives add weapon dummy
+scoreboard objectives add l.use.arm dummy
+scoreboard objectives add l.use.wep dummy
 
-scoreboard objectives add ability1 dummy
-scoreboard objectives add ability2 dummy
+scoreboard objectives add l.use.a1 dummy
+scoreboard objectives add l.use.a2 dummy
 
-scoreboard objectives add utility dummy
+scoreboard objectives add l.use.util dummy
 
 # Selected
 # Remove
-scoreboard objectives remove s.armor
-scoreboard objectives remove s.weapon
+scoreboard objectives remove l.sel.arm
+scoreboard objectives remove l.sel.wep
 
-scoreboard objectives remove s.ability1
-scoreboard objectives remove s.ability2
+scoreboard objectives remove l.sel.a1
+scoreboard objectives remove l.sel.a2
 
-scoreboard objectives remove s.utility
+scoreboard objectives remove l.sel.util
 
 # Add
-scoreboard objectives add s.armor dummy
-scoreboard objectives add s.weapon dummy
+scoreboard objectives add l.sel.arm dummy
+scoreboard objectives add l.sel.wep dummy
 
-scoreboard objectives add s.ability1 dummy
-scoreboard objectives add s.ability2 dummy
+scoreboard objectives add l.sel.a1 dummy
+scoreboard objectives add l.sel.a2 dummy
 
-scoreboard objectives add s.utility dummy
+scoreboard objectives add l.sel.util dummy
 
 # Random stuff
 
-scoreboard objectives remove giveLoadout
-scoreboard objectives add giveLoadout dummy
+scoreboard objectives remove l.give
+scoreboard objectives add l.give dummy
 
 # Lodout editing
-scoreboard objectives remove editLoadout
-scoreboard objectives add editLoadout dummy
+scoreboard objectives remove l.e
+scoreboard objectives add l.e dummy
 
-scoreboard objectives remove slotEdit
-scoreboard objectives add slotEdit dummy
+scoreboard objectives remove l.e.slotEdit
+scoreboard objectives add l.e.slotEdit dummy
 
-scoreboard objectives remove saveToT
-scoreboard objectives add saveToT trigger
+scoreboard objectives remove l.e.saveT
+scoreboard objectives add l.e.saveT trigger
 
-scoreboard objectives remove loadFromT
-scoreboard objectives add loadFromT trigger
+scoreboard objectives remove l.e.loadT
+scoreboard objectives add l.e.loadT trigger
 
-scoreboard objectives remove s.armorT
-scoreboard objectives remove s.weaponT
+scoreboard objectives remove l.e.armT
+scoreboard objectives remove l.e.wepT
 
-scoreboard objectives remove s.ability1T
-scoreboard objectives remove s.ability2T
+scoreboard objectives remove l.e.a1T
+scoreboard objectives remove l.e.a2T
 
-scoreboard objectives remove s.utilityT
+scoreboard objectives remove l.e.utilT
 
-scoreboard objectives add s.armorT trigger
-scoreboard objectives add s.weaponT trigger
+scoreboard objectives add l.e.armT trigger
+scoreboard objectives add l.e.wepT trigger
 
-scoreboard objectives add s.ability1T trigger
-scoreboard objectives add s.ability2T trigger
+scoreboard objectives add l.e.a1T trigger
+scoreboard objectives add l.e.a2T trigger
 
-scoreboard objectives add s.utilityT trigger
+scoreboard objectives add l.e.utilT trigger

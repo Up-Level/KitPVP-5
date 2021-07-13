@@ -11,4 +11,4 @@ execute at @s run playsound entity.lightning_bolt.thunder player @a[tag=inGame] 
 function kitpvp:gamemode/private/start-respawn
 
 # THIS MAN IS ALIVE
-scoreboard players set @s dead 0
+scoreboard players set @s bin.dead 0

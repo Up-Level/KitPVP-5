@@ -1,17 +1,17 @@
 # Remove
-scoreboard objectives remove s2.armor
-scoreboard objectives remove s2.weapon
+scoreboard objectives remove l.save.2.arm
+scoreboard objectives remove l.save.2.wep
 
-scoreboard objectives remove s2.ability1
-scoreboard objectives remove s2.ability2
+scoreboard objectives remove l.save.2.a1
+scoreboard objectives remove l.save.2.a2
 
-scoreboard objectives remove s2.utility
+scoreboard objectives remove l.save.2.util
 
 # Add
-scoreboard objectives add s2.armor dummy
-scoreboard objectives add s2.weapon dummy
+scoreboard objectives add l.save.2.arm dummy
+scoreboard objectives add l.save.2.wep dummy
 
-scoreboard objectives add s2.ability1 dummy
-scoreboard objectives add s2.ability2 dummy
+scoreboard objectives add l.save.2.a1 dummy
+scoreboard objectives add l.save.2.a2 dummy
 
-scoreboard objectives add s2.utility dummy
+scoreboard objectives add l.save.2.util dummy

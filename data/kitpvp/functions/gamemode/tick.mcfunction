@@ -2,7 +2,7 @@
 execute as @a[tag=inGame,tag=!respawning,gamemode=adventure] run item entity @s hotbar.8 replace minecraft:golden_carrot
 
 # If are found dead, run on-death
-execute as @a[tag=inGame,scores={dead=1},nbt={Health:20f}] run function kitpvp:gamemode/on-death
+execute as @a[tag=inGame,scores={bin.dead=1},nbt={Health:20f}] run function kitpvp:gamemode/on-death
 # Tick for respawn
 execute as @a[tag=respawning] run function kitpvp:gamemode/private/tick-respawn
 

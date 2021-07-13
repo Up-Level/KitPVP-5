@@ -1,7 +1,7 @@
-scoreboard players operation @s s1.armor = @s s.armor
-scoreboard players operation @s s1.weapon = @s s.weapon
+scoreboard players operation @s l.save.1.arm = @s l.sel.arm
+scoreboard players operation @s l.save.1.wep = @s l.sel.wep
 
-scoreboard players operation @s s1.ability1 = @s s.ability1
-scoreboard players operation @s s1.ability2 = @s s.ability2
+scoreboard players operation @s l.save.1.a1 = @s l.sel.a1
+scoreboard players operation @s l.save.1.a2 = @s l.sel.a2
 
-scoreboard players operation @s s1.utility = @s s.utility
+scoreboard players operation @s l.save.1.util = @s l.sel.util

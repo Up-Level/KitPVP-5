@@ -1,5 +1,5 @@
-execute if score @s saveToT matches 0.. run scoreboard players operation @s slotEdit = @s saveToT
-execute if score @s saveToT matches 0.. run scoreboard players enable @s saveToT
-execute if score @s saveToT matches 0.. run scoreboard players set @s saveToT -1
+execute if score @s l.e.saveT matches 0.. run scoreboard players operation @s l.e.slotEdit = @s l.e.saveT
+execute if score @s l.e.saveT matches 0.. run scoreboard players enable @s l.e.saveT
+execute if score @s l.e.saveT matches 0.. run scoreboard players set @s l.e.saveT -1
 
 function kitpvp:loadout/edit/save-to-slot/save-to-slot
