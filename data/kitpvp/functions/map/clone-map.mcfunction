@@ -2,9 +2,12 @@
 function kitpvp:map/remove-map
 
 # Cloning to:
-scoreboard players set target.pos.x clone 0
-scoreboard players set target.pos.y clone 0
-scoreboard players set target.pos.z clone 0
+#scoreboard players set target.pos.x clone 0
+#scoreboard players set target.pos.y clone 0
+#scoreboard players set target.pos.z clone 0
+execute store result score target.pos.x clone run data get storage current-map Map.Offset[0]
+execute store result score target.pos.y clone run data get storage current-map Map.Offset[1]
+execute store result score target.pos.z clone run data get storage current-map Map.Offset[2]
 
 # Cloning from:
 #scoreboard players set source.pos.x clone 0
