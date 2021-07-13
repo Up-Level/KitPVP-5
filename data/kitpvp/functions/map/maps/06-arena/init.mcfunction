@@ -1,4 +1,4 @@
-function kitpvp:map/06-arena/spawns
+function kitpvp:map/maps/06-arena/spawns
 
 # They dont appear why
 fill -19 10 0 -19 7 0 ladder[facing=west]

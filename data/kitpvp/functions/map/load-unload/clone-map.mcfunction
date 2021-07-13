@@ -1,5 +1,5 @@
 # delete old map
-function kitpvp:map/remove-map
+function kitpvp:map/load-unload/remove-map
 
 # Cloning to:
 #scoreboard players set target.pos.x clone 0

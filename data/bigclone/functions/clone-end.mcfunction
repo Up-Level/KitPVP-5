@@ -6,6 +6,6 @@ execute at @e[type=minecraft:marker,tag=clone,tag=source,limit=1] run forceload 
 # delete the idiots who we dont need anymore
 kill @e[type=minecraft:marker,tag=clone]
 
-function kitpvp:map/init
+function kitpvp:map/maps/init
 
 say done
