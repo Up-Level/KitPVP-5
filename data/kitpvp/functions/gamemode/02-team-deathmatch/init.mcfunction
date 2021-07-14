@@ -16,4 +16,4 @@ function kitpvp:gamemode/utility/timer-init
 function kitpvp:gamemode/utility/bossbar
 bossbar set timer players @a[tag=inGame]
 
-execute as @a[tag=inGame] run function kitpvp:map/teleport/singleplayer
+execute as @a[tag=inGame] run function kitpvp:map/spawn/singleplayer
