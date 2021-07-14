@@ -7,5 +7,6 @@ execute at @e[type=minecraft:marker,tag=clone,tag=source,limit=1] run forceload 
 kill @e[type=minecraft:marker,tag=clone]
 
 function kitpvp:map/maps/init
+function kitpvp:interface/start-postmap
 
 say done
