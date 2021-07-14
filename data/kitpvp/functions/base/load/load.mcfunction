@@ -2,6 +2,8 @@ execute as @a run function kitpvp:loadout/revoke-items
 execute as @a run function kitpvp:loadout/edit/edit/revoke-edit
 # I honestly don't know why it doesnt remove loadout items, they should still have the relevant scoreboards at this point
 
+function kitpvp:gamemode/force-end
+
 scoreboard objectives add config dummy
 
 # Declarations for vscode
@@ -41,8 +43,8 @@ function kitpvp:base/load/teams-setup
 function kitpvp:base/load/scoreboard-setup
 function kitpvp:base/load/storage-setup
 
-schedule function kitpvp:tick-per-sec 1s
-schedule function kitpvp:tick-per-min 60s
+schedule function kitpvp:base/tick/tick-per-sec 1s
+schedule function kitpvp:base/tick/tick-per-min 60s
 
 tellraw @a {"text":"KitPVP Datapack Reloaded.","color":"gold"}
 playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1 1 1
