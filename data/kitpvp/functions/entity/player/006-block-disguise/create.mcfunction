@@ -6,7 +6,7 @@ scoreboard players set @e[tag=temp,tag=blockPoint] entity.type 6
 scoreboard players set @e[tag=temp,tag=blockPoint] entity.state 0
 scoreboard players set @e[tag=temp,tag=blockPoint] entity.data 0
 
-scoreboard players set @e[tag=temp,tag=blockVisaul] entity.type 6
+scoreboard players set @e[tag=temp,tag=blockVisual] entity.type 6
 scoreboard players set @e[tag=temp,tag=blockVisual] entity.state 1
 scoreboard players set @e[tag=temp,tag=blockVisual] entity.data 0
 
