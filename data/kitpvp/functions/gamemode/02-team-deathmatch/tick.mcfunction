@@ -1,4 +1,5 @@
 function kitpvp:gamemode/utility/timer-tick
+function kitpvp:gamemode/utility/killstreak-tick
 
 execute store result bossbar timer value run scoreboard players get ticksRemaining gm.general
 

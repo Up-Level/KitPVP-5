@@ -44,6 +44,7 @@ scoreboard objectives setdisplay list wins
 # Forceload
 forceload remove all
 forceload add -10000 0
+forceload add -19981 24
 forceload add 32 10032 -1 9999
 
 # Forceloads a 111 block radius around 0,0
