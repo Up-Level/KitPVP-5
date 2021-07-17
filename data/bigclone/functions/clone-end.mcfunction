@@ -7,6 +7,6 @@ execute at @e[type=minecraft:marker,tag=clone,tag=source,limit=1] run forceload 
 kill @e[type=minecraft:marker,tag=clone]
 
 function kitpvp:map/maps/init
-function kitpvp:interface/start-postmap
 
-say done
+execute if score startingGamemode info matches 1 run function kitpvp:interface/start-postmap
+execute if score startingGamemode info matches 1 run scoreboard players set startingGamemode info 0
