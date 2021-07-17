@@ -7,6 +7,8 @@ scoreboard objectives setdisplay sidebar gm.kills
 
 function kitpvp:gamemode/utility/timer/init
 function kitpvp:gamemode/utility/bossbar
+function kitpvp:gamemode/utility/killstreak/init
+
 bossbar set gm.bossbar players @a[tag=inGame]
 
 execute as @a[tag=inGame] run function kitpvp:map/spawn/singleplayer

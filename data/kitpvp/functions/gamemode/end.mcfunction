@@ -25,3 +25,6 @@ execute as @a[tag=inGame] run function kitpvp:interface/menus/main-menu/disable
 execute as @a[scores={ready=1}] run function kitpvp:interface/menus/give/main-menu-display
 
 tag @a[tag=inGame] remove inGame
+
+time set 6000
+weather clear

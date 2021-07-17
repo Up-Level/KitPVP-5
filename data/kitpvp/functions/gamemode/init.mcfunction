@@ -10,11 +10,9 @@ execute as @a[tag=inGame] run function kitpvp:loadout/edit/edit/revoke-edit
 
 execute as @a[tag=inGame] run clear @s
 
-scoreboard players set @a bin.kill 0
-
 # Indicate gamemode has started
-title @a title "Go!"
-execute as @a at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 2 1
+title @a[tag=inGame] title "Go!"
+execute as @a[tag=inGame] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 2 1
 scoreboard players set gamemodeActive info 1
 
 # Initialise common scoreboards
@@ -23,9 +21,6 @@ scoreboard objectives add gm.kills playerKillCount {"text": "Kills","color": "go
 
 scoreboard objectives remove gm.deaths
 scoreboard objectives add gm.deaths deathCount {"text": "Deaths","color": "gold"}
-
-scoreboard objectives remove gm.killstreak
-scoreboard objectives add gm.killstreak dummy
 
 scoreboard objectives remove gm.general
 scoreboard objectives add gm.general dummy
