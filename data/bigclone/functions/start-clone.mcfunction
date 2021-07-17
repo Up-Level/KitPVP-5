@@ -16,7 +16,12 @@ scoreboard players set mover.localpos.z clone 0
 
 scoreboard players set iteration clone 0
 
+scoreboard players operation total clone = source.scale.x clone
+scoreboard players operation total clone *= source.scale.y clone
+scoreboard players operation total clone *= source.scale.z clone
+
 scoreboard players operation temp clone = source.scale.z clone
 scoreboard players remove temp clone 1
+
 
 schedule function bigclone:axis/x 10t
