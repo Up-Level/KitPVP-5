@@ -1,5 +1,8 @@
 function kitpvp:map/maps/06-arena/spawns
 
+time set 6000
+weather clear
+
 # They dont appear why
 fill -19 10 0 -19 7 0 ladder[facing=west]
 fill -13 10 -11 -13 7 -11 minecraft:ladder[facing=west]
