@@ -8,9 +8,7 @@ tag @a[scores={ready=1}] add inGame
 execute as @a[tag=inGame,scores={inMenu=1..}] run function kitpvp:interface/menus/main-menu/disable
 execute as @a[tag=inGame] run function kitpvp:loadout/edit/edit/revoke-edit
 
-
 execute as @a[tag=inGame] run clear @s
-execute as @a[tag=inGame] run function kitpvp:loadout/grant-items-selected
 
 scoreboard players set @a bin.kill 0
 
@@ -38,9 +36,20 @@ scoreboard objectives add gm.respawn-timer dummy
 scoreboard objectives remove gm.respawn-secs
 scoreboard objectives add gm.respawn-secs dummy
 
+scoreboard objectives remove gm.round-wins
+scoreboard objectives add gm.round-wins dummy
+
 scoreboard objectives remove gm.sidebar
 scoreboard objectives add gm.sidebar dummy
 
+# Store round info on scoreboard
+#declare score_holder totalRounds
+#declare score_holder round
+
+execute store result score totalRounds gm.general run data get storage current-gamemode Gamemode.Settings.Rounds
+scoreboard players set round gm.general 0
+
 # Run gamemode-specific initialisation commands
+execute if score gamemode info matches 0 run function kitpvp:gamemode/00-template/init
 execute if score gamemode info matches 1 run function kitpvp:gamemode/01-deathmatch/init
 execute if score gamemode info matches 2 run function kitpvp:gamemode/02-team-deathmatch/init

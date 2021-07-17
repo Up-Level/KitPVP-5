@@ -1,0 +1,20 @@
+required per gamemode:
+    init
+    new-round
+    end
+    tick
+    on-death
+    spawn
+    win-conditions
+
+defaults:
+    init
+    tick
+    end
+    on-death
+
+utility (optional):
+    bossbar
+    killstreak-tick
+    timer/init
+    timer/tick

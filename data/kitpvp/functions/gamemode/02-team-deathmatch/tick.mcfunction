@@ -1,9 +1,9 @@
-function kitpvp:gamemode/utility/timer-tick
+function kitpvp:gamemode/utility/timer/tick
 function kitpvp:gamemode/utility/killstreak-tick
 
-execute store result bossbar timer value run scoreboard players get ticksRemaining gm.general
+execute store result bossbar gm.bossbar value run scoreboard players get ticksRemaining gm.general
 
-execute if score ticksRemaining gm.general matches 0.. run bossbar set timer name [{"text":"Time Remaining: ","color":"gold"},{"score":{"objective":"gm.general","name":"secondsRemaining"},"color":"gold"},{"text":" seconds","color":"gold"}]
+execute if score ticksRemaining gm.general matches 0.. run bossbar set gm.bossbar name [{"text":"Time Remaining: ","color":"gold"},{"score":{"objective":"gm.general","name":"secondsRemaining"},"color":"gold"},{"text":" seconds","color":"gold"}]
 execute if score ticksRemaining gm.general matches ..-1 run function kitpvp:gamemode/02-team-deathmatch/private/overtime
 
 execute as @a[tag=inGame,team=red] run scoreboard players operation Red gm.sidebar += @s bin.kill
