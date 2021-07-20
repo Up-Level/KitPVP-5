@@ -4,6 +4,9 @@ scoreboard objectives remove gm.kills
 scoreboard objectives remove gm.deaths
 scoreboard objectives remove gm.general
 
+scoreboard objectives setdisplay sidebar ready
+scoreboard objectives setdisplay list wins
+
 scoreboard players set gamemodeActive info 0
 
 bossbar set gm.bossbar players
