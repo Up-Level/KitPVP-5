@@ -9,6 +9,8 @@ function kitpvp:gamemode/utility/timer/init
 function kitpvp:gamemode/utility/bossbar
 function kitpvp:gamemode/utility/killstreak/init
 
+team join none @a[tag=inGame]
+
 bossbar set gm.bossbar players @a[tag=inGame]
 
 execute as @a[tag=inGame] run function kitpvp:map/spawn/singleplayer
