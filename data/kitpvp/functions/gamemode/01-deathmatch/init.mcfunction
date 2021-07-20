@@ -11,4 +11,5 @@ function kitpvp:gamemode/utility/killstreak/init
 
 bossbar set gm.bossbar players @a[tag=inGame]
 
+execute as @a[tag=inGame] run function kitpvp:loadout/grant-items-selected
 execute as @a[tag=inGame] run function kitpvp:map/spawn/singleplayer

@@ -1,6 +1,8 @@
 function kitpvp:gamemode/utility/timer/tick
 function kitpvp:gamemode/utility/killstreak/tick
 
+item replace entity @a[tag=inGame] hotbar.8 with minecraft:cooked_beef{Tags:["Bound"]}
+
 execute store result bossbar gm.bossbar value run scoreboard players get ticksRemaining gm.general
 
 execute if score ticksRemaining gm.general matches 0.. run bossbar set gm.bossbar name [{"text":"Time Remaining: ","color":"gold"},{"score":{"objective":"gm.general","name":"secondsRemaining"},"color":"gold"},{"text":" seconds","color":"gold"}]
