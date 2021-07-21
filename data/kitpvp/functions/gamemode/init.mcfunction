@@ -11,6 +11,7 @@ execute as @a[tag=inGame,scores={inMenu=1..}] run function kitpvp:interface/menu
 execute as @a[tag=inGame] run function kitpvp:loadout/edit/edit/revoke-edit
 
 execute as @a[tag=inGame] run clear @s
+gamemode adventure @a[tag=inGame]
 
 # Indicate gamemode has started
 title @a[tag=inGame] title "Go!"
