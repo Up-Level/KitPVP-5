@@ -3,9 +3,13 @@ required per gamemode:
     new-round
     end
     tick
-    on-death
     spawn
     win-conditions
+
+overrides:
+    death/on-death
+    death/tick-respawn
+    death/start-respawn
 
 defaults:
     init
@@ -15,6 +19,7 @@ defaults:
 
 utility (optional):
     bossbar
-    killstreak-tick
+    killstreak/init
+    killstreak/tick
     timer/init
     timer/tick
