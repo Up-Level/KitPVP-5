@@ -6,3 +6,4 @@ execute if score map info matches 5 run function kitpvp:map/maps/05-hanger/init
 execute if score map info matches 6 run function kitpvp:map/maps/06-arena/init
 execute if score map info matches 7 run function kitpvp:map/maps/07-mayan/init
 execute if score map info matches 8 run function kitpvp:map/maps/08-dungeon/init
+execute if score map info matches 9 run function kitpvp:map/maps/09-airsoft/init

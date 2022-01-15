@@ -34,8 +34,11 @@ scoreboard objectives add gm.respawn-timer dummy
 scoreboard objectives remove gm.respawn-secs
 scoreboard objectives add gm.respawn-secs dummy
 
-scoreboard objectives remove gm.round-wins
-scoreboard objectives add gm.round-wins dummy
+scoreboard objectives remove gm.rounds
+scoreboard objectives add gm.rounds dummy
+
+scoreboard objectives remove gm.rounds-copy
+scoreboard objectives add gm.rounds-copy dummy
 
 scoreboard objectives remove gm.sidebar
 scoreboard objectives add gm.sidebar dummy
