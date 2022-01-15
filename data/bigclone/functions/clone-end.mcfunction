@@ -8,5 +8,5 @@ kill @e[type=minecraft:marker,tag=clone]
 
 function kitpvp:map/maps/init
 
-execute if score startingGamemode info matches 1 run schedule function kitpvp:interface/start-postmap 10s replace
+execute if score startingGamemode info matches 1 run schedule function kitpvp:interface/start-postmap 1s replace
 execute if score startingGamemode info matches 1 run scoreboard players set startingGamemode info 0
