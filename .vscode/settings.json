@@ -1,6 +1,6 @@
 {
-    "datapack.env.cmdVersion": "1.17",
-    "datapack.env.jsonVersion": "1.17",
+    "datapack.env.cmdVersion": "1.18",
+    "datapack.env.jsonVersion": "1.18",
     "editor.wordWrap": "on",
     "datapack.lint.strictSoundEventCheck": null
 }
