@@ -2,7 +2,7 @@
 function kitpvp:gamemode/utility/timer/init
 
 # Add points to everyone who won
-execute if score round gm.general matches 1.. run scoreboard players add @r[tag=inGame] gm.rounds 1
+execute if score round gm.general matches 1.. run scoreboard players add @a[tag=inGame,scores={gm.kills-copy=0}] gm.rounds 1
 
 # Calculate who has won the most rounds so far
 execute as @a[tag=inGame] run scoreboard players operation @s gm.rounds-copy = @s gm.rounds
@@ -14,12 +14,12 @@ scoreboard players operation @a[tag=inGame] gm.rounds-copy -= highest gm.rounds-
 execute if score round gm.general matches 1.. as @a[tag=inGame] run tellraw @s [{"text":"You have won ","color":"gold"}, {"score":{"name": "@s","objective": "gm.rounds"}}, " round(s).\nCurrently in the lead: ", {"selector":"@a[scores={gm.rounds-copy=0}]"}, " with ", {"score":{"name": "highest","objective": "gm.rounds-copy"}}, " rounds won."]
 
 # End game if maximum rounds reached
-execute if score round gm.general = totalRounds gm.general run function kitpvp:gamemode/00-template/end
+execute if score round gm.general = totalRounds gm.general run function kitpvp:gamemode/01-deathmatch/end
 # End game if not enough players
-execute if score playersInGame gm.general matches ..1 run function kitpvp:gamemode/00-template/end
+execute if score playersInGame gm.general matches ..1 run function kitpvp:gamemode/01-deathmatch/end
 
 # Spawn players
-execute if score round gm.general < totalRounds gm.general as @a[tag=inGame] run function kitpvp:gamemode/00-template/spawn
+execute if score round gm.general < totalRounds gm.general as @a[tag=inGame] run function kitpvp:gamemode/01-deathmatch/spawn
 
 # Increase round number
 scoreboard players operation round gm.general += #1 mathf.const

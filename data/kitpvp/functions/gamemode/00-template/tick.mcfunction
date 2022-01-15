@@ -2,6 +2,9 @@
 function kitpvp:gamemode/utility/timer/tick
 function kitpvp:gamemode/utility/killstreak/tick
 
+# Detect if running overtime
+execute if score ticksRemaining gm.general matches ..-1 run function kitpvp:gamemode/00-template/overtime
+
 # Run death functions on death
 execute as @a[tag=inGame,scores={bin.dead=1},nbt={Health:20f}] run function kitpvp:gamemode/utility/death-solo/on-death
 # Tick for respawn
