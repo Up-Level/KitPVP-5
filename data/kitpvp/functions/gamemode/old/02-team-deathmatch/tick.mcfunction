@@ -1,4 +1,3 @@
-# Run utility functions
 function kitpvp:gamemode/utility/timer/tick
 function kitpvp:gamemode/utility/killstreak/tick
 
@@ -6,17 +5,9 @@ item replace entity @a[tag=inGame] hotbar.8 with minecraft:cooked_beef{Tags:["Bo
 
 execute store result bossbar gm.bossbar value run scoreboard players get ticksRemaining gm.general
 
-# Detect if running overtime
-execute if score ticksRemaining gm.general matches ..-1 run function kitpvp:gamemode/02-team-deathmatch/overtime
-
 execute if score ticksRemaining gm.general matches 0.. run bossbar set gm.bossbar name [{"text":"Time Remaining: ","color":"gold"},{"score":{"objective":"gm.general","name":"secondsRemaining"},"color":"gold"},{"text":" seconds","color":"gold"}]
+execute if score ticksRemaining gm.general matches ..-1 run function kitpvp:gamemode/02-team-deathmatch/private/overtime
 
-# Run death functions on death
-execute as @a[tag=inGame,scores={bin.dead=1},nbt={Health:20f}] run function kitpvp:gamemode/utility/death-solo/on-death
-# Tick for respawn
-execute as @a[tag=respawning] run function kitpvp:gamemode/utility/death-solo/tick-respawn
-
-# Find highest scorer
 execute as @a[tag=inGame,team=red] run scoreboard players operation Red gm.sidebar += @s bin.kill
 execute as @a[tag=inGame,team=blue] run scoreboard players operation Blue gm.sidebar += @s bin.kill
 execute as @a[tag=inGame,team=green] run scoreboard players operation Green gm.sidebar += @s bin.kill
@@ -38,5 +29,4 @@ scoreboard players operation blue gm.kills-copy -= highest gm.kills-copy
 scoreboard players operation green gm.kills-copy -= highest gm.kills-copy
 scoreboard players operation yellow gm.kills-copy -= highest gm.kills-copy
 
-# Detect if the round should end
 function kitpvp:gamemode/02-team-deathmatch/win-conditions

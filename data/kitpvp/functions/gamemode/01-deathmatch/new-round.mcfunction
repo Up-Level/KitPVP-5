@@ -4,6 +4,8 @@ function kitpvp:gamemode/utility/timer/init
 # Add points to everyone who won
 execute if score round gm.general matches 1.. run scoreboard players add @a[tag=inGame,scores={gm.kills-copy=0}] gm.rounds 1
 
+scoreboard players set @a[tag=inGame] gm.kills 0
+
 # Calculate who has won the most rounds so far
 execute as @a[tag=inGame] run scoreboard players operation @s gm.rounds-copy = @s gm.rounds
 scoreboard players set highest gm.rounds-copy 0

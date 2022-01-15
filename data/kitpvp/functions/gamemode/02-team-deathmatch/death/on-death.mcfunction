@@ -1,0 +1,1 @@
+# Can change death-related functions in gamemode tick to this function to "override" normal death mechanics
