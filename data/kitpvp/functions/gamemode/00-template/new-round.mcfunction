@@ -11,7 +11,7 @@ scoreboard players operation highest gm.rounds-copy > @a[tag=inGame] gm.rounds-c
 scoreboard players operation @a[tag=inGame] gm.rounds-copy -= highest gm.rounds-copy
 
 # Display info saying who is currently winning.
-execute if score round gm.general matches 1.. as @a[tag=inGame] run tellraw @s [{"text":"You have won ","color":"gold"}, {"score":{"name": "@s","objective": "gm.rounds"}}, " round(s).\nCurrently in the lead: ", {"selector":"@a[scores={gm.rounds-copy=0}]"}, " with ", {"score":{"name": "highest","objective": "gm.rounds-copy"}}, " rounds won."]
+execute if score totalRounds gm.general matches 2.. if score round gm.general matches 1.. as @a[tag=inGame] run tellraw @s [{"text":"You have won ","color":"gold"}, {"score":{"name": "@s","objective": "gm.rounds"}}, " round(s).\nCurrently in the lead: ", {"selector":"@a[scores={gm.rounds-copy=0}]"}, " with ", {"score":{"name": "highest","objective": "gm.rounds-copy"}}, " rounds won."]
 
 # End game if maximum rounds reached
 execute if score round gm.general = totalRounds gm.general run function kitpvp:gamemode/00-template/end
