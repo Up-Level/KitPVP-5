@@ -1,6 +1,7 @@
 # Run utility functions
 function kitpvp:gamemode/utility/killstreak/init
 function kitpvp:gamemode/utility/bossbar
+function kitpvp:gamemode/utility/timer/init
 
 # Show description tellraw
 tellraw @a[tag=inGame] [{"text":"Gamemode: Deathmatch","color": "gold","italic": true}, {"text": "\nGet the most kills within ","italic": false}, {"storage": "current-gamemode","nbt": "Gamemode.Settings.Duration","italic": false}, {"text":" seconds.","italic": false}]
