@@ -4,6 +4,8 @@ function kitpvp:gamemode/utility/timer/init
 # Add points to everyone who won
 execute if score round gm.general matches 1.. run scoreboard players add @r[tag=inGame] gm.rounds 1
 
+execute as @a[tag=inGame] run function kitpvp:loadout/revoke-items
+
 # Calculate who has won the most rounds so far
 execute as @a[tag=inGame] run scoreboard players operation @s gm.rounds-copy = @s gm.rounds
 scoreboard players set highest gm.rounds-copy 0
@@ -18,8 +20,9 @@ execute if score round gm.general = totalRounds gm.general run function kitpvp:g
 # End game if not enough players
 execute if score playersInGame gm.general matches ..1 run function kitpvp:gamemode/00-template/end
 
-# Spawn players
-execute if score round gm.general < totalRounds gm.general as @a[tag=inGame] run function kitpvp:gamemode/00-template/spawn
+# Send players to respawn room
+execute if score round gm.general < totalRounds gm.general if score round gm.general matches 2.. as @a[tag=inGame] run function kitpvp:gamemode/utility/death-solo/private/start-respawn
+execute if score round gm.general < totalRounds gm.general if score round gm.general matches ..1 as @a[tag=inGame] run function kitpvp:map/spawn/singleplayer
 
 # Increase round number
 scoreboard players operation round gm.general += #1 mathf.const
