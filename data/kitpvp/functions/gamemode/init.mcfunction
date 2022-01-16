@@ -54,3 +54,4 @@ scoreboard players set round gm.general 0
 execute if score gamemode info matches 0 run function kitpvp:gamemode/00-template/init
 execute if score gamemode info matches 1 run function kitpvp:gamemode/01-deathmatch/init
 execute if score gamemode info matches 2 run function kitpvp:gamemode/02-team-deathmatch/init
+execute if score gamemode info matches 3 run function kitpvp:gamemode/03-lives/init
