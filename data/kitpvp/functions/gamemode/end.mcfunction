@@ -5,6 +5,7 @@ scoreboard players set gamemodeActive info 0
 scoreboard objectives remove gm.kills
 scoreboard objectives remove gm.deaths
 scoreboard objectives remove gm.general
+scoreboard objectives remove gm.sidebar
 
 scoreboard objectives setdisplay sidebar ready
 scoreboard objectives setdisplay list wins
@@ -25,6 +26,7 @@ execute as @a[tag=inGame] run function kitpvp:interface/menus/main-menu/disable
 execute as @a[tag=inGame] run function kitpvp:interface/menus/give/main-menu-display
 
 tag @a[tag=inGame] remove inGame
+tag @a[tag=respawning] remove respawning
 
 time set 6000
 weather clear

@@ -6,6 +6,8 @@ function kitpvp:gamemode/utility/bossbar
 # Show description tellraw
 tellraw @a[tag=inGame] [{"text":"Gamemode: Deathmatch","color": "gold","italic": true}, {"text": "\nGet the most kills within ","italic": false}, {"storage": "current-gamemode","nbt": "Gamemode.Settings.Duration","italic": false}, {"text":" seconds.","italic": false}]
 
+team join none @a[tag=inGame]
+
 # Create additional scoreboards as required
 scoreboard objectives remove gm.kills-copy
 scoreboard objectives add gm.kills-copy dummy
