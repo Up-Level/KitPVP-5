@@ -1,0 +1,1 @@
+execute at @s run particle minecraft:dust 0 0.27058823529 0 1 ~ ~1 ~ 0.25 .35 0.25 0.05 1 force
