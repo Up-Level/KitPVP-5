@@ -1,6 +1,8 @@
 # Run utility functions
 function kitpvp:gamemode/utility/killstreak/tick
 
+give @a[scores={bin.kill=1}] cooked_beef 3
+
 gamemode spectator @a[tag=inGame,scores={gm.lives=..0}]
 
 # Run death functions on death

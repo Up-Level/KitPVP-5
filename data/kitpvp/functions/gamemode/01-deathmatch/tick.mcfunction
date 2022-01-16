@@ -2,8 +2,8 @@
 function kitpvp:gamemode/utility/timer/tick
 function kitpvp:gamemode/utility/killstreak/tick
 
-item replace entity @a[tag=inGame] hotbar.8 with minecraft:cooked_beef{Tags:["Bound"]}
-
+give @a[scores={bin.kill=1}] cooked_beef 3
+ 
 execute store result bossbar gm.bossbar value run scoreboard players get ticksRemaining gm.general
 
 # Detect if running overtime
