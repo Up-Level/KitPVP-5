@@ -4,4 +4,5 @@ execute if score @s l.use.arm matches 3 run function kitpvp:loadout/items/armor/
 execute if score @s l.use.arm matches 4 run function kitpvp:loadout/items/armor/items/004-hazard/start
 
 # Custom
-execute if score @s l.use.arm matches -1 run function kitpvp:loadout/items/armor/items/custom/001-infected/start
+execute if score @s l.use.arm matches -1 run function kitpvp:loadout/items/armor/items/custom/001-infected-prime/start
+execute if score @s l.use.arm matches -2 run function kitpvp:loadout/items/armor/items/custom/002-infected/start
