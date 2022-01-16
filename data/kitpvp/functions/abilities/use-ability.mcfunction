@@ -10,7 +10,7 @@ execute if score isHotbar itemData matches 1 run function kitpvp:abilities/get-i
 execute if score isHotbar itemData matches 0 run function kitpvp:abilities/get-item-data/offhand-data
 
 scoreboard players set bin.sneak itemData 0
-execute if predicate useful:is_sneaking run scoreboard players set bin.sneak itemData 1
+execute if predicate utilities:is_sneaking run scoreboard players set bin.sneak itemData 1
 
 execute if score type itemData matches 1 if score @s a1.ChargeCount matches ..0 run scoreboard players set success itemData 0
 execute if score type itemData matches 2 if score @s a2.ChargeCount matches ..0 run scoreboard players set success itemData 0

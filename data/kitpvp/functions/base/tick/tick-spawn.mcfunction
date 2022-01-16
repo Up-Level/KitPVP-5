@@ -9,5 +9,5 @@ effect give @s[gamemode=adventure] fire_resistance 1 0 true
 
 execute at @s if entity @s[y=0,dy=-50] run tp @s -10000 64 0
 
-execute if entity @s[gamemode=!creative] if predicate useful:is_sneaking unless entity @s[nbt={Inventory:[{tag:{menuToggle:1b}}]}] run function kitpvp:interface/menus/give/main-menu-display
+execute if entity @s[gamemode=!creative] if predicate utilities:is_sneaking unless entity @s[nbt={Inventory:[{tag:{menuToggle:1b}}]}] run function kitpvp:interface/menus/give/main-menu-display
 function kitpvp:interface/menus/main-menu/tick
