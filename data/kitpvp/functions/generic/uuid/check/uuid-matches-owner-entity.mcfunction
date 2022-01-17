@@ -1,7 +1,7 @@
-scoreboard players operation 0.0 uuid = @s uuid.uuid0
-scoreboard players operation 0.1 uuid = @s uuid.uuid1
-scoreboard players operation 0.2 uuid = @s uuid.uuid2
-scoreboard players operation 0.3 uuid = @s uuid.uuid3
+scoreboard players operation 0.0 uuid = @s uuid.entity0
+scoreboard players operation 0.1 uuid = @s uuid.entity1
+scoreboard players operation 0.2 uuid = @s uuid.entity2
+scoreboard players operation 0.3 uuid = @s uuid.entity3
 
 execute as @e[tag=uuid0,limit=1] run scoreboard players operation 1.0 uuid = @s uuid.owner0
 execute as @e[tag=uuid0,limit=1] run scoreboard players operation 1.1 uuid = @s uuid.owner1
