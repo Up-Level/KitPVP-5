@@ -9,6 +9,8 @@ scoreboard players set @a[tag=inGame] gm.kills 0
 
 execute as @a[tag=inGame] run function kitpvp:loadout/revoke-items
 
+gamemode adventure @a[tag=inGame]
+
 # Calculate who has won the most rounds so far
 execute as @a[tag=inGame] run scoreboard players operation @s gm.rounds-copy = @s gm.rounds
 scoreboard players set highest gm.rounds-copy 0
