@@ -88,7 +88,7 @@ execute positioned -24 104 0 run function kitpvp:map/spawn/new-spawnpoint
 execute positioned -24 104 -6 run function kitpvp:map/spawn/new-spawnpoint
 execute positioned -18 104 -6 run function kitpvp:map/spawn/new-spawnpoint
 execute positioned -24 104 -12 run function kitpvp:map/spawn/new-spawnpoint
-execute positioned -18 104 -12 run function kitpvp:map/spawn/new-spawnpoint
+execute positioned -18 104 -11 run function kitpvp:map/spawn/new-spawnpoint
 
 # Big Building(-z)
 execute positioned -24 104 -30 run function kitpvp:map/spawn/new-spawnpoint
