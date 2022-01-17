@@ -57,3 +57,4 @@ execute if score gamemode info matches 2 run function kitpvp:gamemode/02-team-de
 execute if score gamemode info matches 3 run function kitpvp:gamemode/03-lives/init
 
 execute if score gamemode info matches 5 run function kitpvp:gamemode/05-infected/init
+execute if score gamemode info matches 6 run function kitpvp:gamemode/06-ctf/init

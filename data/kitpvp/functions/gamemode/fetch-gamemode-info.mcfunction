@@ -6,3 +6,4 @@ execute if score gamemode info matches 2 run data modify storage current-gamemod
 execute if score gamemode info matches 3 run data modify storage current-gamemode Gamemode set from storage gamemode-03
 execute if score gamemode info matches 4 run data modify storage current-gamemode Gamemode set from storage gamemode-04
 execute if score gamemode info matches 5 run data modify storage current-gamemode Gamemode set from storage gamemode-05
+execute if score gamemode info matches 6 run data modify storage current-gamemode Gamemode set from storage gamemode-06
