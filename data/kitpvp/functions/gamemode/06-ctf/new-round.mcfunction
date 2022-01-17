@@ -3,18 +3,27 @@ function kitpvp:gamemode/utility/timer/init
 
 kill @e[tag=flag]
 
+tag @a remove capturingRedFlag
+tag @a remove capturingBlueFlag
+tag @a remove capturingGreenFlag
+tag @a remove capturingYellowFlag
+
 # Summon Flags
-execute if data storage current-map Map.Gamemodes.6.RedSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["flag", "flag-red"],ArmorItems:[{},{},{},{id:"minecraft:red_concrete",Count:1b}]}
+execute if data storage current-map Map.Gamemodes.6.RedSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Glowing:1b,DisabledSlots:4144959,Tags:["flag", "flag-red"],ArmorItems:[{},{},{},{id:"minecraft:red_concrete",Count:1b}]}
 execute if data storage current-map Map.Gamemodes.6.RedSpawn as @e[tag=flag-red,limit=1] run data modify entity @s Pos set from storage current-map Map.Gamemodes.6.RedSpawn
+team join visualRed @e[tag=flag-red]
 
-execute if data storage current-map Map.Gamemodes.6.BlueSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["flag", "flag-blue"],ArmorItems:[{},{},{},{id:"minecraft:blue_concrete",Count:1b}]}
+execute if data storage current-map Map.Gamemodes.6.BlueSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Glowing:1b,DisabledSlots:4144959,Tags:["flag", "flag-blue"],ArmorItems:[{},{},{},{id:"minecraft:blue_concrete",Count:1b}]}
 execute if data storage current-map Map.Gamemodes.6.BlueSpawn as @e[tag=flag-blue,limit=1] run data modify entity @s Pos set from storage current-map Map.Gamemodes.6.BlueSpawn
+team join visualBlue @e[tag=flag-blue]
 
-execute if data storage current-map Map.Gamemodes.6.GreenSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["flag", "flag-green"],ArmorItems:[{},{},{},{id:"minecraft:green_concrete",Count:1b}]}
+execute if data storage current-map Map.Gamemodes.6.GreenSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Glowing:1b,DisabledSlots:4144959,Tags:["flag", "flag-green"],ArmorItems:[{},{},{},{id:"minecraft:green_concrete",Count:1b}]}
 execute if data storage current-map Map.Gamemodes.6.GreenSpawn as @e[tag=flag-green,limit=1] run data modify entity @s Pos set from storage current-map Map.Gamemodes.6.RedSpawn
+team join visualGreen @e[tag=flag-green]
 
-execute if data storage current-map Map.Gamemodes.6.YellowSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["flag", "flag-yellow"],ArmorItems:[{},{},{},{id:"minecraft:yellow_concrete",Count:1b}]}
+execute if data storage current-map Map.Gamemodes.6.YellowSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Glowing:1b,DisabledSlots:4144959,Tags:["flag", "flag-yellow"],ArmorItems:[{},{},{},{id:"minecraft:yellow_concrete",Count:1b}]}
 execute if data storage current-map Map.Gamemodes.6.YellowSpawn as @e[tag=flag-yellow,limit=1] run data modify entity @s Pos set from storage current-map Map.Gamemodes.6.RedSpawn
+team join visualYellow @e[tag=flag-yellow]
 
 # Add points to everyone who won
 execute if score round gm.general matches 1.. if score Red gm.sidebar = maxCaptures gm.general run scoreboard players add red gm.rounds 1
