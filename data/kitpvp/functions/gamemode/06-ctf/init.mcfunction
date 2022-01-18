@@ -17,7 +17,9 @@ scoreboard objectives add gm.capture-progress dummy
 
 # Show sidebar (usually gm.sidebar)
 scoreboard objectives modify gm.sidebar displayname {"text": "Flag Captures","color": "gold"}
-scoreboard objectives setdisplay sidebar gm.general
+scoreboard objectives setdisplay sidebar gm.sidebar
+
+bossbar set gm.bossbar players @a[tag=inGame]
 
 # Start first round
 function kitpvp:gamemode/06-ctf/new-round

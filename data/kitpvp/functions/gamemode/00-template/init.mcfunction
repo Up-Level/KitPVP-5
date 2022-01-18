@@ -9,7 +9,7 @@ tellraw @a[tag=inGame] [{"text":"Gamemode: Template","color": "gold","italic": t
 # Create additional scoreboards as required
 
 # Show sidebar (usually gm.sidebar)
-scoreboard objectives setdisplay sidebar gm.general
+scoreboard objectives setdisplay sidebar gm.sidebar
 
 # Start first round
 function kitpvp:gamemode/00-template/new-round

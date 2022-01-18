@@ -9,4 +9,7 @@ function kitpvp:loadout/edit/edit/revoke-edit
 function kitpvp:loadout/grant-items-selected
 
 # Teleport player(s) to map
-function kitpvp:map/spawn/singleplayer
+tp @s[team=red] @e[tag=flagRed,limit=1]
+tp @s[team=blue] @e[tag=flagBlue,limit=1]
+tp @s[team=green] @e[tag=flagGreen,limit=1]
+tp @s[team=yellow] @e[tag=flagYellow,limit=1]

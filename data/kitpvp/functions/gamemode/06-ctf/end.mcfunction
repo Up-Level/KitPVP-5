@@ -12,5 +12,7 @@ execute if score yellow gm.rounds-copy matches 0 run tellraw @a[tag=inGame] [{"t
 
 title @a[tag=inGame] subtitle ""
 
+kill @e[tag=flag]
+
 # Tell datapack to end the game
 function kitpvp:gamemode/end
