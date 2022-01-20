@@ -21,5 +21,7 @@ scoreboard objectives setdisplay sidebar gm.sidebar
 
 bossbar set gm.bossbar players @a[tag=inGame]
 
+schedule function kitpvp:gamemode/06-ctf/flag-particles 10t
+
 # Start first round
 function kitpvp:gamemode/06-ctf/new-round

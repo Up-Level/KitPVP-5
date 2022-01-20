@@ -14,5 +14,7 @@ title @a[tag=inGame] subtitle ""
 
 kill @e[tag=flag]
 
+schedule clear kitpvp:gamemode/06-ctf/flag-particles
+
 # Tell datapack to end the game
 function kitpvp:gamemode/end

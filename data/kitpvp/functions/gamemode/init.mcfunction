@@ -50,6 +50,9 @@ scoreboard objectives add gm.sidebar dummy
 execute store result score totalRounds gm.general run data get storage current-gamemode Gamemode.Settings.Rounds
 scoreboard players set round gm.general 0
 
+# Assign players with a team if required and they haven't manually selected one
+execute if data storage current-gamemode Gamemode.Teams as @a[tag=inGame,team=,sort=random] run function kitpvp:generic/assign-team
+
 # Run gamemode-specific initialisation commands
 execute if score gamemode info matches 0 run function kitpvp:gamemode/00-template/init
 execute if score gamemode info matches 1 run function kitpvp:gamemode/01-deathmatch/init
