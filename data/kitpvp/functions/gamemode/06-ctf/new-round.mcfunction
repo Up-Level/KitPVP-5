@@ -9,19 +9,19 @@ tag @a remove capturingGreenFlag
 tag @a remove capturingYellowFlag
 
 # Summon Flags
-execute if data storage current-map Map.Gamemodes.6.RedSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Glowing:1b,DisabledSlots:4144959,Tags:["flag", "flagRed"],ArmorItems:[{},{},{},{id:"minecraft:red_concrete",Count:1b}]}
+execute if data storage current-map Map.Gamemodes.6.RedSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Glowing:1b,DisabledSlots:4144959,Tags:["flag", "flagRed"],ArmorItems:[{},{},{},{id:"minecraft:red_glazed_terracotta",Count:1b}]}
 execute if data storage current-map Map.Gamemodes.6.RedSpawn as @e[tag=flagRed,limit=1] run data modify entity @s Pos set from storage current-map Map.Gamemodes.6.RedSpawn
 team join visualRed @e[tag=flagRed]
 
-execute if data storage current-map Map.Gamemodes.6.BlueSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Glowing:1b,DisabledSlots:4144959,Tags:["flag", "flagBlue"],ArmorItems:[{},{},{},{id:"minecraft:blue_concrete",Count:1b}]}
+execute if data storage current-map Map.Gamemodes.6.BlueSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Glowing:1b,DisabledSlots:4144959,Tags:["flag", "flagBlue"],ArmorItems:[{},{},{},{id:"minecraft:light_blue_glazed_terracotta",Count:1b}]}
 execute if data storage current-map Map.Gamemodes.6.BlueSpawn as @e[tag=flagBlue,limit=1] run data modify entity @s Pos set from storage current-map Map.Gamemodes.6.BlueSpawn
 team join visualBlue @e[tag=flagBlue]
 
-execute if data storage current-map Map.Gamemodes.6.GreenSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Glowing:1b,DisabledSlots:4144959,Tags:["flag", "flagGreen"],ArmorItems:[{},{},{},{id:"minecraft:green_concrete",Count:1b}]}
+execute if data storage current-map Map.Gamemodes.6.GreenSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Glowing:1b,DisabledSlots:4144959,Tags:["flag", "flagGreen"],ArmorItems:[{},{},{},{id:"minecraft:lime_glazed_terracotta",Count:1b}]}
 execute if data storage current-map Map.Gamemodes.6.GreenSpawn as @e[tag=flagGreen,limit=1] run data modify entity @s Pos set from storage current-map Map.Gamemodes.6.RedSpawn
 team join visualGreen @e[tag=flagGreen]
 
-execute if data storage current-map Map.Gamemodes.6.YellowSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Glowing:1b,DisabledSlots:4144959,Tags:["flag", "flagYellow"],ArmorItems:[{},{},{},{id:"minecraft:yellow_concrete",Count:1b}]}
+execute if data storage current-map Map.Gamemodes.6.YellowSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Glowing:1b,DisabledSlots:4144959,Tags:["flag", "flagYellow"],ArmorItems:[{},{},{},{id:"minecraft:yellow_glazed_terracotta",Count:1b}]}
 execute if data storage current-map Map.Gamemodes.6.YellowSpawn as @e[tag=flagYellow,limit=1] run data modify entity @s Pos set from storage current-map Map.Gamemodes.6.RedSpawn
 team join visualYellow @e[tag=flagYellow]
 
@@ -31,6 +31,7 @@ execute if score round gm.general matches 1.. if score Blue gm.sidebar = maxCapt
 execute if score round gm.general matches 1.. if score Green gm.sidebar = maxCaptures gm.general run scoreboard players add green gm.rounds 1
 execute if score round gm.general matches 1.. if score Yellow gm.sidebar = maxCaptures gm.general run scoreboard players add yellow gm.rounds 1
 
+# Find which team is currently winning
 execute if data storage current-map Map.Gamemodes.6.RedSpawn run scoreboard players set Red gm.sidebar 0
 execute if data storage current-map Map.Gamemodes.6.BlueSpawn run scoreboard players set Blue gm.sidebar 0
 execute if data storage current-map Map.Gamemodes.6.GreenSpawn run scoreboard players set Green gm.sidebar 0
