@@ -9,4 +9,4 @@ tag @s remove capturingBlueFlag
 tag @s remove capturingGreenFlag
 tag @s remove capturingYellowFlag
 
-function kitpvp:gamemode/utility/death-solo/on-death
+function kitpvp:gamemode/utility/death/on-death
