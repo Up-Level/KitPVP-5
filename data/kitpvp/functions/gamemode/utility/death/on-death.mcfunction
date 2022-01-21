@@ -11,6 +11,6 @@ tellraw @a[tag=inGame] [{"selector":"@s","color":"red"},{"text":" has Died!","co
 execute at @s run playsound entity.lightning_bolt.thunder player @a[tag=inGame] ~ ~ ~ 1 1 1
 
 # Make them goto respawn room and do respawn stuff
-function kitpvp:gamemode/utility/death-solo/private/start-respawn
+function kitpvp:gamemode/utility/death/private/start-respawn
 
 scoreboard players set @s bin.dead 0

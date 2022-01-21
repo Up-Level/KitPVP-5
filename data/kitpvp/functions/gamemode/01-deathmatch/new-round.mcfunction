@@ -23,7 +23,7 @@ execute if score round gm.general = totalRounds gm.general run function kitpvp:g
 execute if score playersInGame gm.general matches ..1 run function kitpvp:gamemode/01-deathmatch/end
 
 # Send players to respawn room
-execute if score round gm.general < totalRounds gm.general if score round gm.general matches 2.. as @a[tag=inGame] run function kitpvp:gamemode/utility/death-solo/private/start-respawn
+execute if score round gm.general < totalRounds gm.general if score round gm.general matches 2.. as @a[tag=inGame] run function kitpvp:gamemode/utility/death/private/start-respawn
 execute if score round gm.general < totalRounds gm.general if score round gm.general matches ..1 as @a[tag=inGame] run function kitpvp:gamemode/01-deathmatch/spawn
 
 # Increase round number

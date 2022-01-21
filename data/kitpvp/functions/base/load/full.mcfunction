@@ -19,7 +19,7 @@ gamerule spawnRadius 0
 gamerule doImmediateRespawn true
 gamerule doTileDrops false
 
-difficulty normal
+difficulty hard
 
 # Config
 # Declarations for vscode

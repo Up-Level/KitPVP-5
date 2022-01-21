@@ -27,3 +27,19 @@ team add yellow {"text": "Yellow","color": "yellow"}
 team modify yellow color yellow
 team modify yellow friendlyFire false
 team modify yellow nametagVisibility hideForOtherTeams
+
+team remove visualRed
+team add visualRed
+team modify visualRed color red
+
+team remove visualBlue
+team add visualBlue
+team modify visualBlue color blue
+
+team remove visualGreen
+team add visualGreen
+team modify visualGreen color green
+
+team remove visualYellow
+team add visualYellow
+team modify visualYellow color yellow

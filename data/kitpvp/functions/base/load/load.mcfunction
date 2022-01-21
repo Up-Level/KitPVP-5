@@ -48,4 +48,4 @@ schedule function kitpvp:base/tick/tick-per-sec 1s
 schedule function kitpvp:base/tick/tick-per-min 60s
 
 tellraw @a {"text":"KitPVP Datapack Reloaded.","color":"gold"}
-playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1 1 1
+execute as @a at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 1 1
