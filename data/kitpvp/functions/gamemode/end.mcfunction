@@ -25,6 +25,8 @@ execute as @a[tag=inGame] run function kitpvp:generic/coordinates/tp-spawn
 execute as @a[tag=inGame] run function kitpvp:interface/menus/main-menu/disable
 execute as @a[tag=inGame] run function kitpvp:interface/menus/give/main-menu-display
 
+clear @a[tag=inGame] cooked_beef
+
 tag @a[tag=inGame] remove inGame
 tag @a[tag=respawning] remove respawning
 

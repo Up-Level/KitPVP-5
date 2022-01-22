@@ -15,6 +15,9 @@ scoreboard players operation captureTime gm.general *= #20 mathf.const
 scoreboard objectives remove gm.capture-progress
 scoreboard objectives add gm.capture-progress dummy
 
+scoreboard objectives remove gm.captures-copy
+scoreboard objectives add gm.captures-copy dummy
+
 # Show sidebar (usually gm.sidebar)
 scoreboard objectives modify gm.sidebar displayname {"text": "Flag Captures","color": "gold"}
 scoreboard objectives setdisplay sidebar gm.sidebar

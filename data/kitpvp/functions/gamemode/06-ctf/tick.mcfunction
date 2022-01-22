@@ -2,6 +2,8 @@
 function kitpvp:gamemode/utility/timer/tick
 function kitpvp:gamemode/utility/killstreak/tick
 
+give @a[scores={bin.kill=1}] cooked_beef 3
+
 # Detect if enemy player is near a flag
 execute at @e[tag=flagRed,tag=!capturing] if entity @a[tag=inGame,team=!red,distance=..2] unless entity @a[tag=inGame,team=red,distance=..2] run function kitpvp:gamemode/06-ctf/stealing/red
 execute at @e[tag=flagBlue,tag=!capturing] if entity @a[tag=inGame,team=!blue,distance=..2] unless entity @a[tag=inGame,team=blue,distance=..2] run function kitpvp:gamemode/06-ctf/stealing/blue
@@ -14,11 +16,9 @@ execute at @e[tag=flagBlue,tag=!capturing] unless entity @a[tag=inGame,team=!blu
 execute at @e[tag=flagGreen,tag=!capturing] unless entity @a[tag=inGame,team=!green,distance=..2] run scoreboard players set green gm.capture-progress 0
 execute at @e[tag=flagYellow,tag=!capturing] unless entity @a[tag=inGame,team=!yellow,distance=..2] run scoreboard players set yellow gm.capture-progress 0
 
-# Give players stealing flags glowing
-effect give @a[tag=capturingRedFlag] glowing 1 0 true
-effect give @a[tag=capturingBlueFlag] glowing 1 0 true
-effect give @a[tag=capturingGreenFlag] glowing 1 0 true
-effect give @a[tag=capturingYellowFlag] glowing 1 0 true
+# Give effects to players capturing flags
+effect give @a[tag=capturingFlag] glowing 1 0 true
+effect give @a[tag=capturingFlag] slowness 1 0 true
 
 # Teleport stolen flag on top of enemy
 tp @e[tag=flagRed,tag=capturing] @a[tag=capturingRedFlag,limit=1]

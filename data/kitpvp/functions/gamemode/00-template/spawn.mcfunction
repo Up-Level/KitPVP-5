@@ -9,4 +9,4 @@ function kitpvp:loadout/edit/edit/revoke-edit
 function kitpvp:loadout/grant-items-selected
 
 # Teleport player(s) to map
-function kitpvp:map/spawn/singleplayer
+function kitpvp:map/spawn/single-player

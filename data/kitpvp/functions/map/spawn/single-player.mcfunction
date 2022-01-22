@@ -1,3 +1,6 @@
+#> kitpvp:map/spawn/single-player
+# @context player
+
 # Tag all valid spawnpoints with validSpawn
 execute as @e[tag=spawnPoint] at @s run function kitpvp:map/spawn/spawn-distance
 
