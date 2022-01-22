@@ -55,8 +55,8 @@ execute if score chosen entityInput matches 0 if data storage minecraft:item {It
 execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:spruce_planks"}} run function kitpvp:entity/player/006-block-disguise/create-type/wood/planks/spruce-planks
 
 execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:stripped_dark_oak_wood"}} run function kitpvp:entity/player/006-block-disguise/create-type/wood/stripped/stripped_dark_oak_wood
-execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:stripped_oak_wood"}} run function kitpvp:entity/player/006-block-disguise/create-type/wood/stripped/stripped_oak_wood
-execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:stripped_spurce_wood"}} run function kitpvp:entity/player/006-block-disguise/create-type/wood/stripped/stripped_spruce_wood
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:stripped_oak_wood"}} run function kitpvp:entity/player/006-block-disguise/create-type/wood/stripped/stripped-oak-wood
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:stripped_spurce_wood"}} run function kitpvp:entity/player/006-block-disguise/create-type/wood/stripped/stripped-spruce-wood
 
 execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:jungle_wood"}} run function kitpvp:entity/player/006-block-disguise/create-type/wood/jungle-wood
 
