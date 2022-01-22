@@ -18,7 +18,8 @@ execute if score gamemode info matches 6 if data storage current-map Map.Gamemod
 execute store result score playersReady info if entity @a[scores={ready=1}]
 
 execute if score gamemodeSupported info matches 1 if score playersReady info matches 2.. if score gamemodeActive info matches 0 run scoreboard players set startingGamemode info 1
-execute if score startingGamemode info matches 1 run function kitpvp:map/load-unload/clone-map
+execute if score startingGamemode info matches 1 run function kitpvp:map/load-unload/remove-map
+execute if score startingGamemode info matches 1 run schedule function kitpvp:map/load-unload/clone-map 2s
 
 #execute if score gamemode info matches 0 run tellraw @a[scores={ready=1}] {"text":"No Gamemode was selected.","color": "red"}
 execute if score gamemodeSupported info matches 0 run tellraw @a[scores={ready=1}] {"text":"The Map selected does not support this Gamemode.","color": "red"}
