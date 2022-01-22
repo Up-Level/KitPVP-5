@@ -13,4 +13,4 @@ execute if entity @s[team=green,tag=firstInfected] run function kitpvp:loadout/g
 item replace entity @s hotbar.8 with cooked_beef 64
 
 # Teleport player(s) to map
-function kitpvp:map/spawn/singleplayer
+function kitpvp:map/spawn/single-player

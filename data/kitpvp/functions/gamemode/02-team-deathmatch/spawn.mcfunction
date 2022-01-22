@@ -1,5 +1,5 @@
 #> kitpvp:gamemode/02-team-deathmatch/spawn
-# @context player
+# @context server
 
 # Remove respawning tag
 tag @s remove respawning
@@ -11,4 +11,4 @@ function kitpvp:loadout/grant-items-selected
 item replace entity @s hotbar.8 with cooked_beef 5
 
 # Teleport player(s) to map
-function kitpvp:map/spawn/singleplayer
+execute if score roundStarting gm.general matches 0 run function kitpvp:map/spawn/single-player
