@@ -8,8 +8,10 @@ tag @s remove respawning
 function kitpvp:loadout/edit/edit/revoke-edit
 function kitpvp:loadout/grant-items-selected
 
+item replace entity @s hotbar.8 with cooked_beef 5
+
 # Teleport player(s) to map
-tp @s[team=red] @e[tag=flagRed,limit=1]
-tp @s[team=blue] @e[tag=flagBlue,limit=1]
-tp @s[team=green] @e[tag=flagGreen,limit=1]
-tp @s[team=yellow] @e[tag=flagYellow,limit=1]
+tp @s[team=red] @e[tag=redCtfSpawn,limit=1]
+tp @s[team=blue] @e[tag=blueCtfSpawn,limit=1]
+tp @s[team=green] @e[tag=greenCtfSpawn,limit=1]
+tp @s[team=yellow] @e[tag=yellowCtfSpawn,limit=1]

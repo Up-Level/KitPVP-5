@@ -1,20 +1,4 @@
-# Find who had the most captures
-scoreboard players operation red gm.captures-copy = Red gm.sidebar
-scoreboard players operation blue gm.captures-copy = Blue gm.sidebar
-scoreboard players operation green gm.captures-copy = Green gm.sidebar
-scoreboard players operation yellow gm.captures-copy = Yellow gm.sidebar
-
-scoreboard players set highest gm.captures-copy 0
-scoreboard players operation highest gm.captures-copy > red gm.captures-copy
-scoreboard players operation highest gm.captures-copy > blue gm.captures-copy
-scoreboard players operation highest gm.captures-copy > green gm.captures-copy
-scoreboard players operation highest gm.captures-copy > yellow gm.captures-copy
-
-scoreboard players operation red gm.captures-copy -= highest gm.captures-copy
-scoreboard players operation blue gm.captures-copy -= highest gm.captures-copy
-scoreboard players operation green gm.captures-copy -= highest gm.captures-copy
-scoreboard players operation yellow gm.captures-copy -= highest gm.captures-copy
-
+# Give round win to team with most captures
 execute if score red gm.captures-copy matches 0 run scoreboard players add red gm.rounds 1
 execute if score blue gm.captures-copy matches 0 run scoreboard players add blue gm.rounds 1
 execute if score green gm.captures-copy matches 0 run scoreboard players add green gm.rounds 1

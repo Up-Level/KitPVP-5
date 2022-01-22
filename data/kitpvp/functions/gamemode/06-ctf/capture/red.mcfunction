@@ -7,4 +7,5 @@ tag @e[tag=flagRed] remove capturing
 title @a[tag=inGame] subtitle [{"selector": "@a[tag=capturingRedFlag]"},{"text": " has captured Red's Flag!","color": "red"}]
 title @a[tag=inGame] title ""
 
-tag @a[tag=capturingRedFlag] remove capturingRedFlag
+tag @a[tag=capturingRedFlag] remove capturingFlag
+tag @a remove capturingRedFlag
