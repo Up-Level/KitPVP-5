@@ -3,11 +3,19 @@ scoreboard players set chosen entityInput 0
 #Concrete
 execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:black_concrete"}} run function kitpvp:entity/player/006-block-disguise/create-type/concrete/black-concrete
 execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:blue_concrete"}} run function kitpvp:entity/player/006-block-disguise/create-type/concrete/blue-concrete
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:brown_concrete"}} run function kitpvp:entity/player/006-block-disguise/create-type/concrete/brown-concrete
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:cyan_concrete"}} run function kitpvp:entity/player/006-block-disguise/create-type/concrete/cyan-concrete
 execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:gray_concrete"}} run function kitpvp:entity/player/006-block-disguise/create-type/concrete/gray-concrete
 execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:green_concrete"}} run function kitpvp:entity/player/006-block-disguise/create-type/concrete/green-concrete
 execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:light_blue_concrete"}} run function kitpvp:entity/player/006-block-disguise/create-type/concrete/light-blue-concrete
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:light_gray_concrete"}} run function kitpvp:entity/player/006-block-disguise/create-type/concrete/light-gray-concrete
 execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:lime_concrete"}} run function kitpvp:entity/player/006-block-disguise/create-type/concrete/lime-concrete
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:magenta_concrete"}} run function kitpvp:entity/player/006-block-disguise/create-type/concrete/magenta-concrete
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:orange_concrete"}} run function kitpvp:entity/player/006-block-disguise/create-type/concrete/orange-concrete
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:pink_concrete"}} run function kitpvp:entity/player/006-block-disguise/create-type/concrete/pink-concrete
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:purple_concrete"}} run function kitpvp:entity/player/006-block-disguise/create-type/concrete/purple-concrete
 execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:red_concrete"}} run function kitpvp:entity/player/006-block-disguise/create-type/concrete/red-concrete
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:white_concrete"}} run function kitpvp:entity/player/006-block-disguise/create-type/concrete/white-concrete
 execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:yellow_concrete"}} run function kitpvp:entity/player/006-block-disguise/create-type/concrete/yellow-concrete
 
 #Sandstone
@@ -40,11 +48,20 @@ execute if score chosen entityInput matches 0 if data storage minecraft:item {It
 #Terracotta
 execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:black_terracotta"}} run function kitpvp:entity/player/006-block-disguise/create-type/terracotta/black-terracotta
 execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:blue_terracotta"}} run function kitpvp:entity/player/006-block-disguise/create-type/terracotta/blue-terracotta
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:brown_terracotta"}} run function kitpvp:entity/player/006-block-disguise/create-type/terracotta/brown-terracotta
 execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:cyan_terracotta"}} run function kitpvp:entity/player/006-block-disguise/create-type/terracotta/cyan-terracotta
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:gray_terracotta"}} run function kitpvp:entity/player/006-block-disguise/create-type/terracotta/gray-terracotta
 execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:green_terracotta"}} run function kitpvp:entity/player/006-block-disguise/create-type/terracotta/green-terracotta
 execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:light_blue_terracotta"}} run function kitpvp:entity/player/006-block-disguise/create-type/terracotta/light-blue-terracotta
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:light_gray_terracotta"}} run function kitpvp:entity/player/006-block-disguise/create-type/terracotta/light-gray-terracotta
 execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:lime_terracotta"}} run function kitpvp:entity/player/006-block-disguise/create-type/terracotta/lime-terracotta
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:magenta_terracotta"}} run function kitpvp:entity/player/006-block-disguise/create-type/terracotta/magenta-terracotta
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:orange_terracotta"}} run function kitpvp:entity/player/006-block-disguise/create-type/terracotta/orange-terracotta
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:pink_terracotta"}} run function kitpvp:entity/player/006-block-disguise/create-type/terracotta/pink-terracotta
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:purple_terracotta"}} run function kitpvp:entity/player/006-block-disguise/create-type/terracotta/purple-terracotta
 execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:red_terracotta"}} run function kitpvp:entity/player/006-block-disguise/create-type/terracotta/red-terracotta
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:white_terracotta"}} run function kitpvp:entity/player/006-block-disguise/create-type/terracotta/white-terracotta
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:yellow_terracotta"}} run function kitpvp:entity/player/006-block-disguise/create-type/terracotta/yellow-terracotta
 
 #Wood
 execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:dark_oak_log"}} run function kitpvp:entity/player/006-block-disguise/create-type/wood/log/dark-oak-log
@@ -59,6 +76,24 @@ execute if score chosen entityInput matches 0 if data storage minecraft:item {It
 execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:stripped_spruce_wood"}} run function kitpvp:entity/player/006-block-disguise/create-type/wood/stripped/stripped-spruce-wood
 
 execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:jungle_wood"}} run function kitpvp:entity/player/006-block-disguise/create-type/wood/jungle-wood
+
+#Wool
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:black_wool"}} run function kitpvp:entity/player/006-block-disguise/create-type/wool/black-wool
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:blue_wool"}} run function kitpvp:entity/player/006-block-disguise/create-type/wool/blue-wool
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:brown_wool"}} run function kitpvp:entity/player/006-block-disguise/create-type/wool/brown-wool
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:cyan_wool"}} run function kitpvp:entity/player/006-block-disguise/create-type/wool/cyan-wool
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:gray_wool"}} run function kitpvp:entity/player/006-block-disguise/create-type/wool/gray-wool
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:green_wool"}} run function kitpvp:entity/player/006-block-disguise/create-type/wool/green-wool
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:light_blue_wool"}} run function kitpvp:entity/player/006-block-disguise/create-type/wool/light-blue-wool
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:light_gray_wool"}} run function kitpvp:entity/player/006-block-disguise/create-type/wool/light-gray-wool
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:lime_wool"}} run function kitpvp:entity/player/006-block-disguise/create-type/wool/lime-wool
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:magenta_wool"}} run function kitpvp:entity/player/006-block-disguise/create-type/wool/magenta-wool
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:orange_wool"}} run function kitpvp:entity/player/006-block-disguise/create-type/wool/orange-wool
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:pink_wool"}} run function kitpvp:entity/player/006-block-disguise/create-type/wool/pink-wool
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:purple_wool"}} run function kitpvp:entity/player/006-block-disguise/create-type/wool/purple-wool
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:red_wool"}} run function kitpvp:entity/player/006-block-disguise/create-type/wool/red-wool
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:white_wool"}} run function kitpvp:entity/player/006-block-disguise/create-type/wool/white-wool
+execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:yellow_wool"}} run function kitpvp:entity/player/006-block-disguise/create-type/wool/yellow-wool
 
 #None
 execute if score chosen entityInput matches 0 if data storage minecraft:item {Item:{id:"minecraft:amethyst_block"}} run function kitpvp:entity/player/006-block-disguise/create-type/amethyst-block
