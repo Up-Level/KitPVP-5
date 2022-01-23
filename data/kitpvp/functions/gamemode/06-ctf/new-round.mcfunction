@@ -2,6 +2,7 @@
 function kitpvp:gamemode/utility/timer/init
 
 kill @e[tag=flag]
+kill @e[tag=ctfSpawn]
 
 tag @a remove capturingFlag
 tag @a remove capturingRedFlag
