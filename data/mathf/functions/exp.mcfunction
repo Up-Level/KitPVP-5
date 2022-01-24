@@ -3,11 +3,11 @@
 # Exponent - Raises i0 to the power of i1.
 # 
 # @input
-#   score i0 mathf.io The number to be raised.
-#   score i1 math.io The exponent.
+#   score i0 mathf.io   The number to be raised.
+#   score i1 math.io    The exponent.
 # 
 # @output
-#   score o0 mathf.io The result.
+#   score o0 mathf.io   The result.
 # 
 # @public
 # @context any

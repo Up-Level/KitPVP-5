@@ -2,8 +2,8 @@
 # 
 # Returns the sine of the angle input (in degrees).
 # 
-# @input score i0 mathf.io Angle in degrees (Scale 100).
-# @output score o0 mathf.io Number between 0 and 1 (Scale 1000).
+# @input    score   i0  mathf.io    Angle in degrees (Scale 100).
+# @output   score   o0  mathf.io    Number between 0 and 1 (Scale 1000).
 # 
 # @public
 # @context any

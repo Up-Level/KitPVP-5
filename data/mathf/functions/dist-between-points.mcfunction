@@ -3,15 +3,15 @@
 # Gets the distance in whole blocks between 2 coordinates.
 # 
 # @input
-#   score i0 mathf.io Point 1 X coordinate.
-#   score i1 mathf.io Point 1 Y coordinate.
-#   score i2 mathf.io Point 1 Z coordinate.
-#   score i3 mathf.io Point 2 X coordinate.
-#   score i4 mathf.io Point 2 Y coordinate.
-#   score i5 mathf.io Point 2 Z coordinate.
+#   score i0 mathf.io    Point 1 X coordinate.
+#   score i1 mathf.io    Point 1 Y coordinate.
+#   score i2 mathf.io    Point 1 Z coordinate.
+#   score i3 mathf.io    Point 2 X coordinate.
+#   score i4 mathf.io    Point 2 Y coordinate.
+#   score i5 mathf.io    Point 2 Z coordinate.
 # 
 # @output
-#   score o0 mathf.io The distance as an int.
+#   score o0 mathf.io    The distance as an int.
 # 
 # @public
 # @context any

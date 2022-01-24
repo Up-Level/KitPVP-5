@@ -3,8 +3,8 @@
 # Returns the tangent of the angle input (in degrees).
 # Note that this function is very inaccurate past 80 degrees.
 # 
-# @input score i0 mathf.io Angle in degrees (Scale 100).
-# @output score o0 mathf.io Number between 0 and 1 (Scale 1000).
+# @input    score   i0  mathf.io    Angle in degrees (Scale 100).
+# @output   score   o0  mathf.io    Number between 0 and 1 (Scale 1000).
 # 
 # @public
 # @context any
