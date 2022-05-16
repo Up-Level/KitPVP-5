@@ -7,13 +7,20 @@ scoreboard objectives remove mathf.const
 scoreboard objectives add mathf.const dummy
 
 scoreboard players set #-1 mathf.const -1
+scoreboard players set #1 mathf.const 1
 scoreboard players set #2 mathf.const 2
 scoreboard players set #3 mathf.const 3
 scoreboard players set #5 mathf.const 5
 scoreboard players set #6 mathf.const 6
 scoreboard players set #10 mathf.const 10
+scoreboard players set #15 mathf.const 15
+scoreboard players set #16 mathf.const 16
+scoreboard players set #19 mathf.const 19
+scoreboard players set #20 mathf.const 20
+scoreboard players set #32 mathf.const 32
 scoreboard players set #100 mathf.const 100
 scoreboard players set #120 mathf.const 120
+scoreboard players set #125 mathf.const 125
 scoreboard players set #180 mathf.const 180
 scoreboard players set #1000 mathf.const 1000
 scoreboard players set #1800 mathf.const 1800
