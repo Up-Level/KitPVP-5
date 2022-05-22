@@ -39,6 +39,10 @@ scoreboard objectives add totalDeaths deathCount
 scoreboard objectives add totalDamageDealt minecraft.custom:damage_dealt
 scoreboard objectives add totalDamageTaken minecraft.custom:damage_taken
 
+# Reset player settings
+scoreboard objectives remove musicCategory
+scoreboard objectives add musicCategory dummy
+
 scoreboard objectives setdisplay list wins
 
 # Forceload

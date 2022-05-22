@@ -45,8 +45,14 @@ scoreboard players set #pi mathf.const_2dp 314
 #declare score_holder #5
 #declare score_holder #6
 #declare score_holder #10
+#declare score_holder #15
+#declare score_holder #16
+#declare score_holder #19
+#declare score_holder #20
+#declare score_holder #32
 #declare score_holder #100
 #declare score_holder #120
+#declare score_holder #125
 #declare score_holder #180
 #declare score_holder #1000
 #declare score_holder #1800
