@@ -10,16 +10,16 @@ execute store result score yellowPlayers temp if entity @e[team=yellow,tag=inGam
 
 # Find which team has the least players
 scoreboard players set lowestTeamCount temp 2147483647
-execute if score redPlayers temp matches 1.. run scoreboard players operation lowestTeamCount temp < redPlayers team
-execute if score bluePlayers temp matches 1.. run scoreboard players operation lowestTeamCount temp < bluePlayers team
-execute if score greenPlayers temp matches 1.. run scoreboard players operation lowestTeamCount temp < greenPlayers team
-execute if score yellowPlayers temp matches 1.. run scoreboard players operation lowestTeamCount temp < yellowPlayers team
+execute if score redPlayers temp matches 1.. run scoreboard players operation lowestTeamCount temp < redPlayers temp
+execute if score bluePlayers temp matches 1.. run scoreboard players operation lowestTeamCount temp < bluePlayers temp
+execute if score greenPlayers temp matches 1.. run scoreboard players operation lowestTeamCount temp < greenPlayers temp
+execute if score yellowPlayers temp matches 1.. run scoreboard players operation lowestTeamCount temp < yellowPlayers temp
 
 # The team with least players will be the one which now has a count of 0
-scoreboard players operation redPlayers temp -= lowestTeamCount team
-scoreboard players operation bluePlayers temp -= lowestTeamCount team
-scoreboard players operation greenPlayers temp -= lowestTeamCount team
-scoreboard players operation yellowPlayers temp -= lowestTeamCount team
+scoreboard players operation redPlayers temp -= lowestTeamCount temp
+scoreboard players operation bluePlayers temp -= lowestTeamCount temp
+scoreboard players operation greenPlayers temp -= lowestTeamCount temp
+scoreboard players operation yellowPlayers temp -= lowestTeamCount temp
 
 scoreboard players set teamChoice temp 0
 
