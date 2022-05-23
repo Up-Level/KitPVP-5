@@ -5,7 +5,7 @@ give @s written_book
 "[\"\",
 {\"text\":\"Shield\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"We shall prove ourselves in glorious combat!\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.a1T set 1\"}},
 {\"text\":\"\\n\"},{\"text\":\"\\n\"},
-{\"text\":\"Totem of Undying\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"I have returned from the grave to give the living haircuts.\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.a1T set 2\"}},
+{\"text\":\"Block Disguise\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Disguise as the block you are standing on.\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.a1T set 2\"}},
 {\"text\":\"\\n\"},{\"text\":\"\\n\"},
 {\"text\":\"Smoke Bomb\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Stagger your enimies by lowering their fps!\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.a1T set 3\"}},
 {\"text\":\"\\n\"},{\"text\":\"\\n\"},
