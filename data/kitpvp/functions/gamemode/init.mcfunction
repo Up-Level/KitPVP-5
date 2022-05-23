@@ -28,6 +28,9 @@ scoreboard objectives add gm.deaths deathCount {"text": "Deaths","color": "gold"
 scoreboard objectives remove gm.general
 scoreboard objectives add gm.general dummy
 
+scoreboard objectives remove gm.y-location
+scoreboard objectives add gm.y-location dummy
+
 scoreboard objectives remove gm.respawn-timer
 scoreboard objectives add gm.respawn-timer dummy
 
@@ -49,6 +52,7 @@ scoreboard objectives add gm.sidebar dummy
 
 execute store result score totalRounds gm.general run data get storage current-gamemode Gamemode.Settings.Rounds
 scoreboard players set round gm.general 0
+execute store result score killY gm.general run data get storage current-map KillY
 
 # Assign players with a team if required and they haven't manually selected one
 execute if data storage current-gamemode Gamemode.Teams as @a[tag=inGame,team=,sort=random] run function kitpvp:generic/assign-team
