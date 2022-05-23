@@ -10,6 +10,7 @@
 
 #declare storage music-20
 #declare storage music-21
+#declare storage music-22
 
 data merge storage music-00 {Name: "idk1", Duration: 4340}
 data merge storage music-01 {Name: "idk4", Duration: 2160}
@@ -23,3 +24,4 @@ data merge storage music-11 {Name: "ultrakill2", Duration: 2960}
 
 data merge storage music-20 {Name: "jungle1", Duration: 4380}
 data merge storage music-21 {Name: "jungle2", Duration: 2300}
+data merge storage music-22 {Name: "jungle2", Duration: 3200}
