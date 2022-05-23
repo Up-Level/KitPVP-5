@@ -26,6 +26,8 @@ tp @e[tag=flagBlue,tag=capturing] @a[tag=capturingBlueFlag,limit=1]
 tp @e[tag=flagGreen,tag=capturing] @a[tag=capturingGreenFlag,limit=1]
 tp @e[tag=flagBlue,tag=capturing] @a[tag=capturingYellowFlag,limit=1]
 
+execute as @a[tag=flag] run data modify entity @s Rotation set value [0f, 0f]
+
 # Move stolen flag one block up for visibility
 execute as @e[tag=flag,tag=capturing] at @s run tp @s ~ ~1 ~
 
