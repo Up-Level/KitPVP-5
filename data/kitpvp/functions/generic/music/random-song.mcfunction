@@ -1,6 +1,11 @@
-execute store result score songChoice temp run time query gametime
+# Random function from https://www.youtube.com/watch?v=3Ui102TwlBg
+
+execute store result score songChoice temp run loot spawn ~ ~ ~ loot kitpvp:loot_box/random
+#execute store result score songChoice temp run time query gametime
 
 execute if score @s musicCategory matches 1 run scoreboard players operation songChoice temp %= #5 mathf.const
 
 execute if score @s musicCategory matches 2 run scoreboard players operation songChoice temp %= #2 mathf.const
 execute if score @s musicCategory matches 2 run scoreboard players operation songChoice temp += #5 mathf.const
+
+execute at @s run function kitpvp:generic/music/play-song

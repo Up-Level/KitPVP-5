@@ -53,6 +53,9 @@ scoreboard players set round gm.general 0
 # Assign players with a team if required and they haven't manually selected one
 execute if data storage current-gamemode Gamemode.Teams as @a[tag=inGame,team=,sort=random] run function kitpvp:generic/assign-team
 
+# Start music
+scoreboard players set @a remainingLength -20
+
 # Run gamemode-specific initialisation commands
 execute if score gamemode info matches 0 run function kitpvp:gamemode/00-template/init
 execute if score gamemode info matches 1 run function kitpvp:gamemode/01-deathmatch/init
