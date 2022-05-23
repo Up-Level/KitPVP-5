@@ -2,7 +2,7 @@
 # 
 # Converts from radians (at scale 1000) to degrees (at scale 100)
 # 
-# @input score i0 mathf.io Input in radians (scale 1000).
+# @input score i0 mathf.io  Input in radians (scale 1000).
 # @output score o0 mathf.io Output in degrees (scale 100).
 # 
 # @public

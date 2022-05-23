@@ -1,6 +1,7 @@
 
 # Generic
 function kitpvp:base/load/scoreboards/binary-scoreboards
+function kitpvp:base/load/scoreboards/music-scoreboards
 function kitpvp:base/load/scoreboards/uuid
 function kitpvp:base/load/scoreboards/player-entities
 

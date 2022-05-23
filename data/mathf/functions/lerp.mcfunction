@@ -2,12 +2,12 @@
 # 
 # Lerp (Linearly Interpolate)
 # @input
-#   score i0 mathf.io The start point.
-#   score i1 mathf.io The end point.
-#   score i2 mathf.io The interpolant.
+#   score i0 mathf.io    The start point.
+#   score i1 mathf.io    The end point.
+#   score i2 mathf.io    The interpolant.
 # 
 # @output
-#   score o0 mathf.io The result.
+#   score o0 mathf.io    The result.
 # 
 # @public
 # @context any

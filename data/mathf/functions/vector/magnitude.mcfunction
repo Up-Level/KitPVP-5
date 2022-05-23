@@ -1,14 +1,16 @@
-
-#> Magnitude
-#  Input is as follows:
-#  Vector (Scale 100) x = i0 mathf.io
-#  Vector (Scale 100) y = i1 mathf.io
-#  Vector (Scale 100) z = i2 mathf.io
+#> mathf:vector/magnitude
+# Gets the magnitude of a vector.
+# Credit to https://gaming.stackexchange.com/a/348985
+# @input
+#   score i0 mathf.ioVector x (Scale 100)
+#   score i1 mathf.ioVector y (Scale 100)
+#   score i2 mathf.ioVector z (Scale 100)
 #  
-#  Output is as follows:
-#  Magnitude (Scale 100) = o0 mathf.io
-#  
-#  Credit to https://gaming.stackexchange.com/a/348985
+# @output
+#   score o0 mathf.io       Magnitude (Scale 100)
+# 
+# @public
+# @context any
 
 scoreboard players operation xDiff mathf.data = i0 mathf.io
 scoreboard players operation yDiff mathf.data = i1 mathf.io

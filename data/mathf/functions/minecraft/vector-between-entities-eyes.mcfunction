@@ -1,10 +1,15 @@
-
-#> Vector between 2 entities' eyes
-#  First entity should have the tag mathf.entity0
-#  Second entity should have the tag mathf.entity1
-#  Output will be in o0 mathf.io (Scale 100)
+#> mathf:minecraft/vector-between-entities-eyes
+# Note that the mathf.entity0 and mathf.entity1 tags will be removed from the entities afterwards.
+# @input
+#   entity mathf.entity0    The first entity.
+#   entity mathf.entity1    The second entity.
+# @output
+#   score o0 mathf.io       Vector X (Scale 100).
+#   score o1 mathf.io       Vector Y (Scale 100).
+#   score o2 mathf.io       Vector Z (Scale 100).
 #
-#  Note that the mathf.entity0 and mathf.entity1 tags will be removed from the entities afterwards.
+# @public
+# @context any
 
 execute as @e[tag=mathf.entity0,limit=1] at @s anchored eyes run summon minecraft:area_effect_cloud ^ ^ ^ {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["mathf.dummy","mathf.aec0"]}
 execute as @e[tag=mathf.entity1,limit=1] at @s anchored eyes run summon minecraft:area_effect_cloud ^ ^ ^ {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["mathf.dummy","mathf.aec1"]}
