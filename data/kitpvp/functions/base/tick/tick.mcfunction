@@ -16,3 +16,4 @@ execute as @e[tag=playerEntity] run function kitpvp:entity/player/tick
 
 scoreboard players set @a bin.kill 0
 scoreboard players set @a bin.fungus 0
+scoreboard players set @a bin.damaged 0

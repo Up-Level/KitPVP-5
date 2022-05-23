@@ -11,7 +11,7 @@ give @s written_book
 {\"text\":\"\\n\"},{\"text\":\"\\n\"},
 {\"text\":\"Hazard Suit\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Low-Medium defence.\\nNight Vision\\nWater Breathing\\nFire Resistance\\nDepth Strider \"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.armT set 4\"}},
 {\"text\":\"\\n\"},{\"text\":\"\\n\"},
-{\"text\":\"tbd\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Does XYZ\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.armT set 5\"}}
+{\"text\":\"Fledgling Wings\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Elytra with boots.\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.armT set 5\"}}
 ]",
 
 

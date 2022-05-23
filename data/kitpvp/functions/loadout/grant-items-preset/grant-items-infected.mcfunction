@@ -2,7 +2,7 @@ scoreboard players set @s l.use.arm -2
 scoreboard players set @s l.use.wep 0
 
 scoreboard players set @s l.use.a1 0
-scoreboard players set @s l.use.a2 3
+scoreboard players set @s l.use.a2 -1
 
 scoreboard players set @s l.use.util 0
 
