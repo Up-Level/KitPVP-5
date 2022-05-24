@@ -3,7 +3,7 @@ give @s written_book
 [
 
 "[\"\",
-{\"text\":\"Shield\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"We shall prove ourselves in glorious combat!\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.a1T set 1\"}},
+{\"text\":\"Magic Shield\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"You passively have 2 shields behind you that can block attacks.\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.a1T set 1\"}},
 {\"text\":\"\\n\"},{\"text\":\"\\n\"},
 {\"text\":\"Block Disguise\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Disguise as the block you are standing on.\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.a1T set 2\"}},
 {\"text\":\"\\n\"},{\"text\":\"\\n\"},

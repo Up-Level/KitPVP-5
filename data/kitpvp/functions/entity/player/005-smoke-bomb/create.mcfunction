@@ -16,3 +16,5 @@ execute store result entity @e[tag=temp,limit=1] Motion[1] double 0.025 run scor
 execute store result entity @e[tag=temp,limit=1] Motion[2] double 0.025 run scoreboard players get o2 mathf.io
 
 tag @e remove temp
+
+playsound minecraft:entity.snowball.throw player @a ~ ~ ~ 1 .5

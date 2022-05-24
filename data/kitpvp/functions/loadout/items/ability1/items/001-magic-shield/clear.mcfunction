@@ -1,0 +1,1 @@
+function kitpvp:entity/player/010-shield/destroy

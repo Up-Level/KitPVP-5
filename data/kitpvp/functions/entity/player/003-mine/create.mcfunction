@@ -1,5 +1,7 @@
 summon minecraft:armor_stand ^ ^-0.675 ^ {Tags:["temp","playerEntity"], Marker:1b, Invisible:1, NoGravity:1b, ArmorItems:[{},{},{},{id:"smooth_stone_slab",Count:1b}],Small:1b}
 
+playsound minecraft:block.stem.place player @a
+
 scoreboard players set @e[tag=temp] entity.type 3
 scoreboard players set @e[tag=temp] entity.state 0
 scoreboard players set @e[tag=temp] entity.data 0
