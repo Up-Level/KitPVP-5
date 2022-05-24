@@ -11,4 +11,4 @@ function kitpvp:loadout/grant-items-selected
 item replace entity @s hotbar.8 with cooked_beef 5
 
 # Teleport player(s) to map
-execute if score roundStarting gm.general matches 0 run function kitpvp:map/spawn/single-player
+function kitpvp:map/spawn/single-player
