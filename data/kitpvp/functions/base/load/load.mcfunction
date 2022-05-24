@@ -47,5 +47,7 @@ function kitpvp:base/load/storage-setup
 schedule function kitpvp:base/tick/tick-per-sec 1s
 schedule function kitpvp:base/tick/tick-per-min 60s
 
+scoreboard players set @a bin.join 1
+
 tellraw @a {"text":"KitPVP Datapack Reloaded.","color":"gold"}
 execute as @a at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 1 1

@@ -14,6 +14,8 @@ execute as @e[scores={bin.carrot=1..}] at @s run function kitpvp:abilities/use-a
 
 execute as @e[tag=playerEntity] run function kitpvp:entity/player/tick
 
+execute as @a[scores={bin.join=1..}] run function kitpvp:generic/clear-player
+
 scoreboard players set @a bin.kill 0
 scoreboard players set @a bin.fungus 0
 scoreboard players set @a bin.damaged 0
