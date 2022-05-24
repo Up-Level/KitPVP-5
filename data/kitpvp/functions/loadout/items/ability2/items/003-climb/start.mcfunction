@@ -6,4 +6,4 @@ execute if score @s a2.ChargeMax matches -1 run scoreboard players set @s a2.Cha
 execute if score @s a2.ChargeCount matches -1 run scoreboard players operation @s a2.ChargeCount = @s a2.ChargeMax
 execute if score @s a2.Mode matches -1 run scoreboard players set @s a2.Mode 0
 
-attribute @s minecraft:generic.movement_speed modifier add 9-9-6-9-9 "GloveSpeed" .2 multiply_base
+attribute @s minecraft:generic.movement_speed modifier add 9-9-6-9-9 "GloveSpeed" .10 multiply_base
