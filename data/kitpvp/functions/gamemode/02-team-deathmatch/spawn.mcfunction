@@ -1,5 +1,5 @@
 #> kitpvp:gamemode/02-team-deathmatch/spawn
-# @context server
+# @context player
 
 # Remove respawning tag
 tag @s remove respawning
