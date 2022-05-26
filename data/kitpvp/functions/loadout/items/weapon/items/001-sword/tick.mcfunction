@@ -1,3 +1,3 @@
-execute if score @s bin.kill matches 1 if data entity @s Inventory[{id:"minecraft:shield",Slot:-106b}] run item replace entity @s weapon.offhand with minecraft:shield{ItemType:"weapon",Tags:["Bound"],HideFlags:4,Damage:316} 1
+execute if score @s bin.kill matches 1.. if data entity @s Inventory[{id:"minecraft:shield",Slot:-106b}] run item replace entity @s weapon.offhand with minecraft:shield{ItemType:"weapon",Tags:["Bound"],HideFlags:4,Damage:316} 1
 
-execute if score @s bin.kill matches 1 unless data entity @s Inventory[{Slot:-106b}] run item replace entity @s weapon.offhand with minecraft:shield{ItemType:"weapon",Tags:["Bound"],HideFlags:4,Damage:316} 1
+execute if score @s bin.kill matches 1.. unless data entity @s Inventory[{Slot:-106b}] run item replace entity @s weapon.offhand with minecraft:shield{ItemType:"weapon",Tags:["Bound"],HideFlags:4,Damage:316} 1
