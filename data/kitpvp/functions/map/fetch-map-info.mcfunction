@@ -13,3 +13,4 @@ execute if score map info matches 9 run data modify storage current-map Map set 
 execute if score map info matches 10 run data modify storage current-map Map set from storage map-10
 execute if score map info matches 11 run data modify storage current-map Map set from storage map-11
 execute if score map info matches 12 run data modify storage current-map Map set from storage map-12
+execute if score map info matches 13 run data modify storage current-map Map set from storage map-13
