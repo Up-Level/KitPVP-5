@@ -18,4 +18,6 @@ tag @s remove capturingBlueFlag
 tag @s remove capturingGreenFlag
 tag @s remove capturingYellowFlag
 
+function kitpvp:generic/uuid/get-uuid
+
 scoreboard players set @s bin.join 0
