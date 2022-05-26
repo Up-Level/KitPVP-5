@@ -9,7 +9,7 @@ give @s written_book
 {\"text\":\"\\n\"},{\"text\":\"\\n\"},
 {\"text\":\"Battleaxe\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"An axe for battle.\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.wepT set 3\"}},
 {\"text\":\"\\n\"},{\"text\":\"\\n\"},
-{\"text\":\"Stick\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Stick??\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.wepT set 4\"}},
+{\"text\":\"Crossbow\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"A powerful crossbow with limited arrows.\\nEach kill rewards arrows.\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.wepT set 4\"}},
 {\"text\":\"\\n\"},{\"text\":\"\\n\"},
 {\"text\":\"Trident\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"It's like Thor's hammer but its a stick.\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.wepT set 5\"}}
 ]",
