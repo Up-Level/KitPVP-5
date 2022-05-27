@@ -52,7 +52,7 @@ scoreboard objectives add gm.sidebar dummy
 
 execute store result score totalRounds gm.general run data get storage current-gamemode Gamemode.Settings.Rounds
 scoreboard players set round gm.general 0
-execute store result score killY gm.general run data get storage current-map KillY
+execute store result score killY gm.general run data get storage current-map Map.KillY
 
 # Assign players with a team if required and they haven't manually selected one
 execute if data storage current-gamemode Gamemode.Teams as @a[tag=inGame,team=,sort=random] run function kitpvp:generic/assign-team

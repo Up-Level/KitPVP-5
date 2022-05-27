@@ -26,4 +26,4 @@ data merge storage map-09 {Id:9, Name:"Airsoft", Corner1:[139962, 64, -37], Chun
 data merge storage map-10 {Id:10, Name:"CTF Test", Corner1:[179935, 63, -24], Chunks:[5, 1, 2], Offset:[-65, 0, -24], KillY: 0, Gamemodes:{6: {RedSpawn: [-61.5d, 2d, 0.5d], BlueSpawn: [61.5d, 2d, 0.5d]}}}
 data merge storage map-11 {Id:11, Name:"Cave", Corner1:[189975, 75, -32], Chunks:[3, 2, 2], Offset:[-25, -19, -32], KillY: -17, Gamemodes:{1: 1b, 2: 1b, 3: 1b, 4: 1b, 5: 1b}}
 data merge storage map-12 {Id:12, Name:"Enchanted Forest", Corner1:[229871, 52, -129], Chunks:[9, 3, 9], Offset:[-128, 0, -128], KillY: 0, Gamemodes:{1: 1b, 2: 1b, 3: 1b, 4: 1b, 5: 1b}}
-data merge storage map-13 {Id:13, Name:"Weo Circuit", Corner1:[239915, 63, -86], Chunks:[6, 1, 6], Offset:[-86, -32, -86], KillY: 0, Gamemodes:{1: 1b, 2: 1b, 3: 1b, 4: 1b, 5: 1b}}
+data merge storage map-13 {Id:13, Name:"Weo Circuit", Corner1:[239915, 63, -86], Chunks:[6, 1, 6], Offset:[-86, -32, -86], KillY: -64, Gamemodes:{1: 1b, 2: 1b, 3: 1b, 4: 1b, 5: 1b}}
