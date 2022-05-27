@@ -3,10 +3,7 @@ execute store result score playersInGame gm.general if entity @a[tag=inGame]
 
 execute as @a[scores={musicCategory=1..},tag=inGame] run function kitpvp:generic/music/player-tick
 
-<<<<<<< HEAD
 execute as @a[tag=inGame,tag=!respawning,scores={bin.dead=0}] store result score @s gm.y-location run data get entity @s Pos[1]
-=======
->>>>>>> d5f2fb5b1212a96890c4acd00db2543db91dff80
 execute as @a[tag=inGame,tag=!respawning,scores={bin.dead=0}] if score @s gm.y-location <= killY gm.general run function kitpvp:gamemode/utility/death/environmental-death
 
 execute if score gamemode info matches 0 run function kitpvp:gamemode/00-template/tick
