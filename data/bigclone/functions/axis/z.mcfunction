@@ -13,9 +13,9 @@ tellraw @a [{"score":{"name":"iteration","objective":"clone"}},{"text":"/"},{"sc
 function bigclone:mover/begin-chunk
 schedule function bigclone:mover/end-chunk 2t
 
-execute if score mover.localpos.z clone < temp clone run schedule function bigclone:axis/add/z 4t
-execute if score mover.localpos.z clone < temp clone run schedule function bigclone:axis/z 5t
+execute if score mover.localpos.z clone < temp clone run schedule function bigclone:axis/add/z 6t
+execute if score mover.localpos.z clone < temp clone run schedule function bigclone:axis/z 7t
 
-execute if score mover.localpos.z clone >= temp clone run schedule function bigclone:axis/reset/z 4t
-execute if score mover.localpos.z clone >= temp clone run schedule function bigclone:axis/add/y 4t
-execute if score mover.localpos.z clone >= temp clone run schedule function bigclone:axis/y 5t
+execute if score mover.localpos.z clone >= temp clone run schedule function bigclone:axis/reset/z 6t
+execute if score mover.localpos.z clone >= temp clone run schedule function bigclone:axis/add/y 6t
+execute if score mover.localpos.z clone >= temp clone run schedule function bigclone:axis/y 7t

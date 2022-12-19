@@ -11,5 +11,6 @@ execute if score @s menuTriggers matches 8 run scoreboard players set @s musicCa
 execute if score @s menuTriggers matches 9 run scoreboard players set @s musicCategory 1
 execute if score @s menuTriggers matches 10 run scoreboard players set @s musicCategory 2
 execute if score @s menuTriggers matches 11 run scoreboard players set @s musicCategory 3
+execute if score @s menuTriggers matches 12 run scoreboard players set @s musicCategory 4
 
 scoreboard players enable @s[scores={inMenu=1}] menuTriggers

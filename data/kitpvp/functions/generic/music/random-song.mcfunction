@@ -14,6 +14,8 @@ execute at @s run function kitpvp:generic/music/find-song
 
 execute store result score @s remainingLength run data get storage __temp__ SongChoice.Duration
 
+tellraw @s [{"text":"Now Playing: ","color": "gold"}, {"storage":"__temp__","nbt":"SongChoice.Name"}]
+
 execute if score @s musicCategory matches 1 run function kitpvp:generic/music/categories/idk
 execute if score @s musicCategory matches 2 run function kitpvp:generic/music/categories/ultrakill
 execute if score @s musicCategory matches 3 run function kitpvp:generic/music/categories/jungle
