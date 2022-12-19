@@ -1,7 +1,7 @@
 # Get amount of players in game
 execute store result score playersInGame gm.general if entity @a[tag=inGame]
 
-execute as @a[scores={musicCategory=1..},tag=inGame] at @s run function kitpvp:generic/music/player-tick
+execute as @a[scores={musicCategory=1..},tag=inGame] run function kitpvp:generic/music/player-tick
 
 execute as @a[tag=inGame,tag=!respawning] store result score @s gm.y-location run data get entity @s Pos[1]
 execute as @a[tag=inGame,tag=!respawning] if score @s gm.y-location <= killY gm.general run function kitpvp:gamemode/utility/death/environmental-death
