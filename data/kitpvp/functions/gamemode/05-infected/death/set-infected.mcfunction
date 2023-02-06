@@ -5,5 +5,5 @@ team join green @s
 function kitpvp:loadout/revoke-items
 execute if entity @s[tag=!firstInfected] run function kitpvp:loadout/grant-items-preset/grant-items-infected
 
-function kitpvp:entity/player/custom/012-kit-tracker/get
-tp @s @e[limit=1,tag=found]
+execute if entity @s[tag=!firstInfected] run function kitpvp:entity/player/custom/012-kit-tracker/get
+tp @s[tag=!firstInfected] @e[limit=1,tag=found]
