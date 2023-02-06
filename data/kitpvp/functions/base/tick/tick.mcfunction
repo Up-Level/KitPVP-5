@@ -4,7 +4,7 @@ execute positioned -10000 64 0 as @a[tag=!inGame,distance=..250] run function ki
 
 execute as @e[type=#kitpvp:has_owner,tag=!playerEntity,tag=!dontCheck] run function kitpvp:entity/player/generic-new
 
-execute as @e[tag=playerEntity] run function kitpvp:entity/player/tick
+execute as @e[tag=playerEntity] run function kitpvp:entity/player/internal/tick
 
 execute as @a[scores={l.give=1}] run function kitpvp:loadout/items/all/tick
 execute as @a[scores={l.e=1}] run function kitpvp:loadout/edit/edit/trigger-tick
