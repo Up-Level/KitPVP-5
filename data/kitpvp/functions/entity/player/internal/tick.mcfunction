@@ -9,7 +9,7 @@ execute if score @s entity.type matches 6 at @s run function kitpvp:entity/playe
 #execute if score @s entity.type matches 9 at @s run function kitpvp:entity/player/custom/009-fang/tick
 execute if score @s entity.type matches 10 at @s run function kitpvp:entity/player/custom/010-shield/tick
 #execute if score @s entity.type matches 11 at @s run function kitpvp:entity/player/custom/011-wolf/tick
-execute if score @s entity.type matches 12 at @s run function kitpvp:entity/player/custom/012-kit-tracker
+execute if score @s entity.type matches 12 at @s run function kitpvp:entity/player/custom/012-kit-tracker/tick
 
 execute if score @s entity.type matches -1 at @s run function kitpvp:entity/player/generic/001-arrow/tick
 execute if score @s entity.type matches -2 at @s run function kitpvp:entity/player/generic/002-spectral-arrow/tick
