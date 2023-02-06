@@ -7,7 +7,7 @@ execute if entity @s[tag=!firstInfected] run function kitpvp:loadout/grant-items
 
 tellraw @a [{"selector":"@s"},{"text":"'s coordinates are X:"},{"nbt":"Pos[0]","entity":"@s"},{"text":" Y:"},{"nbt":"Pos[1]","entity":"@s"},{"text":" Z:"},{"nbt":"Pos[2]","entity":"@s"}]
 
-function kitpvp:entity/player/custom/012-kit-tracker/get
-tp @s @e[limit=1,tag=found]
+execute if entity @s[tag=!firstInfected] run function kitpvp:entity/player/custom/012-kit-tracker/get
+tp @s[tag=!firstInfected] @e[limit=1,tag=found]
 
 tellraw @a [{"selector":"@s"},{"text":"'s coordinates are X:"},{"nbt":"Pos[0]","entity":"@s"},{"text":" Y:"},{"nbt":"Pos[1]","entity":"@s"},{"text":" Z:"},{"nbt":"Pos[2]","entity":"@s"}]

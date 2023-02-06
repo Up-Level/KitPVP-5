@@ -13,5 +13,3 @@ execute as @a[scores={bin.kill=1..}] at @s run playsound minecraft:block.note_bl
 
 # Make them goto respawn room and do respawn stuff
 function kitpvp:gamemode/utility/death/private/start-respawn
-
-scoreboard players set @s bin.dead 0
