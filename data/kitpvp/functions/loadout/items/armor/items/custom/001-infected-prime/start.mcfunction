@@ -7,4 +7,3 @@ effect give @s fire_resistance 999999 0 true
 
 # Prime special :)
 effect give @s minecraft:water_breathing 999999 9 true
-effect give @s minecraft:speed 999999 0 true

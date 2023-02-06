@@ -4,3 +4,4 @@ effect clear @s minecraft:saturation
 effect clear @s minecraft:night_vision
 effect clear @s minecraft:strength
 effect clear @s resistance
+effect clear @s fire_resistance
