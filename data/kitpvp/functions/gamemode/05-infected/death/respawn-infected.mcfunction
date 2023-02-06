@@ -16,5 +16,4 @@ tag @s add respawning
 
 function kitpvp:generic/coordinates/tp-respawnroom
 
-
 scoreboard players set @s bin.dead 0
