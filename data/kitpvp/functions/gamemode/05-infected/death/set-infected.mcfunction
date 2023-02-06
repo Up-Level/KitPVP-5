@@ -4,6 +4,7 @@ execute at @s run playsound entity.zombie.ambient player @a[tag=inGame] ~ ~ ~ 1 
 team join green @s
 function kitpvp:loadout/revoke-items
 execute if entity @s[tag=!firstInfected] run function kitpvp:loadout/grant-items-preset/grant-items-infected
+execute if entity @s[tag=firstInfected] run function kitpvp:loadout/grant-items-preset/grant-items-infected-prime
 
 execute if entity @s[tag=!firstInfected] run function kitpvp:entity/player/custom/012-kit-tracker/get
 tp @s[tag=!firstInfected] @e[limit=1,tag=found]
