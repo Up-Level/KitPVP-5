@@ -1,0 +1,1 @@
+effect give @s minecraft:darkness 999999 0 true
