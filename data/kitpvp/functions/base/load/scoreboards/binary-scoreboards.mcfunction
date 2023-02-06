@@ -3,9 +3,6 @@
 scoreboard objectives remove bin.dead
 scoreboard objectives add bin.dead deathCount
 
-scoreboard objectives remove bin.deadGamemode
-scoreboard objectives add bin.deadGamemode deathCount
-
 scoreboard objectives remove bin.kill
 scoreboard objectives add bin.kill playerKillCount
 
@@ -24,3 +21,6 @@ scoreboard objectives add bin.join minecraft.custom:minecraft.leave_game
 # Funky Kong
 scoreboard objectives remove bin.wall
 scoreboard objectives add bin.wall dummy
+
+scoreboard objectives remove bin.deadGamemode
+scoreboard objectives add bin.deadGamemode deathCount

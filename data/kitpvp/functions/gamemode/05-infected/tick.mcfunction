@@ -11,7 +11,7 @@ execute store result score Infected gm.sidebar if entity @a[tag=inGame,team=gree
 execute if score ticksRemaining gm.general = firstInfection gm.general as @r[tag=inGame] run function kitpvp:gamemode/05-infected/first-infected
 
 # Run death functions on death
-execute as @a[tag=inGame,scores={bin.dead=1},nbt={Health:20f}] run function kitpvp:gamemode/05-infected/death/on-death
+execute as @a[tag=inGame,scores={bin.deadGamemode=1},nbt={Health:20f}] run function kitpvp:gamemode/05-infected/death/on-death
 # Tick for respawn
 execute as @a[tag=respawning] run function kitpvp:gamemode/utility/death/tick-respawn
 

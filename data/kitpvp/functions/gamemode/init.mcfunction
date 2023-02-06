@@ -5,7 +5,7 @@ function kitpvp:gamemode/fetch-gamemode-info
 # Prepare players
 tag @a[scores={ready=1}] add inGame
 
-scoreboard players set @a bin.dead 0
+scoreboard players set @a bin.deadGamemode 0
 
 execute as @a[tag=inGame,scores={inMenu=1..}] run function kitpvp:interface/menus/main-menu/disable
 execute as @a[tag=inGame] run function kitpvp:loadout/edit/edit/revoke-edit
