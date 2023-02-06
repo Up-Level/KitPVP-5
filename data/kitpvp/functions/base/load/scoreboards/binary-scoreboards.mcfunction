@@ -3,6 +3,9 @@
 scoreboard objectives remove bin.dead
 scoreboard objectives add bin.dead deathCount
 
+scoreboard objectives remove bin.deadGamemode
+scoreboard objectives add bin.deadGamemode deathCount
+
 scoreboard objectives remove bin.kill
 scoreboard objectives add bin.kill playerKillCount
 
