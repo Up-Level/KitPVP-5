@@ -6,4 +6,4 @@ execute if score @s a1.ChargeMax matches -1 run scoreboard players set @s a1.Cha
 execute if score @s a1.ChargeCount matches -1 run scoreboard players operation @s a1.ChargeCount = @s a1.ChargeMax
 execute if score @s a1.Mode matches -1 run scoreboard players set @s a1.Mode 0
 
-function kitpvp:entity/player/010-shield/create
+function kitpvp:entity/player/custom/010-shield/create

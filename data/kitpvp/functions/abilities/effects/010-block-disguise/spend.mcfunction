@@ -1,6 +1,6 @@
 execute at @s positioned ~ ~-1 ~ run function kitpvp:generic/copy-block-to-storage
 
-function kitpvp:entity/player/006-block-disguise/create
+function kitpvp:entity/player/custom/006-block-disguise/create
 effect give @s invisibility 999999 0 true
 execute if score @s l.give matches 1 run function kitpvp:loadout/items/armor/clear
 

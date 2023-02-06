@@ -1,1 +1,1 @@
-function kitpvp:entity/player/010-shield/destroy
+function kitpvp:entity/player/custom/010-shield/destroy

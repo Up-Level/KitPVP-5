@@ -6,4 +6,4 @@ execute if score @s a2.ChargeMax matches -1 run scoreboard players set @s a2.Cha
 execute if score @s a2.ChargeCount matches -1 run scoreboard players operation @s a2.ChargeCount = @s a2.ChargeMax
 execute if score @s a2.Mode matches -1 run scoreboard players set @s a2.Mode 0
 
-execute at @s run function kitpvp:entity/player/011-wolf/create
+execute at @s run function kitpvp:entity/player/custom/011-wolf/create
