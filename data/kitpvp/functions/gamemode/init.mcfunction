@@ -10,13 +10,17 @@ scoreboard players set @a bin.dead 0
 execute as @a[tag=inGame,scores={inMenu=1..}] run function kitpvp:interface/menus/main-menu/disable
 execute as @a[tag=inGame] run function kitpvp:loadout/edit/edit/revoke-edit
 
-execute as @a[tag=inGame] run clear @s
+clear @a[tag=inGame]
 gamemode adventure @a[tag=inGame]
+execute as @a[tag=inGame] run function kitpvp:generic/uuid/get-uuid
 
 # Indicate gamemode has started
 title @a[tag=inGame] title "Go!"
 execute as @a[tag=inGame] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 2 1
 scoreboard players set gamemodeActive info 1
+
+# Add tracker marker
+execute as @a[tag=inGame] run function kitpvp:entity/player/custom/012-kit-tracker/create
 
 # Initialise common scoreboards
 scoreboard objectives remove gm.kills

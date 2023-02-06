@@ -9,6 +9,8 @@ execute if entity @s[tag=respawning] run function kitpvp:loadout/edit/edit/revok
 scoreboard players reset @s gm.kills
 scoreboard players reset @s gm.kills-copy
 
+scoreboard players set @s remainingLength -20
+
 tag @s remove inGame
 tag @s remove respawning
 
