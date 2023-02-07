@@ -1,0 +1,1 @@
+execute if score @s bin.dead matches 1 run summon minecraft:warden ~ ~ ~ {Brain: {memories: {"minecraft:dig_cooldown":{value: {}, ttl: 40L}, "minecraft:is_emerging": {value: {}, ttl: 85L}}}}
