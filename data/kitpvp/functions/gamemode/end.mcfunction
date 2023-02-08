@@ -15,6 +15,7 @@ bossbar set gm.bossbar players
 scoreboard players set @a[tag=inGame,scores={musicCategory=1..}] remainingLength -20
 stopsound @a[tag=inGame]
 
+execute as @a[tag=inGame] run function kitpvp:entity/player/external/destroy-all-end-round
 execute as @a[tag=inGame] run function kitpvp:entity/player/external/destroy-all-end-game
 
 scoreboard players add @a[tag=winner] wins 1
