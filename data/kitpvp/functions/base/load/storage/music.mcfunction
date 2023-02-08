@@ -6,15 +6,19 @@ data merge storage music {Categories: []}
 
 data modify storage music Categories append value {Name: "idk", Songs: []}
 data modify storage music Categories[0].Songs append value {Name: "idk1", Duration: 4340}
-data modify storage music Categories[0].Songs append value {Name: "idk2", Duration: 2160}
-data modify storage music Categories[0].Songs append value {Name: "idk3", Duration: 3340}
-data modify storage music Categories[0].Songs append value {Name: "idk4", Duration: 3440}
-data modify storage music Categories[0].Songs append value {Name: "idk5", Duration: 3180}
+data modify storage music Categories[0].Songs append value {Name: "idk2", Duration: 3340}
+data modify storage music Categories[0].Songs append value {Name: "idk3", Duration: 3180}
+data modify storage music Categories[0].Songs append value {Name: "idk4", Duration: 2160}
+data modify storage music Categories[0].Songs append value {Name: "idk5", Duration: 3340}
+data modify storage music Categories[0].Songs append value {Name: "idk6", Duration: 3440}
+data modify storage music Categories[0].Songs append value {Name: "idk12", Duration: 1660}
+data modify storage music Categories[0].Songs append value {Name: "idk14", Duration: 3180}
 
 data modify storage music Categories append value {Name: "Ultrakill", Songs: []}
 data modify storage music Categories[1].Songs append value {Name: "Ultrakill 1", Duration: 3280}
 data modify storage music Categories[1].Songs append value {Name: "Ultrakill 2", Duration: 2960}
 data modify storage music Categories[1].Songs append value {Name: "Ultrakill 3", Duration: 3420}
+data modify storage music Categories[1].Songs append value {Name: "Weo Prime", Duration: 5700}
 
 data modify storage music Categories append value {Name: "Jungle", Songs: []}
 data modify storage music Categories[2].Songs append value {Name: "Jungle 1", Duration: 4380}
@@ -24,6 +28,10 @@ data modify storage music Categories[2].Songs append value {Name: "Jungle 4", Du
 data modify storage music Categories[2].Songs append value {Name: "Jungle 5", Duration: 4320}
 data modify storage music Categories[2].Songs append value {Name: "Jungle 6", Duration: 5280}
 data modify storage music Categories[2].Songs append value {Name: "Breakcore 1", Duration: 3320}
+data modify storage music Categories[2].Songs append value {Name: "Classic Jungle 1", Duration: 4080}
+data modify storage music Categories[2].Songs append value {Name: "Classic Jungle 2", Duration: 4180}
+data modify storage music Categories[2].Songs append value {Name: "Ford Escort MK3", Duration: 6420}
+data modify storage music Categories[2].Songs append value {Name: "Wet", Duration: 5480}
 
 data modify storage music Categories append value {Name: "Techno House", Songs: []}
 data modify storage music Categories[3].Songs append value {Name: "1", Duration: 3120}
