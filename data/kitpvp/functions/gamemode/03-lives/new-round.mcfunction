@@ -7,6 +7,7 @@ execute if score round gm.general matches 1.. run scoreboard players add @a[tag=
 scoreboard players set @a[tag=inGame] gm.lives 3
 scoreboard players set @a[tag=inGame] gm.kills 0
 
+execute as @a[tag=inGame] run function kitpvp:entity/player/external/destroy-all-end-round
 execute as @a[tag=inGame] run function kitpvp:loadout/revoke-items
 
 gamemode adventure @a[tag=inGame]

@@ -7,6 +7,7 @@ execute if score round gm.general matches 1.. if score Humans gm.sidebar matches
 
 team join none @a[tag=inGame]
 
+execute as @a[tag=inGame] run function kitpvp:entity/player/external/destroy-all-end-round
 execute as @a[tag=inGame] run function kitpvp:loadout/revoke-items
 
 # Calculate who has won the most rounds so far

@@ -1,4 +1,4 @@
-summon horse ~ ~ ~ {Tags:["temp","playerEntity"],Tame:1,SaddleItem:{id:"minecraft:saddle",Count:1,tag:{Tags:["Delete"]}},Attributes:[{Name:"horse.jump_strength",Base:1},{Name:"generic.movement_speed",Base:0.20},{Name:"generic.max_health",Base:16}]}
+summon horse ~ ~ ~ {Tags:["temp","playerEntity"],PersistenceRequired:1b,Tame:1,SaddleItem:{id:"minecraft:saddle",Count:1,tag:{Tags:["Delete"]}},Attributes:[{Name:"horse.jump_strength",Base:1},{Name:"generic.movement_speed",Base:0.20},{Name:"generic.max_health",Base:16}]}
 
 
 scoreboard players set @e[tag=temp] entity.type 7

@@ -1,4 +1,4 @@
-summon marker ^ ^ ^ {Tags:["temp", "playerEntity", "special"]}
+summon marker ^ ^ ^ {Tags:["temp", "playerEntity", "presistGame"]}
 
 scoreboard players set @e[tag=temp] entity.type 12
 scoreboard players set @e[tag=temp] entity.state 0
