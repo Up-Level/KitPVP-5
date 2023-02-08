@@ -9,7 +9,7 @@ give @s written_book
 {\"text\":\"\\n\"},{\"text\":\"\\n\"},
 {\"text\":\"Legionnaires Plate\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Highly protective.\\n-25% speed and -50% attack speed.\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.armT set 3\"}},
 {\"text\":\"\\n\"},{\"text\":\"\\n\"},
-{\"text\":\"Hazard Suit\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Low-Medium defence.\\nNight Vision\\nWater Breathing\\nFire Resistance\\nDepth Strider \"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.armT set 4\"}},
+{\"text\":\"Hazard Suit\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Low-Medium defence.\\nNight Vision\\nWater Breathing\\nFire Resistance\\nDepth Strider\\nSoul Speed\\nSwift Sneak\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.armT set 4\"}},
 {\"text\":\"\\n\"},{\"text\":\"\\n\"},
 {\"text\":\"Fledgling Wings\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Elytra with boots.\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.armT set 5\"}}
 ]",
