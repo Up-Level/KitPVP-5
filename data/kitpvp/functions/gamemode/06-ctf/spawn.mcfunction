@@ -6,7 +6,7 @@ tag @s remove respawning
 
 # Give players their items
 function kitpvp:loadout/edit/edit/revoke-edit
-function kitpvp:loadout/grant-items-selected
+function kitpvp:loadout/equip/grant-items-selected
 
 item replace entity @s hotbar.8 with cooked_beef 8
 

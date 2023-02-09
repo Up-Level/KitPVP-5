@@ -1,3 +1,7 @@
+function kitpvp:loadout/equip/revoke-items
+
+function kitpvp:loadout/edit/set-normal-from-selected
+
 scoreboard players set @s a1.CD -1
 scoreboard players set @s a1.CDCount -1
 

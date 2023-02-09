@@ -1,3 +1,5 @@
+function kitpvp:loadout/equip/test/revoke-items
+
 function kitpvp:loadout/edit/set-normal-from-selected
 
 scoreboard players set @s a1.CD -1
@@ -25,3 +27,5 @@ function kitpvp:loadout/edit/edit/revoke-edit
 function kitpvp:loadout/items/all/start
 function kitpvp:loadout/items/all/give
 scoreboard players set @s l.give 1
+
+execute at @s run function kitpvp:entity/player/custom/012-kit-tracker/create

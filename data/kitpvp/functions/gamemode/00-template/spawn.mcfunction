@@ -6,7 +6,7 @@ tag @s remove respawning
 
 # Give players their items
 function kitpvp:loadout/edit/edit/revoke-edit
-function kitpvp:loadout/grant-items-selected
+function kitpvp:loadout/equip/grant-items-selected
 
 # Teleport player(s) to map
 function kitpvp:map/spawn/single-player

@@ -19,7 +19,8 @@ title @a[tag=inGame] title "Go!"
 execute as @a[tag=inGame] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 2 1
 scoreboard players set gamemodeActive info 1
 
-# Add tracker marker
+# Destroy all owned player entities and add tracker marker
+execute as @a[tag=inGame] run function kitpvp:entity/player/external/destroy-all
 execute as @a[tag=inGame] run function kitpvp:entity/player/custom/012-kit-tracker/create
 
 # Initialise common scoreboards
