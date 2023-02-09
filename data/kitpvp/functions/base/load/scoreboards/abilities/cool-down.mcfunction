@@ -38,3 +38,17 @@ scoreboard objectives add a1.useCD dummy
 
 scoreboard objectives remove a2.useCD
 scoreboard objectives add a2.useCD dummy
+
+# Random
+
+scoreboard objectives remove a.0
+scoreboard objectives add a.0 dummy
+
+scoreboard objectives remove a.1
+scoreboard objectives add a.1 dummy
+
+scoreboard objectives remove a.2
+scoreboard objectives add a.2 dummy
+
+scoreboard objectives remove a.3
+scoreboard objectives add a.3 dummy

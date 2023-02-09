@@ -18,6 +18,12 @@ scoreboard objectives add bin.damaged minecraft.custom:minecraft.damage_taken
 scoreboard objectives remove bin.join
 scoreboard objectives add bin.join minecraft.custom:minecraft.leave_game
 
+scoreboard objectives remove bin.damageTaken
+scoreboard objectives add bin.damageTaken minecraft.custom:damage_taken
+
+scoreboard objectives remove bin.damageDealt
+scoreboard objectives add bin.damageDealt minecraft.custom:damage_dealt
+
 # Funky Kong
 scoreboard objectives remove bin.wall
 scoreboard objectives add bin.wall dummy
