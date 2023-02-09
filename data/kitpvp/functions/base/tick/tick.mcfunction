@@ -14,7 +14,6 @@ execute as @a[scores={bin.join=1..}] run function kitpvp:generic/clear-player
 
 scoreboard players set @a bin.kill 0
 scoreboard players set @a bin.fungus 0
-scoreboard players set @a bin.damaged 0
 scoreboard players set @a bin.dead 0
 scoreboard players set @a bin.damageTaken 0
 scoreboard players set @a bin.damageDealt 0

@@ -11,6 +11,6 @@ execute if score @s entity.state matches 0 if entity @e[distance=..1.5,tag=found
 
 execute if score @s entity.state matches 0 as @e[tag=found] if predicate utilities:is_sprinting run function kitpvp:abilities/effects/010-block-disguise/undisguise
 
-execute if score @s entity.state matches 0 as @e[tag=found,limit=1] if score @s bin.damaged matches 1.. run function kitpvp:abilities/effects/010-block-disguise/undisguise
+execute if score @s entity.state matches 0 as @e[tag=found,limit=1] if score @s bin.damageTaken matches 1.. run function kitpvp:abilities/effects/010-block-disguise/undisguise
 
 execute if score @s entity.state matches 0 at @e[tag=found] align xz run tp @s ~.5 ~ ~.5
