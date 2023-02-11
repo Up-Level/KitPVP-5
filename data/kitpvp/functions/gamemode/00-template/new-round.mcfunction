@@ -5,7 +5,7 @@ function kitpvp:gamemode/utility/timer/init
 execute if score round gm.general matches 1.. run scoreboard players add @r[tag=inGame] gm.rounds 1
 
 execute as @a[tag=inGame] run function kitpvp:entity/player/external/destroy-all-end-round
-execute as @a[tag=inGame] run function kitpvp:loadout/revoke-items
+execute as @a[tag=inGame] run function kitpvp:loadout/equip/revoke-items
 
 # Calculate who has won the most rounds so far
 execute as @a[tag=inGame] run scoreboard players operation @s gm.rounds-copy = @s gm.rounds

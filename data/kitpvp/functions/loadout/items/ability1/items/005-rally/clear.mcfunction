@@ -1,0 +1,1 @@
+function kitpvp:entity/player/custom/014-banner/destroy

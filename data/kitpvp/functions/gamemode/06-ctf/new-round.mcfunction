@@ -55,7 +55,7 @@ execute if score totalRounds gm.general matches 2.. if score round gm.general ma
 execute if score totalRounds gm.general matches 2.. if score round gm.general matches 1.. as @a[tag=inGame,team=yellow] run tellraw @s [{"text":"Your team has won ","color":"gold"}, {"score":{"name": "yellow","objective": "gm.rounds"}}, " round(s).\nCurrently in the lead: ", {"nbt":"Winner","storage":"winning-team","interpret":true}, " with ", {"score":{"name": "highest","objective": "gm.rounds-copy"}}, " rounds won."]
 
 execute as @a[tag=inGame] run function kitpvp:entity/player/external/destroy-all-end-round
-execute as @a[tag=inGame] run function kitpvp:loadout/revoke-items
+execute as @a[tag=inGame] run function kitpvp:loadout/equip/revoke-items
 
 # End game if maximum rounds reached
 execute if score round gm.general = totalRounds gm.general run function kitpvp:gamemode/06-ctf/end

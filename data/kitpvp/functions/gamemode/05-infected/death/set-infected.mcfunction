@@ -2,7 +2,7 @@ tellraw @a[tag=inGame] [{"selector":"@s","color":"red"}," has been ", {"text": "
 execute at @s run playsound entity.zombie.ambient player @a[tag=inGame] ~ ~ ~ 1 0.8 1
 
 team join green @s
-function kitpvp:loadout/revoke-items
+function kitpvp:loadout/equip/revoke-items
 execute if entity @s[tag=!firstInfected] run function kitpvp:loadout/equip/preset/grant-items-infected
 execute if entity @s[tag=firstInfected] run function kitpvp:loadout/equip/preset/grant-items-infected-prime
 

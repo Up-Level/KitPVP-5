@@ -8,7 +8,7 @@ execute if score green gm.kills-copy matches 0 run scoreboard players add green 
 execute if score yellow gm.kills-copy matches 0 run scoreboard players add yellow gm.rounds 1
 
 execute as @a[tag=inGame] run function kitpvp:entity/player/external/destroy-all-end-round
-execute as @a[tag=inGame] run function kitpvp:loadout/revoke-items
+execute as @a[tag=inGame] run function kitpvp:loadout/equip/revoke-items
 
 scoreboard players set @a[tag=inGame] gm.kills 0
 scoreboard players set Red gm.sidebar 0

@@ -11,3 +11,6 @@ function kitpvp:base/load/scoreboards/abilities/cool-down
 
 # Loadouts
 function kitpvp:base/load/scoreboards/loadouts/loadout
+
+# Custom Effects
+function kitpvp:base/load/scoreboards/custom-effects

@@ -11,7 +11,7 @@ give @s written_book
 {\"text\":\"\\n\"},{\"text\":\"\\n\"},
 {\"text\":\"Fireblast\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Shoot a powerful ball of flames towards your foe.\\nIt can't be reflected.\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.a1T set 4\"}},
 {\"text\":\"\\n\"},{\"text\":\"\\n\"},
-{\"text\":\"tbd\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Does XYZ\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.a1T set 5\"}}
+{\"text\":\"Rally Banner\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"A banner that empowers you are your allies.\\nLevel 1 gives regeneration.\\nLevel 2 gives a health boost.\\nLevel 3 gives speed.\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.a1T set 5\"}}
 ]",
 
 

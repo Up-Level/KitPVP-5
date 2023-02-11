@@ -22,5 +22,5 @@ scoreboard players set @s l.e.utilT -1
 scoreboard players set @s l.e.saveT -1
 scoreboard players set @s l.e.loadT -1
 
-function kitpvp:loadout/revoke-items
+function kitpvp:loadout/equip/revoke-items
 function kitpvp:loadout/edit/edit/edit-items/give

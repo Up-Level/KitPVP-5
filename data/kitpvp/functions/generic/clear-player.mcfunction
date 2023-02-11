@@ -1,6 +1,6 @@
 # Edge cases the function
 
-execute if entity @s[tag=inGame] run function kitpvp:loadout/revoke-items
+execute if entity @s[tag=inGame] run function kitpvp:loadout/equip/revoke-items
 execute if entity @s[tag=inGame] run function kitpvp:generic/coordinates/tp-spawn
 clear @s[tag=inGame] cooked_beef
 
@@ -22,4 +22,9 @@ tag @s remove capturingYellowFlag
 
 function kitpvp:generic/uuid/get-uuid
 
+function kitpvp:effects/external/clear-all
+
+# tellraw @a {"text":":D"}
+
 scoreboard players set @s bin.join 0
+tag @s add firstJoined

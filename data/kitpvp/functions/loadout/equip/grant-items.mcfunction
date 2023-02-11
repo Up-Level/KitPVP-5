@@ -24,4 +24,6 @@ function kitpvp:loadout/edit/edit/revoke-edit
 
 function kitpvp:loadout/items/all/start
 function kitpvp:loadout/items/all/give
+
 scoreboard players set @s l.give 1
+scoreboard players set @s l.give.time 0

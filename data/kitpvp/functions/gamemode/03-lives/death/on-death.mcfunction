@@ -4,7 +4,8 @@ scoreboard players remove @s gm.lives 1
 # Clear the player
 clear @s
 effect clear @s
-function kitpvp:loadout/revoke-items
+function kitpvp:effects/external/clear-all
+function kitpvp:loadout/equip/revoke-items
 
 # Reset killstreak
 scoreboard players set @s gm.killstreak 0

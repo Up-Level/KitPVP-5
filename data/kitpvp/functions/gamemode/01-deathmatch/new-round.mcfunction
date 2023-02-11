@@ -5,7 +5,7 @@ function kitpvp:gamemode/utility/timer/init
 execute if score round gm.general matches 1.. run scoreboard players add @a[tag=inGame,scores={gm.kills-copy=0}] gm.rounds 1
 
 execute as @a[tag=inGame] run function kitpvp:entity/player/external/destroy-all-end-round
-execute as @a[tag=inGame] run function kitpvp:loadout/revoke-items
+execute as @a[tag=inGame] run function kitpvp:loadout/equip/revoke-items
 
 scoreboard players set @a[tag=inGame] gm.kills 0
 

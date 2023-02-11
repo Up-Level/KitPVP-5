@@ -6,10 +6,15 @@ execute as @e[type=#kitpvp:has_owner,tag=!playerEntity,tag=!dontCheck] run funct
 
 execute as @e[tag=playerEntity] run function kitpvp:entity/player/internal/tick
 
+execute as @a run function kitpvp:effects/internal/tick
+
 execute as @a[scores={l.give=1}] run function kitpvp:loadout/items/all/tick
 execute as @a[scores={l.e=1}] run function kitpvp:loadout/edit/edit/trigger-tick
+
 execute as @e[scores={bin.carrot=1..}] at @s run function kitpvp:abilities/use-ability
 
+# Detect if someone doesnt have a tag since bin.join only keeps track of disconnects so we need to detect the first one manually
+execute as @a[tag=!firstJoined] run scoreboard players set @s bin.join 1
 execute as @a[scores={bin.join=1..}] run function kitpvp:generic/clear-player
 
 scoreboard players set @a bin.kill 0

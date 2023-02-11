@@ -41,6 +41,9 @@ scoreboard objectives add l.sel.util dummy
 scoreboard objectives remove l.give
 scoreboard objectives add l.give dummy
 
+scoreboard objectives remove l.give.time
+scoreboard objectives add l.give.time dummy
+
 # Lodout editing
 scoreboard objectives remove l.e
 scoreboard objectives add l.e dummy
