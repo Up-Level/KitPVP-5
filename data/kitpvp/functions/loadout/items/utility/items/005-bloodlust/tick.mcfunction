@@ -1,2 +1,2 @@
-execute if score @s bin.kill matches 1.. run effect give @s minecraft:strength 12 0
+execute if score @s bin.kill matches 1.. run effect give @s minecraft:strength 10 0
 execute if score @s bin.kill matches 1.. at @s run particle minecraft:dust_color_transition 1 0 0 1 1 .5 .5 ~ ~1 ~ .25 .5 .25 0.025 100 force

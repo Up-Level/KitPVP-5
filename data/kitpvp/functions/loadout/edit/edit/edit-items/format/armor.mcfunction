@@ -15,7 +15,7 @@ give @s written_book
 ]",
 
 "[\"\",
-{\"text\":\"Warden\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"A medium defence armor set with permanent darkness.\\nCrouch to use echo location.\\nOn your death you summon a temporary neautral warden.\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.armT set 6\"}},
+{\"text\":\"Warden\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"A medium defence armor set with permanent darkness.\\nCrouch to use echo location.\\nOn your death you summon a temporary neutral warden.\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.armT set 6\"}},
 {\"text\":\"\\n\"},{\"text\":\"\\n\"},
 {\"text\":\"Armor 7\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Does XYZ.\"}}},{\"text\":\"\\n\"},{\"text\":\"[Equip]\",\"bold\":true,\"color\":\"#37df34\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger l.e.armT set 7\"}},
 {\"text\":\"\\n\"},{\"text\":\"\\n\"},

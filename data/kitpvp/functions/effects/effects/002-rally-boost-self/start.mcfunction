@@ -1,1 +1,1 @@
-attribute @s minecraft:generic.max_health modifier add bb635488-f6d1-465a-b656-a8a5a59d5724 "rally-healthboost-self" 4 add
+attribute @s minecraft:generic.max_health modifier add bb635488-f6d1-465a-b656-a8a5a59d5724 "rally-healthboost-self" 2 add
