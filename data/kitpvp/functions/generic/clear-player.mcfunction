@@ -27,7 +27,7 @@ function kitpvp:generic/uuid/get-uuid
 
 function kitpvp:effects/external/clear-all
 
-# tellraw @a {"text":":D"}
+scoreboard players set @s inMenu 0
 
 scoreboard players set @s bin.join 0
 tag @s add firstJoined

@@ -1,7 +1,5 @@
 # Executed as players not in game
 
-clear @s[gamemode=adventure] golden_carrot
-
 effect give @s[gamemode=adventure] saturation 1 255 true
 effect give @s[gamemode=adventure] resistance 1 255 true
 effect give @s[gamemode=adventure] weakness 1 255 true
