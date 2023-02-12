@@ -3,6 +3,8 @@ execute as @a run function kitpvp:loadout/edit/edit/revoke-edit
 
 execute as @a run function kitpvp:entity/player/external/destroy-all
 
+execute as @a run function kitpvp:generic/clear-player
+
 kill @e[tag=playerEntity]
 
 # I honestly don't know why it doesnt remove loadout items, they should still have the relevant scoreboards at this point
@@ -26,6 +28,8 @@ scoreboard players set map info 0
 scoreboard players set gamemodeSupported info 0
 scoreboard players set gamemodeActive info 0
 scoreboard players set playersReady info 0
+
+scoreboard objectives remove temp
 
 scoreboard objectives remove temp
 scoreboard objectives add temp dummy

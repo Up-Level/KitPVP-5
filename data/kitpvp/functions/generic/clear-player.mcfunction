@@ -1,6 +1,9 @@
 # Edge cases the function
 
-execute if entity @s[tag=inGame] run function kitpvp:loadout/equip/revoke-items
+function kitpvp:loadout/equip/revoke-items
+function kitpvp:effects/external/clear-all
+function kitpvp:entity/player/external/destroy-all
+
 execute if entity @s[tag=inGame] run function kitpvp:generic/coordinates/tp-spawn
 clear @s[tag=inGame] cooked_beef
 
