@@ -1,6 +1,5 @@
 summon warden ~ ~ ~ {Tags:["temp","playerEntity","presistRound"],PersistenceRequired:1b,Brain: {memories: {"minecraft:dig_cooldown":{value: {}, ttl: 40L}, "minecraft:is_emerging": {value: {}, ttl: 85L}}}}
 
-
 scoreboard players set @e[tag=temp] entity.type 13
 scoreboard players set @e[tag=temp] entity.state 0
 scoreboard players set @e[tag=temp] entity.data 0
