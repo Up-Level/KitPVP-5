@@ -13,4 +13,10 @@ execute if score @s menuTriggers matches 10 run scoreboard players set @s musicC
 execute if score @s menuTriggers matches 11 run scoreboard players set @s musicCategory 3
 execute if score @s menuTriggers matches 12 run scoreboard players set @s musicCategory 4
 
+execute if score @s menuTriggers matches 13 run function kitpvp:loadout/edit/edit/revoke-edit
+execute if score @s menuTriggers matches 14 run function kitpvp:loadout/edit/edit/grant-edit
+
+execute if score @s menuTriggers matches 100 run function kitpvp:interface/menus/main-menu/disable
+
+scoreboard players set @s menuTriggers 0
 scoreboard players enable @s[scores={inMenu=1}] menuTriggers
