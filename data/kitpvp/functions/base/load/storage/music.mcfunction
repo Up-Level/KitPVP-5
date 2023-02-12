@@ -19,6 +19,7 @@ data modify storage music Categories[1].Songs append value {Name: "Ultrakill 1",
 data modify storage music Categories[1].Songs append value {Name: "Ultrakill 2", Duration: 2960}
 data modify storage music Categories[1].Songs append value {Name: "Ultrakill 3", Duration: 3420}
 data modify storage music Categories[1].Songs append value {Name: "Weo Prime", Duration: 5700}
+data modify storage music Categories[1].Songs append value {Name: "o/♀", Duration: 5680}
 
 data modify storage music Categories append value {Name: "Jungle", Songs: []}
 data modify storage music Categories[2].Songs append value {Name: "Jungle 1", Duration: 4380}
