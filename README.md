@@ -1,3 +1,3 @@
 # KitPVP-5
 
-A rewrite of [KitPvP-Datapack](https://github.com/Up-Level/KitPvP-Datapack) for 1.19.2.
+A rewrite of [KitPvP-Datapack](https://github.com/Up-Level/KitPvP-Datapack) for 1.19.3.
