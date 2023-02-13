@@ -1,3 +1,5 @@
+function kitpvp:loadout/edit/edit/revoke-edit
+
 scoreboard players set @s l.e 1
 
 scoreboard players enable @s l.e.armT
