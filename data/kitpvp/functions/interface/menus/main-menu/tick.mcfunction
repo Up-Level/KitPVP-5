@@ -6,8 +6,6 @@ execute if data entity @s SelectedItem.tag.menuToggle if score @s bin.fungus mat
 
 execute if entity @s[scores={inMenu=1,menuTriggers=1..}] run function kitpvp:interface/menus/main-menu/triggers
 
-execute if entity @s[scores={inMenu=1..}] run tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
-
 execute if entity @s[scores={inMenu=1}] run function kitpvp:interface/menus/main-menu/display
 execute if entity @s[scores={inMenu=2}] run function kitpvp:interface/menus/main-menu/submenus/select-gamemode
 execute if entity @s[scores={inMenu=3}] run function kitpvp:interface/menus/main-menu/submenus/select-map
