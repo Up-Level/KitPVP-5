@@ -1,8 +1,8 @@
-#summon minecraft:armor_stand ~ ~ ~ {Tags: ["temp","playerEntity","Back"],DisabledSlots:16191,Invisible:1b,NoGravity:1b,ArmorItems:[{},{},{},{id:"minecraft:stone",Count:1b,tag:{CustomModelData:10}}]}
+#summon minecraft:armor_stand ~ ~ ~ {Tags: ["temp","playerEntity","entity.presistDeath","Back"],DisabledSlots:16191,Invisible:1b,NoGravity:1b,ArmorItems:[{},{},{},{id:"minecraft:stone",Count:1b,tag:{CustomModelData:10}}]}
 
-summon minecraft:armor_stand ~ ~ ~ {Tags: ["temp","playerEntity","Left"],DisabledSlots:16191,Invisible:1b,NoGravity:1b,ArmorItems:[{},{},{},{id:"minecraft:stone",Count:1b,tag:{CustomModelData:10}}]}
+summon minecraft:armor_stand ~ ~ ~ {Tags: ["temp","playerEntity","entity.presistDeath","Left"],DisabledSlots:16191,Invisible:1b,NoGravity:1b,ArmorItems:[{},{},{},{id:"minecraft:stone",Count:1b,tag:{CustomModelData:10}}]}
 
-summon minecraft:armor_stand ~ ~ ~ {Tags: ["temp","playerEntity","Right"],DisabledSlots:16191,Invisible:1b,NoGravity:1b,ArmorItems:[{},{},{},{id:"minecraft:stone",Count:1b,tag:{CustomModelData:10}}]}
+summon minecraft:armor_stand ~ ~ ~ {Tags: ["temp","playerEntity","entity.presistDeath","Right"],DisabledSlots:16191,Invisible:1b,NoGravity:1b,ArmorItems:[{},{},{},{id:"minecraft:stone",Count:1b,tag:{CustomModelData:10}}]}
 
 scoreboard players set @e[tag=temp] entity.type 10
 #scoreboard players set @e[tag=temp,tag=Back] entity.state 0

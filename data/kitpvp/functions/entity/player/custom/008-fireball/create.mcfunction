@@ -1,4 +1,4 @@
-summon minecraft:fireball ~ ~ ~ {Tags:["temp","playerEntity","presistRound"],ExplosionPower:1,Invulnerable:1b}
+summon minecraft:fireball ~ ~ ~ {Tags:["temp","playerEntity","entity.presistRound"],ExplosionPower:1,Invulnerable:1b}
 
 scoreboard players set @e[tag=temp] entity.type 8
 scoreboard players set @e[tag=temp] entity.state 0

@@ -1,4 +1,4 @@
-summon minecraft:evoker_fangs ~ ~ ~ {Invulnerable:1b,Tags: ["temp","playerEntity","presistRound"]}
+summon minecraft:evoker_fangs ~ ~ ~ {Invulnerable:1b,Tags: ["temp","playerEntity","entity.presistRound"]}
 
 scoreboard players set @e[tag=temp] entity.type 9
 scoreboard players set @e[tag=temp] entity.state 0
