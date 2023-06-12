@@ -1,4 +1,5 @@
 {
+    "has_precipitation": false,
     "precipitation": "rain",
     "category": "none",
     "temperature": 0.5,
