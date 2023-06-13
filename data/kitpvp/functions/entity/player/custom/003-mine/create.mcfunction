@@ -4,7 +4,12 @@ playsound minecraft:block.stem.place player @a
 
 scoreboard players set @e[tag=temp] entity.type 3
 scoreboard players set @e[tag=temp] entity.state 0
-scoreboard players set @e[tag=temp] entity.data 0
+
+scoreboard players set @e[tag=temp] entity.data1 0
+scoreboard players set @e[tag=temp] entity.data2 0
+scoreboard players set @e[tag=temp] entity.data3 0
+scoreboard players set @e[tag=temp] entity.data4 0
+
 scoreboard players set @e[tag=temp] entity.time 80
 
 tag @s add uuid0

@@ -2,7 +2,12 @@ summon horse ~ ~ ~ {Tags:["temp","playerEntity","entity.presistDeath","entity.ri
 
 scoreboard players set @e[tag=temp] entity.type 7
 scoreboard players set @e[tag=temp] entity.state 0
-scoreboard players set @e[tag=temp] entity.data 0
+
+scoreboard players set @e[tag=temp] entity.data1 0
+scoreboard players set @e[tag=temp] entity.data2 0
+scoreboard players set @e[tag=temp] entity.data3 0
+scoreboard players set @e[tag=temp] entity.data4 0
+
 scoreboard players set @e[tag=temp] entity.time 0
 
 execute if entity @s[team=red] run team join red @e[limit=1,tag=temp]

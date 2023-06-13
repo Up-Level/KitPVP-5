@@ -11,3 +11,4 @@ execute if score effect itemData matches 8 run function kitpvp:abilities/effects
 execute if score effect itemData matches 9 run function kitpvp:abilities/effects/009-fireball/click
 execute if score effect itemData matches 10 run function kitpvp:abilities/effects/010-block-disguise/click
 execute if score effect itemData matches 11 run function kitpvp:abilities/effects/011-mine/click
+execute if score effect itemData matches 12 run function kitpvp:abilities/effects/012-anvil/click

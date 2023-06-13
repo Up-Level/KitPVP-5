@@ -5,7 +5,12 @@ execute at @e[tag=temp] rotated 0 0 run playsound minecraft:item.flintandsteel.u
 
 scoreboard players set @e[tag=temp] entity.type 1
 scoreboard players set @e[tag=temp] entity.state 0
-scoreboard players set @e[tag=temp] entity.data 0
+
+scoreboard players set @e[tag=temp] entity.data1 0
+scoreboard players set @e[tag=temp] entity.data2 0
+scoreboard players set @e[tag=temp] entity.data3 0
+scoreboard players set @e[tag=temp] entity.data4 0
+
 scoreboard players set @e[tag=temp] entity.time 0
 
 tag @s add uuid0

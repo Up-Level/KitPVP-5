@@ -2,7 +2,7 @@ tag @s add playerEntity
 
 scoreboard players set @s entity.type 0
 scoreboard players set @s entity.state 0
-scoreboard players set @s entity.data 0
+scoreboard players set @s entity.data1 0
 scoreboard players set @s entity.time 0
 
 execute if entity @s[type=arrow] run scoreboard players set @s entity.type -1

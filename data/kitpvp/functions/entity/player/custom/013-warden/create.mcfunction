@@ -2,7 +2,12 @@ summon warden ~ ~ ~ {Tags:["temp","playerEntity","entity.presistRound"],Persiste
 
 scoreboard players set @e[tag=temp] entity.type 13
 scoreboard players set @e[tag=temp] entity.state 0
-scoreboard players set @e[tag=temp] entity.data 0
+
+scoreboard players set @e[tag=temp] entity.data1 0
+scoreboard players set @e[tag=temp] entity.data2 0
+scoreboard players set @e[tag=temp] entity.data3 0
+scoreboard players set @e[tag=temp] entity.data4 0
+
 scoreboard players set @e[tag=temp] entity.time 550
 
 tag @s add uuid0

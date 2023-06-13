@@ -8,7 +8,12 @@ scoreboard players set @e[tag=temp] entity.type 10
 #scoreboard players set @e[tag=temp,tag=Back] entity.state 0
 scoreboard players set @e[tag=temp,tag=Left] entity.state 1
 scoreboard players set @e[tag=temp,tag=Right] entity.state 2
-scoreboard players set @e[tag=temp] entity.data 0
+
+scoreboard players set @e[tag=temp] entity.data1 0
+scoreboard players set @e[tag=temp] entity.data2 0
+scoreboard players set @e[tag=temp] entity.data3 0
+scoreboard players set @e[tag=temp] entity.data4 0
+
 scoreboard players set @e[tag=temp] entity.time 0
 
 #tag @s add uuid0
