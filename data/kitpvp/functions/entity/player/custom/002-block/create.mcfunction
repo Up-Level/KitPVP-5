@@ -1,4 +1,4 @@
-summon minecraft:area_effect_cloud ~ ~-0.375 ~ {Age: -2147483648, Duration: -1, WaitTime: -2147483648,Invulnerable:1b,Silent:1b,Tags:["blockPoint","temp","playerEntity","entity.presistRound"],Passengers:[{id:falling_block,Tags:["blockVisual","temp","playerEntity","entity.presistRound"],NoGravity:1b,NoAI:1b,Time:-2147483648,BlockState:{Name:"bricks"}},{id:shulker,Tags:["blockBox","temp","playerEntity","entity.presistRound"],NoAI:1b,Invulnerable:1b,Silent:1b}]}
+summon minecraft:area_effect_cloud ~ ~-0.375 ~ {Age: -2147483648, Duration: -1, WaitTime: -2147483648,Invulnerable:1b,Silent:1b,Tags:["blockPoint","temp","playerEntity","entity.persistRound"],Passengers:[{id:falling_block,Tags:["blockVisual","temp","playerEntity","entity.persistRound"],NoGravity:1b,NoAI:1b,Time:-2147483648,BlockState:{Name:"bricks"}},{id:shulker,Tags:["blockBox","temp","playerEntity","entity.persistRound"],NoAI:1b,Invulnerable:1b,Silent:1b}]}
 effect give @e[tag=temp,tag=blockBox] minecraft:invisibility 999999 0 true
 
 execute at @e[tag=temp,tag=blockPoint] run particle minecraft:block minecraft:bricks ^ ^.5 ^ .5 .5 .5 0. 10 force

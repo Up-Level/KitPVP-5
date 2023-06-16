@@ -1,4 +1,4 @@
-summon wolf ~ ~ ~ {Tags:["temp","playerEntity","entity.presistDeath"],PersistenceRequired:1b}
+summon wolf ~ ~ ~ {Tags:["temp","playerEntity","entity.persistDeath"],PersistenceRequired:1b}
 
 scoreboard players set @e[limit=1,tag=temp] entity.type 11
 scoreboard players set @e[limit=1,tag=temp] entity.state 0

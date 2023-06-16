@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~1 ~ {Tags:["temp","playerEntity","entity.presistRound","entity.rideable","blockPoint"],Invisible:1,Small:1b,Passengers:[{id:"block_display",Tags:["temp","playerEntity","entity.presistRound","blockVisual"],block_state:{Name:"anvil"},transformation:{translation:[-0.5f,-0.740625f,-0.5f],left_rotation:[0f,0f,0f,1f],scale:[1f,1f,1f],right_rotation:[0f,0f,0f,1f]}}]}
+summon minecraft:armor_stand ~ ~1 ~ {Tags:["temp","playerEntity","entity.persistRound","entity.rideable","blockPoint"],Invisible:1,Small:1b,Passengers:[{id:"block_display",Tags:["temp","playerEntity","entity.persistRound","blockVisual"],block_state:{Name:"anvil"},transformation:{translation:[-0.5f,-0.740625f,-0.5f],left_rotation:[0f,0f,0f,1f],scale:[1f,1f,1f],right_rotation:[0f,0f,0f,1f]}}]}
 
 scoreboard players set @e[tag=temp] entity.type 15
 
