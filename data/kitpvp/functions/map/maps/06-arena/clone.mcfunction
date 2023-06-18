@@ -1,4 +1,8 @@
+forceload add 79963 -32 80037 32
+
 clone 79963 26 -32 80037 67 32 -37 0 -32
+
+forceload remove 79963 -32 80037 32
 
 # They dont appear why
 fill -19 10 0 -19 7 0 ladder[facing=west]
