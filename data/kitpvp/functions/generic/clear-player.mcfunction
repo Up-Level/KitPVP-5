@@ -4,6 +4,8 @@ function kitpvp:loadout/equip/revoke-items
 function kitpvp:effects/external/clear-all
 function kitpvp:entity/player/external/destroy-all
 
+advancement revoke @s only kitpvp:killed-by-player
+
 execute if entity @s[tag=inGame] run function kitpvp:generic/coordinates/tp-spawn
 clear @s[tag=inGame] cooked_beef
 

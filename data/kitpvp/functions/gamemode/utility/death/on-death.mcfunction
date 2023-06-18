@@ -6,6 +6,7 @@ function kitpvp:loadout/equip/revoke-items
 
 # Remove a kill from the player if they didn't die to another player (such as self-explosion or jumping off the map)
 execute if entity @s[advancements={kitpvp:killed-by-player=false}] run scoreboard players remove @s gm.kills 1
+execute if entity @s[advancements={kitpvp:killed-by-player=false}] run scoreboard players remove @s bin.kill 1
 advancement revoke @s only kitpvp:killed-by-player
 
 # Reset killstreak

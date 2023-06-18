@@ -4,6 +4,8 @@
 # Remove respawning tag
 tag @s remove respawning
 
+advancement revoke @s only kitpvp:killed-by-player
+
 # Give players their items
 function kitpvp:loadout/edit/edit/revoke-edit
 execute if entity @s[team=none] run function kitpvp:loadout/equip/grant-items-selected
