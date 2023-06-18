@@ -41,3 +41,5 @@ tag @a[tag=respawning] remove respawning
 
 time set 6000
 weather clear
+
+function kitpvp:map/load-unload/remove-map
