@@ -23,13 +23,18 @@ difficulty hard
 
 # Config
 # Declarations for vscode
-#declare score_holder spawnDistance
 #declare score_holder respawnTime
+#declare score_holder spawnDistance
+#declare score_holder sqrSpawnDistance
 
 scoreboard objectives remove config
 scoreboard objectives add config dummy
-scoreboard players set spawnDistance config 15
+
 scoreboard players set respawnTime config 200
+
+scoreboard players set spawnDistance config 15
+scoreboard players operation sqrSpawnDistance config = spawnDistance config
+scoreboard players operation sqrSpawnDistance config *= spawnDistance config
 
 # Stats
 scoreboard objectives add timePlayed dummy

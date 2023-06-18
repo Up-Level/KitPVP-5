@@ -1,6 +1,6 @@
 {
 	"values":[
-		"mathf:internal/init",
+		"mathf:internal/load",
 		"kitpvp:base/load/load"
 	]
 }
