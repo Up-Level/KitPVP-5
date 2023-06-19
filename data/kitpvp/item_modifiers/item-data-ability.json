@@ -1,0 +1,16 @@
+[
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "kitpvp:item-data"
+    },
+    "ops": [
+      {
+        "source": "item.tag.Special",
+        "target": "Special",
+        "op": "replace"
+      }
+    ]
+  }
+]
