@@ -13,7 +13,8 @@ scoreboard objectives remove gm.kills-copy
 scoreboard objectives add gm.kills-copy dummy
 
 # Show sidebar (usually gm.sidebar)
-scoreboard objectives setdisplay sidebar gm.kills
+scoreboard objectives setdisplay sidebar gm.sidebar
+scoreboard objectives modify gm.sidebar displayname {"text": "Kills","color": "gold"}
 
 team join none @a[tag=inGame]
 

@@ -12,16 +12,17 @@ execute if score ticksRemaining gm.general matches ..-1 run function kitpvp:game
 execute if score ticksRemaining gm.general matches 0.. run bossbar set gm.bossbar name [{"text":"Time Remaining: ","color":"gold"},{"score":{"objective":"gm.general","name":"secondsRemaining"},"color":"gold"},{"text":" seconds","color":"gold"}]
 
 # Run death functions on death
-execute as @a[tag=inGame,scores={bin.deadGamemode=1},nbt={Health:20f}] run function kitpvp:gamemode/utility/death/on-death
+execute as @a[tag=inGame,scores={bin.deadGamemode=1},nbt={Health:20f}] run function kitpvp:gamemode/02-team-deathmatch/death/on-death
 # Tick for respawn
 execute as @a[tag=respawning] run function kitpvp:gamemode/utility/death/tick-respawn
 
-# Find highest scorer
+# Update team kill counts
 execute as @a[tag=inGame,team=red] run scoreboard players operation Red gm.sidebar += @s bin.kill
 execute as @a[tag=inGame,team=blue] run scoreboard players operation Blue gm.sidebar += @s bin.kill
 execute as @a[tag=inGame,team=green] run scoreboard players operation Green gm.sidebar += @s bin.kill
 execute as @a[tag=inGame,team=yellow] run scoreboard players operation Yellow gm.sidebar += @s bin.kill
 
+# Find highest scorer
 scoreboard players operation red gm.kills-copy = Red gm.sidebar
 scoreboard players operation blue gm.kills-copy = Blue gm.sidebar
 scoreboard players operation green gm.kills-copy = Green gm.sidebar
