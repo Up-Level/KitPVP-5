@@ -1,0 +1,13 @@
+execute positioned -20 33 -40 run function kitpvp:map/spawn/new-spawnpoint
+execute positioned 2 28 -43 run function kitpvp:map/spawn/new-spawnpoint
+execute positioned 36 28 -23 run function kitpvp:map/spawn/new-spawnpoint
+execute positioned 34 34 17 run function kitpvp:map/spawn/new-spawnpoint
+execute positioned -32 31 34 run function kitpvp:map/spawn/new-spawnpoint
+execute positioned -4 39 28 run function kitpvp:map/spawn/new-spawnpoint
+execute positioned 22 39 -1 run function kitpvp:map/spawn/new-spawnpoint
+execute positioned 0 40.5 15 run function kitpvp:map/spawn/new-spawnpoint
+execute positioned 0 39 -18 run function kitpvp:map/spawn/new-spawnpoint
+execute positioned 0 56.5 18 run function kitpvp:map/spawn/new-spawnpoint
+execute positioned -39 42 18 run function kitpvp:map/spawn/new-spawnpoint
+execute positioned 27 34 39 run function kitpvp:map/spawn/new-spawnpoint
+execute positioned 0 49.5 -6 run function kitpvp:map/spawn/new-spawnpoint
