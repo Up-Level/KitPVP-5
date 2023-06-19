@@ -1,4 +1,4 @@
-execute if score @s gm.mkill matches 2.. run tellraw @a[tag=inGame] [{"selector":"@s","color":"#ff0000"}, " has killed ", {"score":{"name": "@s", "objective": "gm.mkill"}}, " in a row!"]
+execute if score @s gm.mkill matches 2.. run tellraw @a[tag=inGame] [{"selector":"@s","color":"#ff0000"}, " has a ", {"score":{"name": "@s", "objective": "gm.mkill"}}, " player multikill!"]
 
 execute if score @s gm.mkill matches 2 run playsound minecraft:custom.announcer.multikill.doublekill player @a[tag=inGame] 0 0 0 0.25 1 0.25
 execute if score @s gm.mkill matches 3 run playsound minecraft:custom.announcer.multikill.multikill player @a[tag=inGame] 0 0 0 0.25 1 0.25
