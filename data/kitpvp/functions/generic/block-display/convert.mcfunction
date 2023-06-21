@@ -43,6 +43,8 @@ execute store result entity @e[tag=blockMidpoint,limit=1] Pos[0] double 1 run sc
 execute store result entity @e[tag=blockMidpoint,limit=1] Pos[1] double 1 run scoreboard players get ym temp
 execute store result entity @e[tag=blockMidpoint,limit=1] Pos[2] double 1 run scoreboard players get zm temp
 
+summon marker 0 0 0 {Tags:["bMarker"]}
 execute at @e[tag=blockMidpoint] run function kitpvp:generic/block-display/private/loop
+kill @e[tag=bMarker]
 
 kill @e[tag=blockMidpoint]

@@ -34,8 +34,11 @@ scoreboard players operation zOffset temp -= zm temp
 scoreboard players operation zOffset temp *= #10 mathf.const
 scoreboard players operation zOffset temp -= #5 mathf.const
 
+execute store result entity @e[tag=bMarker,limit=1] Pos[0] double 1 run scoreboard players get worldX temp
+execute store result entity @e[tag=bMarker,limit=1] Pos[1] double 1 run scoreboard players get worldY temp
+execute store result entity @e[tag=bMarker,limit=1] Pos[2] double 1 run scoreboard players get worldZ temp
 
-function kitpvp:generic/block-display/private/block
+execute at @e[tag=bMarker,limit=1] unless block ~ ~ ~ air at @e[tag=blockMidpoint] run function kitpvp:generic/block-display/private/block
 
 scoreboard players add i temp 1
 
