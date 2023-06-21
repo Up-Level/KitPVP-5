@@ -1,0 +1,11 @@
+{
+    "values": [
+        "minecraft:air",
+        "minecraft:barrier",
+        "minecraft:chest",
+        "minecraft:trapped_chest",
+        "minecraft:ender_chest",
+        "#kitpvp:liquidblocks",
+        "#minecraft:banners"
+    ]
+}

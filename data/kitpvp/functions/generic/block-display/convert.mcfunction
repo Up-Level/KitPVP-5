@@ -38,6 +38,8 @@ scoreboard players set i temp 0
 
 tag @e[tag=newBlockDisplay] remove newBlockDisplay
 
+data merge storage __temp__ {Pos:[0d,0d,0d],translation:[0f,0f,0f]}
+
 summon marker 0 0 0 {Tags:["blockMidpoint"]}
 execute store result entity @e[tag=blockMidpoint,limit=1] Pos[0] double 1 run scoreboard players get xm temp
 execute store result entity @e[tag=blockMidpoint,limit=1] Pos[1] double 1 run scoreboard players get ym temp
