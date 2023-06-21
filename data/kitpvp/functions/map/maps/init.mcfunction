@@ -11,3 +11,4 @@ execute if score map info matches 10 run function kitpvp:map/maps/10-ctftest/ini
 execute if score map info matches 11 run function kitpvp:map/maps/11-cave/init
 execute if score map info matches 12 run function kitpvp:map/maps/12-enchanted-forest/init
 execute if score map info matches 13 run function kitpvp:map/maps/13-weo-circuit/init
+execute if score map info matches 14 run function kitpvp:map/maps/14-the-cathedral/init
