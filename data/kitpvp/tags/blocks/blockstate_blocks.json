@@ -1,6 +1,9 @@
 {
     "values": [
         "#stairs",
-        "#slabs"   
+        "#slabs",
+        "#logs",
+        "#fence_gates",
+        "#trapdoors"
     ]
 }
