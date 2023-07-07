@@ -15,3 +15,5 @@ execute if score valid itemData matches 2 store result score charge.max itemData
 execute if score valid itemData matches 2 store result score charge.amount itemData run data get storage kitpvp:item-data item.tag.Special.Ability.ChargeAmount
 
 execute if score valid itemData matches 2 store result score timestamp itemData run data get storage kitpvp:item-data item.tag.Special.Timestamp
+
+execute if score valid itemData matches 2 store result score hudId itemData run data get storage kitpvp:item-data item.tag.Special.Ability.HudId

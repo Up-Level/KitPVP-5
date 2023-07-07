@@ -6,7 +6,7 @@ function kitpvp:base/load/scoreboards/uuid
 function kitpvp:base/load/scoreboards/player-entities
 
 # Abilities
-function kitpvp:base/load/scoreboards/abilities/binary
+# function kitpvp:base/load/scoreboards/abilities/binary
 function kitpvp:base/load/scoreboards/abilities/cool-down
 
 # Loadouts

@@ -58,3 +58,6 @@ forceload add 32 10032 -1 9999
 
 # Forceloads a 111 block radius around 0,0
 forceload add -97 -97 96 96
+
+setblock 0 50 10000 oak_sign
+setblock 0 49 10000 shulker_box

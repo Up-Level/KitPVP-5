@@ -12,6 +12,8 @@ execute as @a[scores={l.give=1}] run function kitpvp:loadout/items/all/tick
 execute as @a[scores={l.e=1}] run function kitpvp:loadout/edit/edit/trigger-tick
 
 execute as @e[scores={bin.carrot=1..}] at @s run function kitpvp:abilities/use-ability
+execute as @a run function kitpvp:abilities/hud-display/internal/tick
+execute as @a run function kitpvp:abilities/hud-display/external/show-cd
 
 # Detect if someone doesnt have a tag since bin.join only keeps track of disconnects so we need to detect the first one manually
 execute as @a[tag=!firstJoined] run scoreboard players set @s bin.join 1
