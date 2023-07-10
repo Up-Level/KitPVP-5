@@ -29,6 +29,8 @@ function kitpvp:generic/uuid/get-uuid
 
 function kitpvp:effects/external/clear-all
 
+spawnpoint @s -10000 64 0
+
 scoreboard players set @s inMenu 0
 
 scoreboard players set @s bin.join 0
