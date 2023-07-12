@@ -1,0 +1,13 @@
+{
+    "values": [
+        "minecraft:air",
+        "minecraft:barrier",
+        "minecraft:chest",
+        "minecraft:trapped_chest",
+        "minecraft:ender_chest",
+        "minecraft:piston_head",
+        "#minecraft:fire",
+        "#kitpvp:liquidblocks",
+        "#minecraft:banners"
+    ]
+}

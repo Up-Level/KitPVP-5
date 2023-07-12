@@ -1,0 +1,2 @@
+- Store transformation data from block displays in scoreboards so nbt reads aren't necessary when performing a transformation
+- Means only nbt writes are required
