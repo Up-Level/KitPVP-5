@@ -38,7 +38,8 @@ scoreboard players set i temp 0
 
 tag @e[tag=newBlockDisplay] remove newBlockDisplay
 
-data merge storage __temp__ {Pos:[0d,0d,0d],translation:[0f,0f,0f]}
+data remove storage __temp__ block
+data merge storage __temp__ {Pos:[0d,0d,0d], block:{transformation:{translation:[0f,0f,0f]}, block_state:{Name:"",Properties:{}}, Tags:["newBlockDisplay"]}}
 
 summon marker 0 0 0 {Tags:["blockMidpoint"]}
 execute store result entity @e[tag=blockMidpoint,limit=1] Pos[0] double 1 run scoreboard players get xm temp
