@@ -1,3 +1,5 @@
+# Run the pos1 and pos2 functions at the -XYZ and +XYZ corners respectively.
+
 # Calculate midpoint
 scoreboard players operation xm temp = x0 temp
 scoreboard players operation xm temp += x1 temp
@@ -47,7 +49,7 @@ execute store result entity @e[tag=blockMidpoint,limit=1] Pos[1] double 1 run sc
 execute store result entity @e[tag=blockMidpoint,limit=1] Pos[2] double 1 run scoreboard players get zm temp
 
 summon marker 0 0 0 {Tags:["bMarker"]}
-function kitpvp:generic/block-display/private/loop
+function grouped-bd:convert/loop
 kill @e[tag=bMarker]
 
 kill @e[tag=blockMidpoint]
