@@ -1,0 +1,140 @@
+{
+	"categories": [
+		{
+			"name": "idk",
+			"songs": [
+				{
+					"name": "idk1",
+					"duration": "3:37"
+				},
+				{
+					"name": "idk2",
+					"duration": "2:47"
+				},
+				{
+					"name": "idk3",
+					"duration": "2:39"
+				},
+				{
+					"name": "idk4",
+					"duration": "1:48"
+				},
+				{
+					"name": "idk5",
+					"duration": "2:47"
+				},
+				{
+					"name": "idk6",
+					"duration": "2:52"
+				},
+				{
+					"name": "idk12",
+					"duration": "1:23"
+				},
+				{
+					"name": "idk14",
+					"duration": "2:39"
+				}
+			]
+		},
+		{
+			"name": "Ultrakill",
+			"songs": [
+				{
+					"name": "Ultrakill 1",
+					"duration": "2:44"
+				},
+				{
+					"name": "Ultrakill 2",
+					"duration": "2:28"
+				},
+				{
+					"name": "Ultrakill 3",
+					"duration": "2:51"
+				},
+				{
+					"name": "Weo Prime",
+					"duration": "4:45"
+				},
+				{
+					"name": "o/♀",
+					"duration": "4:44"
+				}
+			]
+		},
+		{
+			"name": "Jungle",
+			"songs": [
+				{
+					"name": "Jungle 1",
+					"duration": "3:39"
+				},
+				{
+					"name": "Jungle 2",
+					"duration": "1:55"
+				},
+				{
+					"name": "Jungle 3",
+					"duration": "2:40"
+				},
+				{
+					"name": "Jungle 4",
+					"duration": "3:28"
+				},
+				{
+					"name": "Jungle 5",
+					"duration": "3:36"
+				},
+				{
+					"name": "Jungle 6",
+					"duration": "4:24"
+				},
+				{
+					"name": "Breakcore 1",
+					"duration": "2:46"
+				},
+				{
+					"name": "Classic Jungle 1",
+					"duration": "3:24"
+				},
+				{
+					"name": "Classic Jungle 2",
+					"duration": "3:29"
+				},
+				{
+					"name": "Ford Escort MK3",
+					"duration": "5:21"
+				},
+				{
+					"name": "Wet",
+					"duration": "4:34"
+				}
+			]
+		},
+		{
+			"name": "Techno House",
+			"songs": [
+				{
+					"name": "1",
+					"duration": "2:36"
+				},
+				{
+					"name": "3 Scarface",
+					"duration": "2:46"
+				},
+				{
+					"name": "9999999999",
+					"duration": "4:11"
+				},
+				{
+					"name": "HM 1",
+					"duration": "2:38"
+				},
+				{
+					"name": "tudsgusnrvnbuydh",
+					"duration": "4:06"
+				}
+			]
+		}
+	]
+}

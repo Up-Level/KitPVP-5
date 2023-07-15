@@ -1,5 +1,4 @@
-
-#> Storage containing the names and durations of all songs.
+# Storage containing the names and durations of all songs.
 #declare storage music
 
 data merge storage music {Categories: []}
