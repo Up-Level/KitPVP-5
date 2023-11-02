@@ -1,138 +1,200 @@
 {
 	"categories": [
 		{
+			"displayName": "idk",
 			"name": "idk",
 			"songs": [
 				{
+					"displayName": "idk1",
 					"name": "idk1",
-					"duration": "3:37"
+					"duration": "3:37",
+					"volume": 1
 				},
 				{
+					"displayName": "idk2",
 					"name": "idk2",
-					"duration": "2:47"
+					"duration": "2:47",
+					"volume": 1
 				},
 				{
+					"displayName": "idk3",
 					"name": "idk3",
-					"duration": "2:39"
+					"duration": "2:39",
+					"volume": 1
 				},
 				{
+					"displayName": "idk4",
 					"name": "idk4",
-					"duration": "1:48"
+					"duration": "1:48",
+					"volume": 1
 				},
 				{
+					"displayName": "idk5",
 					"name": "idk5",
-					"duration": "2:47"
+					"duration": "2:47",
+					"volume": 1
 				},
 				{
+					"displayName": "idk6",
 					"name": "idk6",
-					"duration": "2:52"
+					"duration": "2:52",
+					"volume": 1
 				},
 				{
+					"displayName": "idk12",
 					"name": "idk12",
-					"duration": "1:23"
+					"duration": "1:23",
+					"volume": 1
 				},
 				{
+					"displayName": "idk14",
 					"name": "idk14",
-					"duration": "2:39"
+					"duration": "2:39",
+					"volume": 1
 				}
 			]
 		},
 		{
-			"name": "Ultrakill",
+			"displayName": "Ultrakill",
+			"name": "ultrakill",
 			"songs": [
 				{
-					"name": "Ultrakill 1",
-					"duration": "2:44"
+					"displayName": "Ultrakill 1",
+					"name": "ultrakill1",
+					"duration": "2:44",
+					"volume": 1
 				},
 				{
-					"name": "Ultrakill 2",
-					"duration": "2:28"
+					"displayName": "Ultrakill 2",
+					"name": "ultrakill2",
+					"duration": "2:28",
+					"volume": 1
 				},
 				{
-					"name": "Ultrakill 3",
-					"duration": "2:51"
+					"displayName": "Ultrakill 3",
+					"name": "ultrakill3",
+					"duration": "2:51",
+					"volume": 1
 				},
 				{
-					"name": "Weo Prime",
-					"duration": "4:45"
+					"displayName": "Weo Prime",
+					"name": "weo_prime",
+					"duration": "4:45",
+					"volume": 1
 				},
 				{
-					"name": "o/♀",
-					"duration": "4:44"
+					"displayName": "o/♀",
+					"name": "man_with_lantern",
+					"duration": "4:44",
+					"volume": 1
 				}
 			]
 		},
 		{
-			"name": "Jungle",
+			"displayName": "Jungle",
+			"name": "jungle",
 			"songs": [
 				{
-					"name": "Jungle 1",
-					"duration": "3:39"
+					"displayName": "Jungle 1",
+					"name": "jungle1",
+					"duration": "3:39",
+					"volume": 0.5
 				},
 				{
-					"name": "Jungle 2",
-					"duration": "1:55"
+					"displayName": "Jungle 2",
+					"name": "jungle2",
+					"duration": "1:55",
+					"volume": 0.5
 				},
 				{
-					"name": "Jungle 3",
-					"duration": "2:40"
+					"displayName": "Jungle 3",
+					"name": "jungle3",
+					"duration": "2:40",
+					"volume": 0.7
 				},
 				{
-					"name": "Jungle 4",
-					"duration": "3:28"
+					"displayName": "Jungle 4",
+					"name": "jungle4",
+					"duration": "3:28",
+					"volume": 0.7
 				},
 				{
-					"name": "Jungle 5",
-					"duration": "3:36"
+					"displayName": "Jungle 5",
+					"name": "jungle5",
+					"duration": "3:36",
+					"volume": 0.7
 				},
 				{
-					"name": "Jungle 6",
-					"duration": "4:24"
+					"displayName": "Jungle 6",
+					"name": "jungle6",
+					"duration": "4:24",
+					"volume": 0.7
 				},
 				{
-					"name": "Breakcore 1",
-					"duration": "2:46"
+					"displayName": "Breakcore 1",
+					"name": "breakcore1",
+					"duration": "2:46",
+					"volume": 0.5
 				},
 				{
-					"name": "Classic Jungle 1",
-					"duration": "3:24"
+					"displayName": "Classic Jungle 1",
+					"name": "classic_jungle_1",
+					"duration": "3:24",
+					"volume": 0.8
 				},
 				{
-					"name": "Classic Jungle 2",
-					"duration": "3:29"
+					"displayName": "Classic Jungle 2",
+					"name": "classic_jungle_2",
+					"duration": "3:29",
+					"volume": 0.8
 				},
 				{
-					"name": "Ford Escort MK3",
-					"duration": "5:21"
+					"displayName": "Ford Escort MK3",
+					"name": "ford_escort_mk3",
+					"duration": "5:21",
+					"volume": 1
 				},
 				{
-					"name": "Wet",
-					"duration": "4:34"
+					"displayName": "Wet",
+					"name": "wet",
+					"duration": "4:34",
+					"volume": 1
 				}
 			]
 		},
 		{
-			"name": "Techno House",
+			"displayName": "Techno House",
+			"name": "technohouse",
 			"songs": [
 				{
+					"displayName": "1",
 					"name": "1",
-					"duration": "2:36"
+					"duration": "2:36",
+					"volume": 1
 				},
 				{
-					"name": "3 Scarface",
-					"duration": "2:46"
+					"displayName": "3 Scarface",
+					"name": "3-scarface",
+					"duration": "2:46",
+					"volume": 1
 				},
 				{
+					"displayName": "9999999999",
 					"name": "9999999999",
-					"duration": "4:11"
+					"duration": "4:11",
+					"volume": 1
 				},
 				{
-					"name": "HM 1",
-					"duration": "2:38"
+					"displayName": "HM 1",
+					"name": "hm-1",
+					"duration": "2:38",
+					"volume": 1
 				},
 				{
+					"displayName": "tudsgusnrvnbuydh",
 					"name": "tudsgusnrvnbuydh",
-					"duration": "4:06"
+					"duration": "4:06",
+					"volume": 1
 				}
 			]
 		}
