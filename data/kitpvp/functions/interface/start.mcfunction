@@ -11,12 +11,12 @@ scoreboard players set playersReady info 0
 # Override for template gamemode
 execute if score gamemode info matches 0 run scoreboard players set gamemodeSupported info 1
 
-execute if score gamemode info matches 1 if data storage current-map Map.Gamemodes.1 run scoreboard players set gamemodeSupported info 1
-execute if score gamemode info matches 2 if data storage current-map Map.Gamemodes.2 run scoreboard players set gamemodeSupported info 1
-execute if score gamemode info matches 3 if data storage current-map Map.Gamemodes.3 run scoreboard players set gamemodeSupported info 1
-execute if score gamemode info matches 4 if data storage current-map Map.Gamemodes.4 run scoreboard players set gamemodeSupported info 1
-execute if score gamemode info matches 5 if data storage current-map Map.Gamemodes.5 run scoreboard players set gamemodeSupported info 1
-execute if score gamemode info matches 6 if data storage current-map Map.Gamemodes.6 run scoreboard players set gamemodeSupported info 1
+execute if score gamemode info matches 1 if data storage maps CurrentMap.Gamemodes.1 run scoreboard players set gamemodeSupported info 1
+execute if score gamemode info matches 2 if data storage maps CurrentMap.Gamemodes.2 run scoreboard players set gamemodeSupported info 1
+execute if score gamemode info matches 3 if data storage maps CurrentMap.Gamemodes.3 run scoreboard players set gamemodeSupported info 1
+execute if score gamemode info matches 4 if data storage maps CurrentMap.Gamemodes.4 run scoreboard players set gamemodeSupported info 1
+execute if score gamemode info matches 5 if data storage maps CurrentMap.Gamemodes.5 run scoreboard players set gamemodeSupported info 1
+execute if score gamemode info matches 6 if data storage maps CurrentMap.Gamemodes.6 run scoreboard players set gamemodeSupported info 1
 
 execute store result score playersReady info if entity @a[scores={ready=1}]
 

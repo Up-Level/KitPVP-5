@@ -15,7 +15,7 @@ scoreboard objectives modify gm.sidebar displayname {"text":"Infected","color":"
 scoreboard objectives setdisplay sidebar gm.sidebar
 scoreboard objectives setdisplay list gm.kills
 
-execute store result score firstInfection gm.general run data get storage current-gamemode Gamemode.Settings.FirstInfection
+execute store result score firstInfection gm.general run data get storage gamemode CurrentGamemode.Settings.FirstInfection
 scoreboard players operation firstInfection gm.general *= #20 mathf.const
 
 # Teams
