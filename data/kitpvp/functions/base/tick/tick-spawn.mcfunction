@@ -7,5 +7,7 @@ effect give @s[gamemode=adventure] fire_resistance 1 0 true
 
 execute at @s if entity @s[y=0,dy=-50] run tp @s -10000 64 0
 
+execute if score @s musicCategory matches 1 run scoreboard players set @s musicCategory 2
+
 execute if entity @s[gamemode=!creative] if predicate utilities:is_sneaking unless entity @s[nbt={Inventory:[{tag:{menuToggle:1b}}]}] run function kitpvp:interface/menus/give/main-menu-display
 function kitpvp:interface/menus/main-menu/tick

@@ -12,7 +12,10 @@ data merge storage music {Categories: []}
 """
 
 for i, category in enumerate(data["categories"]):
-    string += f'data modify storage music Categories append value {{Name: "{category["name"]}", DisplayName: "{category["displayName"]}", Songs: []}}\n'
+    displayNames = ""
+    if category["displayNames"]:
+        displayNames = f'DisplayNames: true, '
+    string += f'data modify storage music Categories append value {{Name: "{category["name"]}", {displayNames}Songs: []}}\n'
     for song in category["songs"]:
         timeStr = song["duration"].split(":")
         time = (int(timeStr[0]) * 60 + int(timeStr[1])) * 20

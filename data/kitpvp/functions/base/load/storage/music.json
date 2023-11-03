@@ -1,200 +1,200 @@
 {
 	"categories": [
 		{
-			"displayName": "idk",
-			"name": "idk",
+			"name": "game",
+			"displayNames": true,
 			"songs": [
 				{
-					"displayName": "idk1",
-					"name": "idk1",
-					"duration": "3:37",
+					"name": "35",
+					"displayName": "35",
+					"duration": "2:07",
 					"volume": 1
 				},
 				{
-					"displayName": "idk2",
-					"name": "idk2",
-					"duration": "2:47",
+					"name": "40",
+					"displayName": "40",
+					"duration": "3:39",
 					"volume": 1
 				},
 				{
-					"displayName": "idk3",
-					"name": "idk3",
+					"name": "43",
+					"displayName": "43",
+					"duration": "2:40",
+					"volume": 1
+				},
+				{
+					"name": "44",
+					"displayName": "44",
+					"duration": "4:24",
+					"volume": 1
+				},
+				{
+					"name": "beginning",
+					"displayName": "beginning",
+					"duration": "4:28",
+					"volume": 1
+				},
+				{
+					"name": "blewtoof",
+					"displayName": "blewtoof",
+					"duration": "3:39",
+					"volume": 1
+				},
+				{
+					"name": "dreamcd",
+					"displayName": "dreamcd",
+					"duration": "3:41",
+					"volume": 1
+				},
+				{
+					"name": "fish_fear_me",
+					"displayName": "fish fear me",
+					"duration": "3:39",
+					"volume": 1
+				},
+				{
+					"name": "hotwheels",
+					"displayName": "hotwheels",
+					"duration": "4:14",
+					"volume": 1
+				},
+				{
+					"name": "ford_escort_mk3",
+					"displayName": "ford escort mk3",
+					"duration": "5:19",
+					"volume": 1
+				},
+				{
+					"name": "idk14",
+					"displayName": "idk 14",
 					"duration": "2:39",
 					"volume": 1
 				},
 				{
-					"displayName": "idk4",
-					"name": "idk4",
-					"duration": "1:48",
-					"volume": 1
-				},
-				{
-					"displayName": "idk5",
-					"name": "idk5",
-					"duration": "2:47",
-					"volume": 1
-				},
-				{
-					"displayName": "idk6",
-					"name": "idk6",
+					"name": "lol1",
+					"displayName": "lol 1",
 					"duration": "2:52",
 					"volume": 1
 				},
 				{
-					"displayName": "idk12",
-					"name": "idk12",
-					"duration": "1:23",
-					"volume": 1
-				},
-				{
-					"displayName": "idk14",
-					"name": "idk14",
-					"duration": "2:39",
-					"volume": 1
-				}
-			]
-		},
-		{
-			"displayName": "Ultrakill",
-			"name": "ultrakill",
-			"songs": [
-				{
-					"displayName": "Ultrakill 1",
-					"name": "ultrakill1",
-					"duration": "2:44",
-					"volume": 1
-				},
-				{
-					"displayName": "Ultrakill 2",
-					"name": "ultrakill2",
-					"duration": "2:28",
-					"volume": 1
-				},
-				{
-					"displayName": "Ultrakill 3",
-					"name": "ultrakill3",
-					"duration": "2:51",
-					"volume": 1
-				},
-				{
-					"displayName": "Weo Prime",
-					"name": "weo_prime",
-					"duration": "4:45",
-					"volume": 1
-				},
-				{
-					"displayName": "o/♀",
 					"name": "man_with_lantern",
+					"displayName": "o/♀",
 					"duration": "4:44",
 					"volume": 1
-				}
-			]
-		},
-		{
-			"displayName": "Jungle",
-			"name": "jungle",
-			"songs": [
-				{
-					"displayName": "Jungle 1",
-					"name": "jungle1",
-					"duration": "3:39",
-					"volume": 0.5
 				},
 				{
-					"displayName": "Jungle 2",
-					"name": "jungle2",
-					"duration": "1:55",
-					"volume": 0.5
-				},
-				{
-					"displayName": "Jungle 3",
-					"name": "jungle3",
-					"duration": "2:40",
-					"volume": 0.7
-				},
-				{
-					"displayName": "Jungle 4",
-					"name": "jungle4",
-					"duration": "3:28",
-					"volume": 0.7
-				},
-				{
-					"displayName": "Jungle 5",
-					"name": "jungle5",
-					"duration": "3:36",
-					"volume": 0.7
-				},
-				{
-					"displayName": "Jungle 6",
-					"name": "jungle6",
-					"duration": "4:24",
-					"volume": 0.7
-				},
-				{
-					"displayName": "Breakcore 1",
-					"name": "breakcore1",
-					"duration": "2:46",
-					"volume": 0.5
-				},
-				{
-					"displayName": "Classic Jungle 1",
-					"name": "classic_jungle_1",
-					"duration": "3:24",
-					"volume": 0.8
-				},
-				{
-					"displayName": "Classic Jungle 2",
-					"name": "classic_jungle_2",
-					"duration": "3:29",
-					"volume": 0.8
-				},
-				{
-					"displayName": "Ford Escort MK3",
-					"name": "ford_escort_mk3",
-					"duration": "5:21",
+					"name": "low_graphics",
+					"displayName": "low graphics",
+					"duration": "3:10",
 					"volume": 1
 				},
 				{
-					"displayName": "Wet",
+					"name": "tgxjhnbfjhsanbf",
+					"displayName": "tgxjhnbfjhsanbf",
+					"duration": "4:06",
+					"volume": 1
+				},
+				{
+					"name": "tick",
+					"displayName": "tick",
+					"duration": "3:13",
+					"volume": 1
+				},
+				{
+					"name": "uplevel_prime",
+					"displayName": "uplevel prime",
+					"duration": "4:00",
+					"volume": 1
+				},
+				{
+					"name": "vaca",
+					"displayName": "VACA",
+					"duration": "2:34",
+					"volume": 1
+				},
+				{
+					"name": "weo_prime",
+					"displayName": "weo prime",
+					"duration": "4:43",
+					"volume": 1
+				},
+				{
 					"name": "wet",
+					"displayName": "wet",
 					"duration": "4:34",
 					"volume": 1
 				}
 			]
 		},
 		{
-			"displayName": "Techno House",
-			"name": "technohouse",
+			"name": "menu",
+			"displayNames": false,
 			"songs": [
 				{
-					"displayName": "1",
-					"name": "1",
-					"duration": "2:36",
+					"name": "40_menu",
+					"displayName": "-",
+					"duration": "3:15",
 					"volume": 1
 				},
 				{
-					"displayName": "3 Scarface",
-					"name": "3-scarface",
-					"duration": "2:46",
+					"name": "43_menu",
+					"displayName": "-",
+					"duration": "2:22",
 					"volume": 1
 				},
 				{
-					"displayName": "9999999999",
-					"name": "9999999999",
-					"duration": "4:11",
-					"volume": 1
+					"name": "autistic_beach",
+					"displayName": "-",
+					"duration": "3:34",
+					"volume": 0.7
 				},
 				{
-					"displayName": "HM 1",
-					"name": "hm-1",
-					"duration": "2:38",
-					"volume": 1
+					"name": "dreamcd2",
+					"displayName": "-",
+					"duration": "2:59",
+					"volume": 0.7
 				},
 				{
-					"displayName": "tudsgusnrvnbuydh",
-					"name": "tudsgusnrvnbuydh",
-					"duration": "4:06",
-					"volume": 1
+					"name": "idk1",
+					"displayName": "-",
+					"duration": "3:33",
+					"volume": 0.8
+				},
+				{
+					"name": "idk4",
+					"displayName": "-",
+					"duration": "1:47",
+					"volume": 0.8
+				},
+				{
+					"name": "idk5",
+					"displayName": "-",
+					"duration": "2:47",
+					"volume": 0.8
+				},
+				{
+					"name": "idk6",
+					"displayName": "-",
+					"duration": "2:52",
+					"volume": 0.8
+				},
+				{
+					"name": "idk8",
+					"displayName": "-",
+					"duration": "2:47",
+					"volume": 0.8
+				},
+				{
+					"name": "women_want_me",
+					"displayName": "-",
+					"duration": "4:02",
+					"volume": 0.6
+				},
+				{
+					"name": "zamn",
+					"displayName": "-",
+					"duration": "2:18",
+					"volume": 0.6
 				}
 			]
 		}
