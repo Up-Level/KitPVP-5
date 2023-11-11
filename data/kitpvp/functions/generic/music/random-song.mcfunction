@@ -1,5 +1,5 @@
-execute if score @s musicCategory matches 1 run data modify storage __temp__ MusicCategory set from storage music Categories[0]
-execute if score @s musicCategory matches 2 run data modify storage __temp__ MusicCategory set from storage music Categories[1]
+execute if entity @s[tag=inGame,tag=ingameMusic] run data modify storage __temp__ MusicCategory set from storage music Categories[0]
+execute if entity @s[tag=!inGame,tag=menuMusic] run data modify storage __temp__ MusicCategory set from storage music Categories[1]
 
 execute store result score categoryLength temp run data get storage __temp__ MusicCategory.Songs
 scoreboard players remove categoryLength temp 1

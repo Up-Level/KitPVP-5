@@ -2,7 +2,8 @@ execute if score gamemodeActive info matches 1 run function kitpvp:gamemode/tick
 
 execute positioned -10000 64 0 as @a[tag=!inGame,distance=..250] run function kitpvp:base/tick/tick-spawn
 
-execute as @a[scores={musicCategory=1..}] run function kitpvp:generic/music/player-tick
+execute as @a[tag=ingameMusic,tag=inGame] run function kitpvp:generic/music/player-tick
+execute as @a[tag=menuMusic,tag=!inGame] run function kitpvp:generic/music/player-tick
 
 execute as @e[type=#kitpvp:has_owner,tag=!playerEntity,tag=!dontCheck] run function kitpvp:entity/player/internal/generic-new
 

@@ -12,6 +12,3 @@ execute if score map info matches 11 run function kitpvp:map/maps/11-cave/clone
 execute if score map info matches 12 run function kitpvp:map/maps/12-enchanted-forest/clone
 execute if score map info matches 13 run function kitpvp:map/maps/13-weo-circuit/clone
 execute if score map info matches 14 run function kitpvp:map/maps/14-the-cathedral/clone
-
-
-function kitpvp:interface/start-postmap
