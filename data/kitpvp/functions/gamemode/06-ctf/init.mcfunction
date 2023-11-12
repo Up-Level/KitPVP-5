@@ -7,9 +7,9 @@ function kitpvp:gamemode/utility/bossbar
 tellraw @a[tag=inGame] [{"text":"Gamemode: Capture the Flag","color": "gold","italic": true}, {"text": "\nBe the first to Capture ","italic": false}, {"storage": "current-gamemode","nbt": "Gamemode.Settings.Captures","italic": false}, {"text":" flags.","italic": false}]
 
 # Create additional scoreboards as required
-execute store result score maxCaptures gm.general run data get storage gamemode CurrentGamemode.Settings.Captures
+execute store result score maxCaptures gm.general run data get storage gamemodes CurrentGamemode.Settings.Captures
 
-execute store result score captureTime gm.general run data get storage gamemode CurrentGamemode.Settings.CaptureTime
+execute store result score captureTime gm.general run data get storage gamemodes CurrentGamemode.Settings.CaptureTime
 scoreboard players operation captureTime gm.general *= #20 mathf.const
 
 scoreboard objectives remove gm.capture-progress

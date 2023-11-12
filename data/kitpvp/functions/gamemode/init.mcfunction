@@ -58,12 +58,12 @@ scoreboard objectives add gm.sidebar dummy
 #declare score_holder totalRounds
 #declare score_holder round
 
-execute store result score totalRounds gm.general run data get storage gamemode CurrentGamemode.Settings.Rounds
+execute store result score totalRounds gm.general run data get storage gamemodes CurrentGamemode.Settings.Rounds
 scoreboard players set round gm.general 0
 execute store result score killY gm.general run data get storage maps CurrentMap.KillY
 
 # Assign players with a team if required and they haven't manually selected one
-execute if data storage gamemode CurrentGamemode.Teams as @a[tag=inGame,team=,sort=random] run function kitpvp:generic/assign-team
+execute if data storage gamemodes CurrentGamemode.Teams as @a[tag=inGame,team=,sort=random] run function kitpvp:generic/assign-team
 
 # Start music
 scoreboard players set @a remainingLength -20
