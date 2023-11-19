@@ -14,6 +14,8 @@ execute if score @s entity.type matches 13 at @s run function kitpvp:entity/play
 execute if score @s entity.type matches 14 at @s run function kitpvp:entity/player/custom/014-banner/tick
 execute if score @s entity.type matches 15 at @s run function kitpvp:entity/player/custom/015-anvil/tick
 
+#execute if score @s entity.type matches 999 at @s run function kitpvp:entity/player/custom/999-ability-tracker/tick
+
 execute if score @s entity.type matches -1 at @s run function kitpvp:entity/player/generic/001-arrow/tick
 execute if score @s entity.type matches -2 at @s run function kitpvp:entity/player/generic/002-spectral-arrow/tick
 execute if score @s entity.type matches -3 at @s run function kitpvp:entity/player/generic/003-item/tick

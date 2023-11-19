@@ -11,37 +11,37 @@ tag @a remove capturingGreenFlag
 tag @a remove capturingYellowFlag
 
 # Summon Flags
-execute if data storage current-map Map.Gamemodes.6.RedSpawn run summon marker 0 0 0 {Tags:["redCtfSpawn","ctfSpawn"]}
-execute if data storage current-map Map.Gamemodes.6.RedSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Glowing:1b,DisabledSlots:4144959,Tags:["flag", "flagRed"],ArmorItems:[{},{},{},{id:"minecraft:red_glazed_terracotta",Count:1b}]}
-execute if data storage current-map Map.Gamemodes.6.RedSpawn as @e[tag=redCtfSpawn,limit=1] run data modify entity @s Pos set from storage current-map Map.Gamemodes.6.RedSpawn
+execute if data storage maps CurrentMap.Gamemodes.6.RedSpawn run summon marker 0 0 0 {Tags:["redCtfSpawn","ctfSpawn"]}
+execute if data storage maps CurrentMap.Gamemodes.6.RedSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Glowing:1b,DisabledSlots:4144959,Tags:["flag", "flagRed"],ArmorItems:[{},{},{},{id:"minecraft:red_glazed_terracotta",Count:1b}]}
+execute if data storage maps CurrentMap.Gamemodes.6.RedSpawn as @e[tag=redCtfSpawn,limit=1] run data modify entity @s Pos set from storage maps CurrentMap.Gamemodes.6.RedSpawn
 tp @e[tag=flagRed] @e[tag=redCtfSpawn,limit=1]
 team join visualRed @e[tag=flagRed]
 
-execute if data storage current-map Map.Gamemodes.6.BlueSpawn run summon marker 0 0 0 {Tags:["blueCtfSpawn","ctfSpawn"]}
-execute if data storage current-map Map.Gamemodes.6.BlueSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Glowing:1b,DisabledSlots:4144959,Tags:["flag", "flagBlue"],ArmorItems:[{},{},{},{id:"minecraft:blue_glazed_terracotta",Count:1b}]}
-execute if data storage current-map Map.Gamemodes.6.BlueSpawn as @e[tag=blueCtfSpawn,limit=1] run data modify entity @s Pos set from storage current-map Map.Gamemodes.6.BlueSpawn
+execute if data storage maps CurrentMap.Gamemodes.6.BlueSpawn run summon marker 0 0 0 {Tags:["blueCtfSpawn","ctfSpawn"]}
+execute if data storage maps CurrentMap.Gamemodes.6.BlueSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Glowing:1b,DisabledSlots:4144959,Tags:["flag", "flagBlue"],ArmorItems:[{},{},{},{id:"minecraft:blue_glazed_terracotta",Count:1b}]}
+execute if data storage maps CurrentMap.Gamemodes.6.BlueSpawn as @e[tag=blueCtfSpawn,limit=1] run data modify entity @s Pos set from storage maps CurrentMap.Gamemodes.6.BlueSpawn
 tp @e[tag=flagBlue] @e[tag=blueCtfSpawn,limit=1]
 team join visualBlue @e[tag=flagBlue]
 
-execute if data storage current-map Map.Gamemodes.6.GreenSpawn run summon marker 0 0 0 {Tags:["greenCtfSpawn","ctfSpawn"]}
-execute if data storage current-map Map.Gamemodes.6.GreenSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Glowing:1b,DisabledSlots:4144959,Tags:["flag", "flagGreen"],ArmorItems:[{},{},{},{id:"minecraft:green_glazed_terracotta",Count:1b}]}
-execute if data storage current-map Map.Gamemodes.6.GreenSpawn as @e[tag=greenCtfSpawn,limit=1] run data modify entity @s Pos set from storage current-map Map.Gamemodes.6.GreenSpawn
+execute if data storage maps CurrentMap.Gamemodes.6.GreenSpawn run summon marker 0 0 0 {Tags:["greenCtfSpawn","ctfSpawn"]}
+execute if data storage maps CurrentMap.Gamemodes.6.GreenSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Glowing:1b,DisabledSlots:4144959,Tags:["flag", "flagGreen"],ArmorItems:[{},{},{},{id:"minecraft:green_glazed_terracotta",Count:1b}]}
+execute if data storage maps CurrentMap.Gamemodes.6.GreenSpawn as @e[tag=greenCtfSpawn,limit=1] run data modify entity @s Pos set from storage maps CurrentMap.Gamemodes.6.GreenSpawn
 tp @e[tag=flagGreen] @e[tag=greenCtfSpawn,limit=1]
 team join visualGreen @e[tag=flagGreen]
 
-execute if data storage current-map Map.Gamemodes.6.YellowSpawn run summon marker 0 0 0 {Tags:["yellowCtfSpawn","ctfSpawn"]}
-execute if data storage current-map Map.Gamemodes.6.YellowSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Glowing:1b,DisabledSlots:4144959,Tags:["flag", "flagYellow"],ArmorItems:[{},{},{},{id:"minecraft:yellow_glazed_terracotta",Count:1b}]}
-execute if data storage current-map Map.Gamemodes.6.YellowSpawn as @e[tag=yellowCtfSpawn,limit=1] run data modify entity @s Pos set from storage current-map Map.Gamemodes.6.YellowSpawn
+execute if data storage maps CurrentMap.Gamemodes.6.YellowSpawn run summon marker 0 0 0 {Tags:["yellowCtfSpawn","ctfSpawn"]}
+execute if data storage maps CurrentMap.Gamemodes.6.YellowSpawn run summon armor_stand 0 0 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Glowing:1b,DisabledSlots:4144959,Tags:["flag", "flagYellow"],ArmorItems:[{},{},{},{id:"minecraft:yellow_glazed_terracotta",Count:1b}]}
+execute if data storage maps CurrentMap.Gamemodes.6.YellowSpawn as @e[tag=yellowCtfSpawn,limit=1] run data modify entity @s Pos set from storage maps CurrentMap.Gamemodes.6.YellowSpawn
 tp @e[tag=flagYellow] @e[tag=yellowCtfSpawn,limit=1]
 team join visualYellow @e[tag=flagYellow]
 
 # Add round wins to everyone who won
 execute if score round gm.general matches 1.. run function kitpvp:gamemode/06-ctf/grant-round-win
 
-execute if data storage current-map Map.Gamemodes.6.RedSpawn run scoreboard players set Red gm.sidebar 0
-execute if data storage current-map Map.Gamemodes.6.BlueSpawn run scoreboard players set Blue gm.sidebar 0
-execute if data storage current-map Map.Gamemodes.6.GreenSpawn run scoreboard players set Green gm.sidebar 0
-execute if data storage current-map Map.Gamemodes.6.YellowSpawn run scoreboard players set Yellow gm.sidebar 0
+execute if data storage maps CurrentMap.Gamemodes.6.RedSpawn run scoreboard players set Red gm.sidebar 0
+execute if data storage maps CurrentMap.Gamemodes.6.BlueSpawn run scoreboard players set Blue gm.sidebar 0
+execute if data storage maps CurrentMap.Gamemodes.6.GreenSpawn run scoreboard players set Green gm.sidebar 0
+execute if data storage maps CurrentMap.Gamemodes.6.YellowSpawn run scoreboard players set Yellow gm.sidebar 0
 
 # Display info saying who is currently winning.
 execute if score red gm.rounds-copy matches 0 run data merge storage winning-team {Winner:"{\"text\":\"Red Team\",\"color\":\"red\"}"}
