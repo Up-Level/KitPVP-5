@@ -1,1 +1,1 @@
-execute if score valid itemData matches 2 run scoreboard players remove charge.amount itemData 1
+execute if score valid itemData matches 1 run scoreboard players remove charge.amount itemData 1
