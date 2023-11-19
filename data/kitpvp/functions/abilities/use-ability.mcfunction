@@ -24,7 +24,7 @@ execute if score valid itemData matches 1.. run function kitpvp:abilities/effect
 
 
 function kitpvp:entity/player/custom/999-ability-tracker/get
-execute if score valid itemData matches 1 if score isHotbar itemData matches 1 run function kitpvp:abilities/item-data/set/data
+execute if score valid itemData matches 1 run function kitpvp:abilities/item-data/set/data
 
 #execute if score valid itemData matches 1 if score isHotbar itemData matches 1 run function kitpvp:abilities/item-data/set/mainhand-data
 #execute if score valid itemData matches 1 if score isHotbar itemData matches 0 run function kitpvp:abilities/item-data/set/offhand-data
