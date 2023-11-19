@@ -14,4 +14,4 @@ execute if score valid itemData matches 1 store result score charge.amount itemD
 
 execute if score valid itemData matches 1 store result score timestamp itemData run data get storage kitpvp:item-data abilityData.Timestamp
 
-execute if score valid itemData matches 1 store result score hudId itemData run data get storage kitpvp:item-data abilityData.Ability.HudId
+execute if score valid itemData matches 1 store result score hudId itemData run data get storage kitpvp:item-data abilityData.HudId
