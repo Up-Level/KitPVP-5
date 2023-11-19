@@ -1,0 +1,1 @@
+$data modify entity @e[tag=found] data.abilities[{id:$(Id)}] set from storage kitpvp:item-data item
