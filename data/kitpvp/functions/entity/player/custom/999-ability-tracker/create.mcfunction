@@ -1,4 +1,4 @@
-summon marker 0 64 10000 {Tags:["temp", "playerEntity"]}
+summon marker 0 64 10000 {Tags:["temp", "playerEntity"],data:{abilities:[]}}
 
 scoreboard players set @e[tag=temp] entity.type 999
 scoreboard players set @e[tag=temp] entity.state 0
