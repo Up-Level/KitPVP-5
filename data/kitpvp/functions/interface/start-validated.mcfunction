@@ -1,3 +1,6 @@
+# Clone map
+function kitpvp:map/load-unload/clone-map
+
 # Countdown
 scoreboard players set countdown temp 3
 

@@ -7,6 +7,9 @@ tag @a[scores={ready=1}] add inGame
 
 scoreboard players set @a bin.deadGamemode 0
 
+# Reset menu music
+execute as @a[tag=inGame] run function kitpvp:generic/music/skip-song
+
 execute as @a[tag=inGame,scores={inMenu=1..}] run function kitpvp:interface/menus/main-menu/disable
 execute as @a[tag=inGame] run function kitpvp:loadout/edit/edit/revoke-edit
 
@@ -55,12 +58,12 @@ scoreboard objectives add gm.sidebar dummy
 #declare score_holder totalRounds
 #declare score_holder round
 
-execute store result score totalRounds gm.general run data get storage current-gamemode Gamemode.Settings.Rounds
+execute store result score totalRounds gm.general run data get storage gamemodes CurrentGamemode.Settings.Rounds
 scoreboard players set round gm.general 0
-execute store result score killY gm.general run data get storage current-map Map.KillY
+execute store result score killY gm.general run data get storage maps CurrentMap.KillY
 
 # Assign players with a team if required and they haven't manually selected one
-execute if data storage current-gamemode Gamemode.Teams as @a[tag=inGame,team=,sort=random] run function kitpvp:generic/assign-team
+execute if data storage gamemodes CurrentGamemode.Teams as @a[tag=inGame,team=,sort=random] run function kitpvp:generic/assign-team
 
 # Start music
 scoreboard players set @a remainingLength -20

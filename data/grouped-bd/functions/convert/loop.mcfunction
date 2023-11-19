@@ -22,8 +22,8 @@ execute store result storage __temp__ Pos[1] double 1 run scoreboard players get
 execute store result storage __temp__ Pos[2] double 1 run scoreboard players get worldZ temp
 data modify entity @e[tag=bMarker,limit=1] Pos set from storage __temp__ Pos
 
-execute at @e[tag=bMarker] unless block ~ ~ ~ #kitpvp:invalid_block_display at @e[tag=blockMidpoint] run function kitpvp:generic/block-display/private/block
+execute at @e[tag=bMarker] unless block ~ ~ ~ #kitpvp:invalid_block_display at @e[tag=blockMidpoint] run function grouped-bd:convert/block
 
 scoreboard players add i temp 1
 
-execute if score i temp < iterations temp run function kitpvp:generic/block-display/private/loop
+execute if score i temp < iterations temp run function grouped-bd:convert/loop
