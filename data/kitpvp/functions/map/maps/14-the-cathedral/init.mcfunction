@@ -1,5 +1,10 @@
 function kitpvp:map/maps/14-the-cathedral/spawns
 
+# Teleporters
+scoreboard objectives remove gm.teleport-cooldown
+scoreboard objectives add gm.teleport-cooldown dummy
+scoreboard players set @a[tag=inGame] gm.teleport-cooldown 0
+
 # Pentagram
 summon minecraft:item_display 0 36.6875 3 {item_display:"head",item:{id:"stone_button",Count:1,tag:{CustomModelData:10}},transformation:[1.000f, 0.000f, 0.000f,0.000f,0.000f, -1.000f, -0.000f,-0.500f,0.000f, 0.000f, -1.000f,0.000f,0.000f, 0.000f, 0.000f,1.000f],brightness:{block:10},Tags:["mapEntity"]}
 

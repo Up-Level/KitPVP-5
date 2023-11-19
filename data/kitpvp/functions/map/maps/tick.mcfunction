@@ -1,0 +1,1 @@
+execute if score map info matches 14 run function kitpvp:map/maps/14-the-cathedral/tick
