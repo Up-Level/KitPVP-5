@@ -8,11 +8,15 @@ execute if score SpendType abilityData matches 1 store result score CD.Amount ab
 execute if score SpendType abilityData matches 1 store result score Charge.Max abilityData run data get storage kitpvp:ability-data abilityData.Charge.Max
 execute if score SpendType abilityData matches 1 store result score Charge.Amount abilityData run data get storage kitpvp:ability-data abilityData.Charge.Amount
 
-execute store result score HudID abilityData run data get storage kitpvp:ability-data abilityData.HudId
+#execute store result score HudID abilityData run data get storage kitpvp:ability-data abilityData.HudId
 
 execute store result score newTimestamp abilityData run time query gametime
 
-#function kitpvp:abilities/ability-data/set/data-macro with storage kitpvp:ability-data
+tag @e[tag=abilityTracker] remove abilityTracker
+function kitpvp:entity/player/custom/999-ability-tracker/get
+tag @e[tag=found] add abilityTracker
+
+function kitpvp:abilities/ability-data/register-macro with storage kitpvp:ability-data
 
 scoreboard players operation id temp = HudID abilityData
 
