@@ -22,6 +22,7 @@ tag @e[tag=found] add abilityTracker
 function kitpvp:abilities/ability-data/register-macro with storage kitpvp:ability-data
 
 scoreboard players operation id temp = HudID abilityData
+execute store result score icon temp run data get storage kitpvp:ability-data abilityData.HudIcon 1
 
 scoreboard players set manual temp 0
 
