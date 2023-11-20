@@ -1,1 +1,1 @@
-execute if score Success itemData matches 1 run function kitpvp:abilities/effects/006-builder/spend
+execute if score Success abilityData matches 1 run function kitpvp:abilities/effects/006-builder/spend

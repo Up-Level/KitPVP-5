@@ -1,20 +1,20 @@
-data modify storage kitpvp:item-data Id set from entity @s SelectedItem.tag.Special.AbilityId
+data modify storage kitpvp:ability-data Id set from entity @s SelectedItem.tag.Special.AbilityId
 
-function kitpvp:abilities/item-data/get/data-macro with storage kitpvp:item-data
+function kitpvp:abilities/item-data/get/data-macro with storage kitpvp:ability-data
 
-execute if data storage kitpvp:item-data abilityData.Effect run scoreboard players set Valid itemData 1
+execute if data storage kitpvp:ability-data abilityData.Effect run scoreboard players set Valid abilityData 1
 
-execute if score Valid itemData matches 1 store result score Effect itemData run data get storage kitpvp:item-data abilityData.Effect
+execute if score Valid abilityData matches 1 store result score Effect abilityData run data get storage kitpvp:ability-data abilityData.Effect
 
 
-execute if score Valid itemData matches 1 store result score SpendType itemData run data get storage kitpvp:item-data abilityData.SpendType
+execute if score Valid abilityData matches 1 store result score SpendType abilityData run data get storage kitpvp:ability-data abilityData.SpendType
 
-execute if score Valid itemData matches 1 if score SpendType itemData matches 1 store result score CD.Max itemData run data get storage kitpvp:item-data abilityData.CD.Max
-execute if score Valid itemData matches 1 if score SpendType itemData matches 1 store result score CD.Amount itemData run data get storage kitpvp:item-data abilityData.CD.Amount
+execute if score Valid abilityData matches 1 if score SpendType abilityData matches 1 store result score CD.Max abilityData run data get storage kitpvp:ability-data abilityData.CD.Max
+execute if score Valid abilityData matches 1 if score SpendType abilityData matches 1 store result score CD.Amount abilityData run data get storage kitpvp:ability-data abilityData.CD.Amount
 
-execute if score Valid itemData matches 1 if score SpendType itemData matches 1 store result score Charge.Max itemData run data get storage kitpvp:item-data abilityData.Charge.Max
-execute if score Valid itemData matches 1 if score SpendType itemData matches 1 store result score Charge.Amount itemData run data get storage kitpvp:item-data abilityData.Charge.Amount
+execute if score Valid abilityData matches 1 if score SpendType abilityData matches 1 store result score Charge.Max abilityData run data get storage kitpvp:ability-data abilityData.Charge.Max
+execute if score Valid abilityData matches 1 if score SpendType abilityData matches 1 store result score Charge.Amount abilityData run data get storage kitpvp:ability-data abilityData.Charge.Amount
 
-execute if score Valid itemData matches 1 store result score oldTimestamp itemData run data get storage kitpvp:item-data abilityData.Timestamp
+execute if score Valid abilityData matches 1 store result score oldTimestamp abilityData run data get storage kitpvp:ability-data abilityData.Timestamp
 
-execute if score Valid itemData matches 1 store result score HudID itemData run data get storage kitpvp:item-data abilityData.HudId
+execute if score Valid abilityData matches 1 store result score HudID abilityData run data get storage kitpvp:ability-data abilityData.HudId

@@ -3,7 +3,7 @@
     "function": "minecraft:copy_nbt",
     "source": {
       "type": "minecraft:storage",
-      "source": "kitpvp:item-data"
+      "source": "kitpvp:ability-data"
     },
     "ops": [
       {

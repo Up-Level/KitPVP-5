@@ -2,9 +2,9 @@
 
 data merge storage __temp__ {}
 
-#declare storage kitpvp:item-data
+#declare storage kitpvp:ability-data
 
-data merge storage kitpvp:item-data {}
+data merge storage kitpvp:ability-data {}
 
 #declare storage kitpvp:action-bar
 

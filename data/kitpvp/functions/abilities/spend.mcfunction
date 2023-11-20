@@ -1,1 +1,1 @@
-execute if score Valid itemData matches 1 if score SpendType itemData matches 1 run scoreboard players remove Charge.Amount itemData 1
+execute if score Valid abilityData matches 1 if score SpendType abilityData matches 1 run scoreboard players remove Charge.Amount abilityData 1

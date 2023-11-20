@@ -1,1 +1,1 @@
-$data modify entity @e[limit=1,tag=abilityTracker] data.abilities[{id:$(Id)}].data set from storage kitpvp:item-data abilityData
+$data modify entity @e[limit=1,tag=abilityTracker] data.abilities[{id:$(Id)}].data set from storage kitpvp:ability-data abilityData

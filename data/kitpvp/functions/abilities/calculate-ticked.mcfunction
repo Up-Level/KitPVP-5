@@ -1,32 +1,32 @@
 # Set Time
-scoreboard players operation timePassed itemData = newTimestamp itemData
-scoreboard players operation timePassed itemData -= oldTimestamp itemData
+scoreboard players operation timePassed abilityData = newTimestamp abilityData
+scoreboard players operation timePassed abilityData -= oldTimestamp abilityData
 
 # Max time passed allowed
-scoreboard players operation timePassedReal itemData = timePassed itemData
+scoreboard players operation timePassedReal abilityData = timePassed abilityData
 
-scoreboard players operation temp itemData = Charge.Max itemData
-scoreboard players operation temp itemData -= Charge.Amount itemData
-scoreboard players operation temp itemData *= CD.Max itemData
+scoreboard players operation temp abilityData = Charge.Max abilityData
+scoreboard players operation temp abilityData -= Charge.Amount abilityData
+scoreboard players operation temp abilityData *= CD.Max abilityData
 
-scoreboard players operation temp itemData -= CD.Amount itemData
+scoreboard players operation temp abilityData -= CD.Amount abilityData
 
-scoreboard players operation timePassed itemData < temp itemData
+scoreboard players operation timePassed abilityData < temp abilityData
 
 # Set Charge Amount
 
-scoreboard players operation temp itemData = CD.Amount itemData
+scoreboard players operation temp abilityData = CD.Amount abilityData
 
-scoreboard players operation temp itemData += timePassed itemData
-scoreboard players operation temp itemData /= CD.Max itemData
+scoreboard players operation temp abilityData += timePassed abilityData
+scoreboard players operation temp abilityData /= CD.Max abilityData
 
-scoreboard players operation Charge.Amount itemData += temp itemData
-scoreboard players operation Charge.Amount itemData < Charge.Max itemData
+scoreboard players operation Charge.Amount abilityData += temp abilityData
+scoreboard players operation Charge.Amount abilityData < Charge.Max abilityData
 
 # Set Cooldown Time
-scoreboard players operation temp itemData = CD.Amount itemData
+scoreboard players operation temp abilityData = CD.Amount abilityData
 
-scoreboard players operation temp itemData += timePassed itemData
-scoreboard players operation temp itemData %= CD.Max itemData
+scoreboard players operation temp abilityData += timePassed abilityData
+scoreboard players operation temp abilityData %= CD.Max abilityData
 
-scoreboard players operation CD.Amount itemData = temp itemData
+scoreboard players operation CD.Amount abilityData = temp abilityData

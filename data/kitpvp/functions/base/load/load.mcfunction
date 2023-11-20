@@ -44,8 +44,8 @@ scoreboard objectives add inMenu dummy
 scoreboard objectives remove menuTriggers
 scoreboard objectives add menuTriggers trigger
 
-scoreboard objectives remove itemData
-scoreboard objectives add itemData dummy
+scoreboard objectives remove abilityData
+scoreboard objectives add abilityData dummy
 
 scoreboard objectives setdisplay list wins
 
