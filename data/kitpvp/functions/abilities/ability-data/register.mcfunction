@@ -28,5 +28,5 @@ scoreboard players operation cd.time temp = CD.Amount abilityData
 scoreboard players operation count.max temp = Charge.Max abilityData
 scoreboard players operation count.amount temp = Charge.Amount abilityData
 
-function kitpvp:abilities/hud-display/external/update
+function kitpvp:abilities/hud-display/external/assign
 
