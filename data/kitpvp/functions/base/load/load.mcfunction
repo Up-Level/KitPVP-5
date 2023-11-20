@@ -47,6 +47,9 @@ scoreboard objectives add menuTriggers trigger
 scoreboard objectives remove abilityData
 scoreboard objectives add abilityData dummy
 
+scoreboard objectives remove idCounter
+scoreboard objectives add idCounter dummy
+
 scoreboard objectives setdisplay list wins
 
 function kitpvp:base/load/teams-setup
