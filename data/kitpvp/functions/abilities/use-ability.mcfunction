@@ -14,7 +14,7 @@ tag @e[tag=found] add abilityTracker
 execute if score isHotbar abilityData matches 1 run function kitpvp:abilities/item-data/get/mainhand-data
 execute if score isHotbar abilityData matches 0 run function kitpvp:abilities/item-data/get/offhand-data
 
-execute store result score newTimestamp abilityData run time query gametime
+execute if score Valid abilityData matches 1 store result score newTimestamp abilityData run time query gametime
 
 execute if score Valid abilityData matches 1 if score SpendType abilityData matches 1 run function kitpvp:abilities/calculate-ticked
 
@@ -22,10 +22,10 @@ scoreboard players set Success abilityData 0
 execute if score Valid abilityData matches 1 if score SpendType abilityData matches 0 run scoreboard players set Success abilityData 1
 execute if score Valid abilityData matches 1 if score SpendType abilityData matches 1 if score Charge.Amount abilityData matches 1.. run scoreboard players set Success abilityData 1
 
-scoreboard players set Sneaking abilityData 0
-execute if predicate utilities:is_sneaking run scoreboard players set Sneaking abilityData 1
+execute if score Valid abilityData matches 1 run scoreboard players set Sneaking abilityData 0
+execute if score Valid abilityData matches 1 if predicate utilities:is_sneaking run scoreboard players set Sneaking abilityData 1
 
-execute if score Valid abilityData matches 1.. run function kitpvp:abilities/effect
+execute if score Valid abilityData matches 1 run function kitpvp:abilities/effect
 
 execute if score Valid abilityData matches 1 run function kitpvp:abilities/item-data/set/data
 
