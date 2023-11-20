@@ -1,3 +1,4 @@
+data remove storage kitpvp:ability-data Id
 execute store success score Valid abilityData run data modify storage kitpvp:ability-data Id set from entity @s SelectedItem.tag.Special.AbilityId
 
 execute if score Valid abilityData matches 1 run function kitpvp:abilities/item-data/get/data-macro with storage kitpvp:ability-data
