@@ -8,6 +8,8 @@ execute if score SpendType abilityData matches 1 store result score CD.Amount ab
 execute if score SpendType abilityData matches 1 store result score Charge.Max abilityData run data get storage kitpvp:ability-data abilityData.Charge.Max
 execute if score SpendType abilityData matches 1 store result score Charge.Amount abilityData run data get storage kitpvp:ability-data abilityData.Charge.Amount
 
+scoreboard players operation HudID abilityData = counter idCounter
+
 #execute store result score HudID abilityData run data get storage kitpvp:ability-data abilityData.HudId
 
 execute store result score newTimestamp abilityData run time query gametime
