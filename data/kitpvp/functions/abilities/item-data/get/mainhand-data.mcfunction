@@ -1,4 +1,6 @@
 data remove storage kitpvp:ability-data Id
+data remove storage kitpvp:ability-data abiltiyData
+
 data modify storage kitpvp:ability-data Id set from entity @s SelectedItem.tag.Special.AbilityId
 
 execute if data storage kitpvp:ability-data Id run scoreboard players set Valid abilityData 1
