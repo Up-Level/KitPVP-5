@@ -17,7 +17,7 @@ execute if score isHotbar itemData matches 0 run function kitpvp:abilities/item-
 execute if score Valid itemData matches 1 if score SpendType itemData matches 1 run function kitpvp:abilities/calculate-ticked
 
 scoreboard players set Success itemData 0
-execute if score Valid itemData matches 1 if score SpendType itemData matches 1 if score Charge.Amount itemData matches 1.. run scoreboard players set Success itemData 0
+execute if score Valid itemData matches 1 if score SpendType itemData matches 1 if score Charge.Amount itemData matches 1.. run scoreboard players set Success itemData 1
 
 scoreboard players set Sneaking itemData 0
 execute if predicate utilities:is_sneaking run scoreboard players set Sneaking itemData 1
