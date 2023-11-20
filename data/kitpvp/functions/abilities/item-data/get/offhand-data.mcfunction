@@ -2,7 +2,7 @@ data modify storage kitpvp:item-data Id set from entity @s Inventory[{Slot:-106b
 
 function kitpvp:abilities/item-data/get/data-macro with storage kitpvp:item-data
 
-execute if data storage kitpvp:item-data abilityData.Effect run scoreboard players set valid itemData 1
+execute if data storage kitpvp:item-data abilityData.Effect run scoreboard players set Valid itemData 1
 
 execute if score Valid itemData matches 1 store result score Effect itemData run data get storage kitpvp:item-data abilityData.Effect
 

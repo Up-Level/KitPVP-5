@@ -1,6 +1,6 @@
 scoreboard players set @s bin.carrot 0
 
-scoreboard players set valid itemData 0
+scoreboard players set Valid itemData 0
 
 # Check if main or off hand
 # execute store success score isHotbar itemData run data get entity @s SelectedItem.tag.AbilityEffect
