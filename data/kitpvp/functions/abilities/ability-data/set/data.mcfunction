@@ -10,7 +10,7 @@ execute if score SpendType abilityData matches 1 store result storage kitpvp:abi
 
 execute store result storage kitpvp:ability-data abilityData.Timestamp int 1 run scoreboard players get newTimestamp abilityData
 
-function kitpvp:abilities/item-data/set/data-macro with storage kitpvp:ability-data
+function kitpvp:abilities/ability-data/set/data-macro with storage kitpvp:ability-data
 
 scoreboard players operation id temp = HudID abilityData
 

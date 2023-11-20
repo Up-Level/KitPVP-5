@@ -1,0 +1,1 @@
+$give @s minecraft:carrot_on_a_stick{Special:{AbilityId:$(Id)},Unbreakable:1b,ItemType:"ability1",Tags:["Bound"],HideFlags:4,CustomModelData:60,display:{Name:'{"text":"Block Disguise","italic":false}', Lore:['{"text":"Disguise as the block you are standing on.","color":"gray","italic":false}']}} 1

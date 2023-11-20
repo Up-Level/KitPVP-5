@@ -11,8 +11,8 @@ function kitpvp:entity/player/custom/999-ability-tracker/get
 tag @e[tag=found] add abilityTracker
 
 # Run if main or off hand
-execute if score isHotbar abilityData matches 1 run function kitpvp:abilities/item-data/get/mainhand-data
-execute if score isHotbar abilityData matches 0 run function kitpvp:abilities/item-data/get/offhand-data
+execute if score isHotbar abilityData matches 1 run function kitpvp:abilities/ability-data/get/mainhand-data
+execute if score isHotbar abilityData matches 0 run function kitpvp:abilities/ability-data/get/offhand-data
 
 execute if score Valid abilityData matches 0 run return 0
 
@@ -29,7 +29,7 @@ execute if predicate utilities:is_sneaking run scoreboard players set Sneaking a
 
 function kitpvp:abilities/effect
 
-function kitpvp:abilities/item-data/set/data
+function kitpvp:abilities/ability-data/set/data
 
-#execute if score Valid abilityData matches 1 if score isHotbar abilityData matches 1 run function kitpvp:abilities/item-data/set/mainhand-data
-#execute if score Valid abilityData matches 1 if score isHotbar abilityData matches 0 run function kitpvp:abilities/item-data/set/offhand-data
+#execute if score Valid abilityData matches 1 if score isHotbar abilityData matches 1 run function kitpvp:abilities/ability-data/set/mainhand-data
+#execute if score Valid abilityData matches 1 if score isHotbar abilityData matches 0 run function kitpvp:abilities/ability-data/set/offhand-data

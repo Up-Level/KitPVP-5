@@ -7,7 +7,7 @@ execute if data storage kitpvp:ability-data Id run scoreboard players set Valid 
 
 execute if score Valid abilityData matches 0 run return 0
 
-function kitpvp:abilities/item-data/get/data-macro with storage kitpvp:ability-data
+function kitpvp:abilities/ability-data/get/data-macro with storage kitpvp:ability-data
 
 execute unless data storage kitpvp:ability-data abilityData.Effect run scoreboard players set Valid abilityData 0
 
