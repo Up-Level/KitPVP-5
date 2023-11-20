@@ -12,7 +12,8 @@ scoreboard players operation HudID abilityData = counter idCounter
 
 #execute store result score HudID abilityData run data get storage kitpvp:ability-data abilityData.HudId
 
-execute store result score newTimestamp abilityData run time query gametime
+execute store result storage kitpvp:ability-data abilityData int 1 run time query gametime
+
 
 tag @e[tag=abilityTracker] remove abilityTracker
 function kitpvp:entity/player/custom/999-ability-tracker/get
