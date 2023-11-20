@@ -14,7 +14,7 @@ scoreboard players set manual temp 0
 scoreboard players set cd.length temp 360
 scoreboard players set cd.time temp 0
 
-scoreboard players operation count.max temp = charge.max itemData
-scoreboard players operation count.amount temp = charge.amount itemData
+scoreboard players operation count.max temp = Charge.Max itemData
+scoreboard players operation count.amount temp = Charge.Amount itemData
 
 give @s minecraft:carrot_on_a_stick{Unbreakable:1b,ItemType:"ability1",Tags:["Bound"],HideFlags:4,AbilitySlot:1b,AbilityEffect:7b,CustomModelData:30,display:{Name:'{"text":"Smoke Bomb","italic":false}', Lore:['{"text":"Use to throw a smoke bomb.","color":"gray","italic":false}']}} 1
