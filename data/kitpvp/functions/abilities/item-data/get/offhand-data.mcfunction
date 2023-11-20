@@ -1,13 +1,14 @@
-data modify storage kitpvp:ability-data Id set from entity @s Inventory[{Slot:-106b}].tag.Special.AbilityId
+data remove storage kitpvp:ability-data Id
+execute store success score Valid abilityData run data modify storage kitpvp:ability-data Id set from entity @s Inventory[{Slot:-106b}].tag.Special.AbilityId
 
-function kitpvp:abilities/item-data/get/data-macro with storage kitpvp:ability-data
+execute if score Valid abilityData matches 1 run function kitpvp:abilities/item-data/get/data-macro with storage kitpvp:ability-data
 
-execute if data storage kitpvp:ability-data abilityData.Effect run scoreboard players set Valid abilityData 1
+execute if score Valid abilityData matches 1 unless data storage kitpvp:ability-data abilityData.Effect run scoreboard players set Valid abilityData 0
 
 execute if score Valid abilityData matches 1 store result score Effect abilityData run data get storage kitpvp:ability-data abilityData.Effect
 
 
-execute if score Valid abilityData matches 1 store result score SpendType abilityData run data get storage kitpvp:ability-data abilityData.UseType
+execute if score Valid abilityData matches 1 store result score SpendType abilityData run data get storage kitpvp:ability-data abilityData.SpendType
 
 execute if score Valid abilityData matches 1 if score SpendType abilityData matches 1 store result score CD.Max abilityData run data get storage kitpvp:ability-data abilityData.CD.Max
 execute if score Valid abilityData matches 1 if score SpendType abilityData matches 1 store result score CD.Amount abilityData run data get storage kitpvp:ability-data abilityData.CD.Amount
