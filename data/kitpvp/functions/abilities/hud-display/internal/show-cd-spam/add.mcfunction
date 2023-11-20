@@ -5,12 +5,12 @@ data modify storage kitpvp:action-bar text[0] set value '[{"font":"minecraft:hud
 
 
 # Icon
-execute if score id temp matches 1 run data modify storage kitpvp:action-bar text[1] set value '[{"font":"minecraft:hud_item","color":"#4e5c24","text":"a"},{"font":"minecraft:default","translate": "space.-24"}]'
-execute if score id temp matches 2 run data modify storage kitpvp:action-bar text[1] set value '[{"font":"minecraft:hud_item","color":"#4e5c24","text":"b"},{"font":"minecraft:default","translate": "space.-24"}]'
-execute if score id temp matches 3 run data modify storage kitpvp:action-bar text[1] set value '[{"font":"minecraft:hud_item","color":"#4e5c24","text":"c"},{"font":"minecraft:default","translate": "space.-24"}]'
-execute if score id temp matches 4 run data modify storage kitpvp:action-bar text[1] set value '[{"font":"minecraft:hud_item","color":"#4e5c24","text":"d"},{"font":"minecraft:default","translate": "space.-24"}]'
-execute if score cid temp matches 5 run data modify storage kitpvp:action-bar text[1] set value '[{"font":"minecraft:hud_item","color":"#4e5c24","text":"e"},{"font":"minecraft:default","translate": "space.-24"}]'
-execute if score id temp matches 6 run data modify storage kitpvp:action-bar text[1] set value '[{"font":"minecraft:hud_item","color":"#4e5c24","text":"f"},{"font":"minecraft:default","translate": "space.-24"}]'
+execute if score icon temp matches 1 run data modify storage kitpvp:action-bar text[1] set value '[{"font":"minecraft:hud_item","color":"#4e5c24","text":"a"},{"font":"minecraft:default","translate": "space.-24"}]'
+execute if score icon temp matches 2 run data modify storage kitpvp:action-bar text[1] set value '[{"font":"minecraft:hud_item","color":"#4e5c24","text":"b"},{"font":"minecraft:default","translate": "space.-24"}]'
+execute if score icon temp matches 3 run data modify storage kitpvp:action-bar text[1] set value '[{"font":"minecraft:hud_item","color":"#4e5c24","text":"c"},{"font":"minecraft:default","translate": "space.-24"}]'
+execute if score icon temp matches 4 run data modify storage kitpvp:action-bar text[1] set value '[{"font":"minecraft:hud_item","color":"#4e5c24","text":"d"},{"font":"minecraft:default","translate": "space.-24"}]'
+execute if score icon temp matches 5 run data modify storage kitpvp:action-bar text[1] set value '[{"font":"minecraft:hud_item","color":"#4e5c24","text":"e"},{"font":"minecraft:default","translate": "space.-24"}]'
+execute if score icon temp matches 6 run data modify storage kitpvp:action-bar text[1] set value '[{"font":"minecraft:hud_item","color":"#4e5c24","text":"f"},{"font":"minecraft:default","translate": "space.-24"}]'
 
 
 # Cooldown
