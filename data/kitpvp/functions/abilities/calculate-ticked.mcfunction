@@ -1,10 +1,6 @@
 # Set Time
-execute store result score temp itemData run time query gametime
-
-scoreboard players operation timePassed itemData = temp itemData
-scoreboard players operation timePassed itemData -= Timestamp itemData
-
-scoreboard players operation Timestamp itemData = temp itemData
+scoreboard players operation timePassed itemData = newTimestamp itemData
+scoreboard players operation timePassed itemData -= oldTimestamp itemData
 
 # Max time passed allowed
 scoreboard players operation timePassedReal itemData = timePassed itemData

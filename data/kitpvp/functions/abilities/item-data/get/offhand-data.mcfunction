@@ -15,6 +15,6 @@ execute if score Valid itemData matches 1 if score SpendType itemData matches 1 
 execute if score Valid itemData matches 1 if score SpendType itemData matches 1 store result score Charge.Max itemData run data get storage kitpvp:item-data abilityData.Charge.Max
 execute if score Valid itemData matches 1 if score SpendType itemData matches 1 store result score Charge.Amount itemData run data get storage kitpvp:item-data abilityData.Charge.Amount
 
-execute if score Valid itemData matches 1 store result score Timestamp itemData run data get storage kitpvp:item-data abilityData.Timestamp
+execute if score Valid itemData matches 1 store result score oldTimestamp itemData run data get storage kitpvp:item-data abilityData.Timestamp
 
 execute if score Valid itemData matches 1 store result score HudID itemData run data get storage kitpvp:item-data abilityData.HudId

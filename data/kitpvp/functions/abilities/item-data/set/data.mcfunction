@@ -8,7 +8,7 @@ execute if score SpendType itemData matches 1 store result storage kitpvp:item-d
 execute if score SpendType itemData matches 1 store result storage kitpvp:item-data abilityData.Charge.Max int 1 run scoreboard players get Charge.Max itemData
 execute if score SpendType itemData matches 1 store result storage kitpvp:item-data abilityData.Charge.Amount int 1 run scoreboard players get Charge.Amount itemData
 
-execute store result storage kitpvp:item-data abilityData.Timestamp int 1 run scoreboard players get Timestamp itemData
+execute store result storage kitpvp:item-data abilityData.Timestamp int 1 run scoreboard players get newTimestamp itemData
 
 function kitpvp:abilities/item-data/set/data-macro with storage kitpvp:item-data
 
