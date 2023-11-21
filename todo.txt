@@ -1,7 +1,5 @@
 Make saving better with naming and more slots ande add preset saves.
 
-Weapon
-Change crossbow
 
 Armor
 Change Legionaire
@@ -13,7 +11,3 @@ remove block diguise and magic shield.
 
 Ability 2
 remove pack leader
-
-Utility
-Make utility a utility.
-remove bloodlust and golden apples.
