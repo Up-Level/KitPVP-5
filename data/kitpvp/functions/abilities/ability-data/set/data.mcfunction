@@ -13,7 +13,7 @@ execute store result storage kitpvp:ability-data abilityData.Timestamp int 1 run
 function kitpvp:abilities/ability-data/set/data-macro with storage kitpvp:ability-data
 
 scoreboard players operation id temp = HudID abilityData
-scoreboard players set id temp -1
+scoreboard players set icon temp -1
 
 scoreboard players set manual temp 0
 
