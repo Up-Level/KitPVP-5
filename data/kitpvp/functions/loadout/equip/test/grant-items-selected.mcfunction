@@ -1,5 +1,10 @@
 function kitpvp:loadout/equip/test/revoke-items
 
+function kitpvp:entity/player/custom/999-ability-tracker/destroy
+function kitpvp:entity/player/custom/999-ability-tracker/create
+
+function kitpvp:abilities/hud-display/external/reset-cd
+
 function kitpvp:loadout/edit/set-normal-from-selected
 
 scoreboard players set @s a1.CD -1

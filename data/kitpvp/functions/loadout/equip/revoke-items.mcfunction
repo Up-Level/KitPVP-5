@@ -1,3 +1,7 @@
+function kitpvp:entity/player/custom/999-ability-tracker/destroy
+
+function kitpvp:abilities/hud-display/external/reset-cd
+
 execute if score @s l.give matches 1 run function kitpvp:loadout/items/all/stop
 execute if score @s l.give matches 1 run function kitpvp:loadout/items/all/clear
 execute if score @s l.give matches 1 run title @s actionbar ""
