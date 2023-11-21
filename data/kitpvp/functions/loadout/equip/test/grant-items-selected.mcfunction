@@ -1,11 +1,12 @@
-function kitpvp:loadout/equip/test/revoke-items
+function kitpvp:generic/uuid/get-uuid
+
+function kitpvp:loadout/equip/revoke-items
+function kitpvp:loadout/edit/edit/revoke-edit
 
 function kitpvp:entity/player/custom/999-ability-tracker/destroy
 function kitpvp:entity/player/custom/999-ability-tracker/create
 
 function kitpvp:abilities/hud-display/external/reset-cd
-
-function kitpvp:loadout/edit/set-normal-from-selected
 
 scoreboard players set @s a1.CD -1
 scoreboard players set @s a1.CDCount -1
@@ -23,11 +24,8 @@ scoreboard players set @s a1.Mode -1
 
 scoreboard players set @s a2.Mode -1
 
-function kitpvp:generic/uuid/get-uuid
 scoreboard players set @s a1.useCD 0
 scoreboard players set @s a2.useCD 0
-
-function kitpvp:loadout/edit/edit/revoke-edit
 
 function kitpvp:loadout/items/all/start
 function kitpvp:loadout/items/all/give
