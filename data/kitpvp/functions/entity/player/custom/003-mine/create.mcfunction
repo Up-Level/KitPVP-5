@@ -16,5 +16,3 @@ tag @s add uuid0
 execute as @e[tag=temp] run function kitpvp:generic/uuid/set/owner-from-entity
 
 tag @e remove temp
-
-#/summon minecraft:armor_stand ~ ~ ~ {Small:1b,Invisible:1b,Marker:1b,NoGravity:1b,ArmorItems:[{},{},{},{id:stone,Count:1b}]}
