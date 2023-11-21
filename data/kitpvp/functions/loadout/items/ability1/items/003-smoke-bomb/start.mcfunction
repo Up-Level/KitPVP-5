@@ -7,5 +7,3 @@ execute store result storage kitpvp:ability-data Id int 1 run scoreboard players
 function kitpvp:loadout/items/ability1/items/003-smoke-bomb/give-macro with storage kitpvp:ability-data
 
 function kitpvp:abilities/ability-data/register
-
-function kitpvp:generic/get-id
