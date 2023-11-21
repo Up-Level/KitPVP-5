@@ -8,9 +8,6 @@ function kitpvp:entity/player/custom/999-ability-tracker/create
 
 function kitpvp:abilities/hud-display/external/reset-cd
 
-scoreboard players set @s a1.useCD 0
-scoreboard players set @s a2.useCD 0
-
 function kitpvp:loadout/items/all/start
 function kitpvp:loadout/items/all/give
 
