@@ -1,0 +1,1 @@
+$give @s minecraft:carrot_on_a_stick{Special:{AbilityId:$(Id)},Unbreakable:1b,ItemType:"ability1",Tags:["Bound"],HideFlags:4,CustomModelData:50,display:{Name:'{"text":"Fireblast","italic":false}', Lore:['{"text":"Use to summon a fireball.","color":"gray","italic":false}']}} 1

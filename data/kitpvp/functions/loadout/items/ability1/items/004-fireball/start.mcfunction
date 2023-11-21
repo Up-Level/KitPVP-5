@@ -1,11 +1,11 @@
-scoreboard players set @s a1.useCD 1
+function kitpvp:generic/get-id
 
-execute if score @s a1.CD matches -1 run scoreboard players set @s a1.CD 100
-execute if score @s a1.CDCount matches -1 run scoreboard players operation @s a1.CDCount = @s a1.CD
-execute if score @s a1.ChargeMax matches -1 run scoreboard players set @s a1.ChargeMax 3
-execute if score @s a1.ChargeCount matches -1 run scoreboard players operation @s a1.ChargeCount = @s a1.ChargeMax
-execute if score @s a1.Mode matches -1 run scoreboard players set @s a1.Mode 0
+data modify storage kitpvp:ability-data abilityData set value {SpendType:1,Effect:9,HudIcon:3,CD:{Amount:0,Max:100},Charge:{Amount:3,Max:3}}
+execute store result storage kitpvp:ability-data abilityData.HudId int 1 run scoreboard players get counter idCounter
+execute store result storage kitpvp:ability-data Id int 1 run scoreboard players get counter idCounter
 
-give @s minecraft:carrot_on_a_stick{Unbreakable:1b,ItemType:"ability1",Tags:["Bound"],HideFlags:4,AbilitySlot:1b,AbilityEffect:9b,CustomModelData:50,display:{Name:'{"text":"Fireblast","italic":false}', Lore:['{"text":"Use to summon a fireball.","color":"gray","italic":false}']}} 1
-# display:{Name:'{"text":"Smoke Bomb","italic":false}', Lore:['{"keybind":"key.use","color":"gray","italic":false,"extra":[{"text":" to throw a smoke bomb.","color":"gray","italic":false}]}']}
-#give @s minecraft:carrot_on_a_stick{Unbreakable:1b,ItemType:"ability1",AbilitySlot:1b,Tags:["Bound"],AbilityEffect:7b,CustomModelData:102,display:{Name:'{"text":"Smoke Bomb","italic":false}', Lore:['{"text":" to throw a smoke bomb.","color":"gray","italic":false}']}} 1
+function kitpvp:loadout/items/ability1/items/004-fireball/give-macro with storage kitpvp:ability-data
+
+function kitpvp:abilities/ability-data/register
+
+function kitpvp:generic/get-id
