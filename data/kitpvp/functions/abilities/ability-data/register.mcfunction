@@ -26,11 +26,11 @@ execute store result score icon temp run data get storage kitpvp:ability-data ab
 
 scoreboard players set manual temp 0
 
-scoreboard players operation cd.length temp = CD.Max abilityData
-scoreboard players operation cd.time temp = CD.Amount abilityData
+execute if score SpendType abilityData matches 1 run scoreboard players operation cd.length temp = CD.Max abilityData
+execute if score SpendType abilityData matches 1 run scoreboard players operation cd.time temp = CD.Amount abilityData
 
-scoreboard players operation count.max temp = Charge.Max abilityData
-scoreboard players operation count.amount temp = Charge.Amount abilityData
+execute if score SpendType abilityData matches 1 run scoreboard players operation count.max temp = Charge.Max abilityData
+execute if score SpendType abilityData matches 1 run scoreboard players operation count.amount temp = Charge.Amount abilityData
 
 function kitpvp:abilities/hud-display/external/assign
 
