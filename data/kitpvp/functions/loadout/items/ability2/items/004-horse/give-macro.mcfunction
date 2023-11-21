@@ -1,0 +1,1 @@
+$give @s minecraft:carrot_on_a_stick{Special:{AbilityId:$(Id)},Unbreakable:1b,ItemType:"ability1",Tags:["Bound"],HideFlags:4,CustomModelData:40,display:{Name:'{"text":"Horse Whistle","italic":false}', Lore:['{"text":"Use to summon a horse.","color":"gray","italic":false}','{"text":"Sneak+Use to return your horse.","color":"gray","italic":false}']}} 1
