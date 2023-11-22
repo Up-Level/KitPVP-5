@@ -2,7 +2,7 @@ Make saving better with naming and more slots ande add preset saves.
 
 
 Armor
-make elytra have rockets somehow
+make elytra have rockets somehow, maybe
 
 Abiltiy 1
 Modifiy smoke bomb.
