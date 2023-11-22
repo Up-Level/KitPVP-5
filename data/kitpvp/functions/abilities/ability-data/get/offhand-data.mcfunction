@@ -1,5 +1,5 @@
 data remove storage kitpvp:ability-data Id
-data remove storage kitpvp:ability-data abiltiyData
+data remove storage kitpvp:ability-data abilityData
 
 data modify storage kitpvp:ability-data Id set from entity @s Inventory[{Slot:-106b}].tag.Special.AbilityId
 
