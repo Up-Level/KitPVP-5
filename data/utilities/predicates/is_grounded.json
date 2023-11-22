@@ -4,7 +4,7 @@
     "predicate": {
       "stepping_on": {
         "block": {
-          "tag": "minecraft:anvil"
+          "tag": "minecraft:air"
         }
       }
     }
