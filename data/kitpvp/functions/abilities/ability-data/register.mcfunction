@@ -1,12 +1,12 @@
 execute store result score Effect abilityData run data get storage kitpvp:ability-data abilityData.Effect
 
-execute store result score SpendType abilityData run data get storage kitpvp:ability-data abilityData.SpendType
+execute store result score Spend.Type abilityData run data get storage kitpvp:ability-data abilityData.Spend.Type
 
-execute if score SpendType abilityData matches 1 store result score CD.Max abilityData run data get storage kitpvp:ability-data abilityData.CD.Max
-execute if score SpendType abilityData matches 1 store result score CD.Amount abilityData run data get storage kitpvp:ability-data abilityData.CD.Amount
+execute if score Spend.Type abilityData matches 1 store result score Spend.CD.Max abilityData run data get storage kitpvp:ability-data abilityData.Spend.CD.Max
+execute if score Spend.Type abilityData matches 1 store result score Spend.CD.Amount abilityData run data get storage kitpvp:ability-data abilityData.Spend.CD.Amount
 
-execute if score SpendType abilityData matches 1 store result score Charge.Max abilityData run data get storage kitpvp:ability-data abilityData.Charge.Max
-execute if score SpendType abilityData matches 1 store result score Charge.Amount abilityData run data get storage kitpvp:ability-data abilityData.Charge.Amount
+execute if score Spend.Type abilityData matches 1 store result score Spend.Charge.Max abilityData run data get storage kitpvp:ability-data abilityData.Spend.Charge.Max
+execute if score Spend.Type abilityData matches 1 store result score Spend.Charge.Amount abilityData run data get storage kitpvp:ability-data abilityData.Spend.Charge.Amount
 
 scoreboard players operation HudID abilityData = counter idCounter
 
@@ -26,11 +26,11 @@ execute store result score icon temp run data get storage kitpvp:ability-data ab
 
 scoreboard players set manual temp 0
 
-execute if score SpendType abilityData matches 1 run scoreboard players operation cd.length temp = CD.Max abilityData
-execute if score SpendType abilityData matches 1 run scoreboard players operation cd.time temp = CD.Amount abilityData
+execute if score Spend.Type abilityData matches 1 run scoreboard players operation cd.length temp = Spend.CD.Max abilityData
+execute if score Spend.Type abilityData matches 1 run scoreboard players operation cd.time temp = Spend.CD.Amount abilityData
 
-execute if score SpendType abilityData matches 1 run scoreboard players operation count.max temp = Charge.Max abilityData
-execute if score SpendType abilityData matches 1 run scoreboard players operation count.amount temp = Charge.Amount abilityData
+execute if score Spend.Type abilityData matches 1 run scoreboard players operation count.max temp = Spend.Charge.Max abilityData
+execute if score Spend.Type abilityData matches 1 run scoreboard players operation count.amount temp = Spend.Charge.Amount abilityData
 
 function kitpvp:abilities/hud-display/external/assign
 

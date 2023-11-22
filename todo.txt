@@ -5,7 +5,6 @@ Armor
 make elytra have rockets somehow, maybe
 
 Abiltiy 1
-Modifiy smoke bomb.
 remove block diguise and magic shield.
 
 Ability 2

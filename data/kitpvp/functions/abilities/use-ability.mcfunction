@@ -18,11 +18,11 @@ execute if score Valid abilityData matches 0 run return 0
 
 execute store result score newTimestamp abilityData run time query gametime
 
-execute if score SpendType abilityData matches 1 run function kitpvp:abilities/calculate-ticked
+execute if score Spend.Type abilityData matches 1 run function kitpvp:abilities/calculate-ticked
 
 scoreboard players set Success abilityData 0
-execute if score SpendType abilityData matches 0 run scoreboard players set Success abilityData 1
-execute if score SpendType abilityData matches 1 if score Charge.Amount abilityData matches 1.. run scoreboard players set Success abilityData 1
+execute if score Spend.Type abilityData matches 0 run scoreboard players set Success abilityData 1
+execute if score Spend.Type abilityData matches 1 if score Spend.Charge.Amount abilityData matches 1.. run scoreboard players set Success abilityData 1
 
 scoreboard players set Sneaking abilityData 0
 execute if predicate utilities:is_sneaking run scoreboard players set Sneaking abilityData 1

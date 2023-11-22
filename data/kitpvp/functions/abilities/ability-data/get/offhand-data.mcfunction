@@ -16,13 +16,13 @@ execute if score Valid abilityData matches 0 run return 0
 execute store result score Effect abilityData run data get storage kitpvp:ability-data abilityData.Effect
 
 
-execute store result score SpendType abilityData run data get storage kitpvp:ability-data abilityData.SpendType
+execute store result score Spend.Type abilityData run data get storage kitpvp:ability-data abilityData.Spend.Type
 
-execute if score SpendType abilityData matches 1 store result score CD.Max abilityData run data get storage kitpvp:ability-data abilityData.CD.Max
-execute if score SpendType abilityData matches 1 store result score CD.Amount abilityData run data get storage kitpvp:ability-data abilityData.CD.Amount
+execute if score Spend.Type abilityData matches 1 store result score Spend.CD.Max abilityData run data get storage kitpvp:ability-data abilityData.Spend.CD.Max
+execute if score Spend.Type abilityData matches 1 store result score Spend.CD.Amount abilityData run data get storage kitpvp:ability-data abilityData.Spend.CD.Amount
 
-execute if score SpendType abilityData matches 1 store result score Charge.Max abilityData run data get storage kitpvp:ability-data abilityData.Charge.Max
-execute if score SpendType abilityData matches 1 store result score Charge.Amount abilityData run data get storage kitpvp:ability-data abilityData.Charge.Amount
+execute if score Spend.Type abilityData matches 1 store result score Spend.Charge.Max abilityData run data get storage kitpvp:ability-data abilityData.Spend.Charge.Max
+execute if score Spend.Type abilityData matches 1 store result score Spend.Charge.Amount abilityData run data get storage kitpvp:ability-data abilityData.Spend.Charge.Amount
 
 execute store result score oldTimestamp abilityData run data get storage kitpvp:ability-data abilityData.Timestamp
 

@@ -1,6 +1,6 @@
 function kitpvp:generic/get-id
 
-data modify storage kitpvp:ability-data abilityData set value {SpendType:1,Effect:9,HudIcon:3,CD:{Amount:0,Max:100},Charge:{Amount:3,Max:3}}
+data modify storage kitpvp:ability-data abilityData set value {Effect:9,HudIcon:3,Spend:{Type:1,CD:{Amount:0,Max:100},Charge:{Amount:3,Max:3}}}
 execute store result storage kitpvp:ability-data abilityData.HudId int 1 run scoreboard players get counter idCounter
 execute store result storage kitpvp:ability-data Id int 1 run scoreboard players get counter idCounter
 
