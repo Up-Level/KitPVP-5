@@ -2,7 +2,6 @@ Make saving better with naming and more slots ande add preset saves.
 
 
 Armor
-Change Legionaire
 make elytra have rockets somehow
 
 Abiltiy 1
