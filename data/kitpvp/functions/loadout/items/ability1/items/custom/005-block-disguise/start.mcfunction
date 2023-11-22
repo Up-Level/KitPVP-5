@@ -4,6 +4,6 @@ data modify storage kitpvp:ability-data abilityData set value {Effect:10,HudIcon
 execute store result storage kitpvp:ability-data abilityData.HudId int 1 run scoreboard players get counter idCounter
 execute store result storage kitpvp:ability-data Id int 1 run scoreboard players get counter idCounter
 
-function kitpvp:loadout/items/ability1/items/002-block-disguise/give-macro with storage kitpvp:ability-data
+function kitpvp:loadout/items/ability1/items/custom/005-block-disguise/give-macro with storage kitpvp:ability-data
 
 function kitpvp:abilities/ability-data/register
