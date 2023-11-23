@@ -13,14 +13,16 @@ function kitpvp:abilities/ability-data/get/data-macro with storage kitpvp:abilit
 
 #execute if score Valid abilityData matches 0 run return 0
 
-# Use type
+# Use
 execute store result score Use.Type abilityData run data get storage kitpvp:ability-data abilityData.Use.Type
 
+# Use (Impusle)
 execute if score Use.Type abilityData matches 0 store result score Use.Use.Effect abilityData run data get storage kitpvp:ability-data abilityData.Use.Effect
 
-# Spend type
+# Spend
 execute store result score Spend.Type abilityData run data get storage kitpvp:ability-data abilityData.Spend.Type
 
+# Spend (CD-Charges)
 execute if score Spend.Type abilityData matches 1 store result score Spend.CD.Max abilityData run data get storage kitpvp:ability-data abilityData.Spend.CD.Max
 execute if score Spend.Type abilityData matches 1 store result score Spend.CD.Amount abilityData run data get storage kitpvp:ability-data abilityData.Spend.CD.Amount
 
