@@ -1,4 +1,4 @@
-execute store result score Effect abilityData run data get storage kitpvp:ability-data abilityData.Effect
+execute store result score Use.Effect abilityData run data get storage kitpvp:ability-data abilityData.Use.Effect
 
 execute store result score Spend.Type abilityData run data get storage kitpvp:ability-data abilityData.Spend.Type
 

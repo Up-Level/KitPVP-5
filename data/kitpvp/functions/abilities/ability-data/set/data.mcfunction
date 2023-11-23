@@ -1,4 +1,6 @@
-execute store result storage kitpvp:ability-data abilityData.Effect int 1 run scoreboard players get Effect abilityData
+execute store result storage kitpvp:ability-data abilityData.Use.Type int 1 run scoreboard players get Use.Type abilityData
+
+execute if score Use.Type abilityData matches 0 store result storage kitpvp:ability-data abilityData.Use.Effect int 1 run scoreboard players get Use.Effect abilityData
 
 execute store result storage kitpvp:ability-data abilityData.Spend.Type int 1 run scoreboard players get Spend.Type abilityData
 

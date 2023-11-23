@@ -9,13 +9,16 @@ execute if score Valid abilityData matches 0 run return 0
 
 function kitpvp:abilities/ability-data/get/data-macro with storage kitpvp:ability-data
 
-execute unless data storage kitpvp:ability-data abilityData.Effect run scoreboard players set Valid abilityData 0
+#execute unless data storage kitpvp:ability-data abilityData.Use.Effect run scoreboard players set Valid abilityData 0
 
-execute if score Valid abilityData matches 0 run return 0
+#execute if score Valid abilityData matches 0 run return 0
 
-execute store result score Effect abilityData run data get storage kitpvp:ability-data abilityData.Effect
+# Use type
+execute store result score Use.Type abilityData run data get storage kitpvp:ability-data abilityData.Use.Type
 
+execute if score Use.Type abilityData matches 0 store result score Use.Use.Effect abilityData run data get storage kitpvp:ability-data abilityData.Use.Effect
 
+# Spend type
 execute store result score Spend.Type abilityData run data get storage kitpvp:ability-data abilityData.Spend.Type
 
 execute if score Spend.Type abilityData matches 1 store result score Spend.CD.Max abilityData run data get storage kitpvp:ability-data abilityData.Spend.CD.Max
