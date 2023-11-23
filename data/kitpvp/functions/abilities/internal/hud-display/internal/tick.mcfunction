@@ -1,0 +1,10 @@
+execute if score @s hud.ability.0.Id matches 0.. if score @s hud.ability.0.Manual matches 0 run function kitpvp:abilities/internal/hud-display/internal/tick-spam/tick-0
+execute if score @s hud.ability.1.Id matches 0.. if score @s hud.ability.1.Manual matches 0 run function kitpvp:abilities/internal/hud-display/internal/tick-spam/tick-1
+execute if score @s hud.ability.2.Id matches 0.. if score @s hud.ability.2.Manual matches 0 run function kitpvp:abilities/internal/hud-display/internal/tick-spam/tick-2
+execute if score @s hud.ability.3.Id matches 0.. if score @s hud.ability.3.Manual matches 0 run function kitpvp:abilities/internal/hud-display/internal/tick-spam/tick-3
+execute if score @s hud.ability.4.Id matches 0.. if score @s hud.ability.4.Manual matches 0 run function kitpvp:abilities/internal/hud-display/internal/tick-spam/tick-4
+execute if score @s hud.ability.5.Id matches 0.. if score @s hud.ability.5.Manual matches 0 run function kitpvp:abilities/internal/hud-display/internal/tick-spam/tick-5
+execute if score @s hud.ability.6.Id matches 0.. if score @s hud.ability.6.Manual matches 0 run function kitpvp:abilities/internal/hud-display/internal/tick-spam/tick-6
+execute if score @s hud.ability.7.Id matches 0.. if score @s hud.ability.7.Manual matches 0 run function kitpvp:abilities/internal/hud-display/internal/tick-spam/tick-7
+execute if score @s hud.ability.8.Id matches 0.. if score @s hud.ability.8.Manual matches 0 run function kitpvp:abilities/internal/hud-display/internal/tick-spam/tick-8
+execute if score @s hud.ability.9.Id matches 0.. if score @s hud.ability.9.Manual matches 0 run function kitpvp:abilities/internal/hud-display/internal/tick-spam/tick-9
