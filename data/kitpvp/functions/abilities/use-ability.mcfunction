@@ -18,6 +18,12 @@ execute if score Valid abilityData matches 0 run return 0
 
 execute store result score newTimestamp abilityData run time query gametime
 
+# Get Time Passed
+scoreboard players operation timePassed abilityData = newTimestamp abilityData
+scoreboard players operation timePassed abilityData -= oldTimestamp abilityData
+
+execute if score Use.SoftCD abilityData > timePassed abilityData run return 0
+
 execute if score Spend.Type abilityData matches 1 run function kitpvp:abilities/calculate-ticked
 
 scoreboard players set Success abilityData 0

@@ -30,5 +30,6 @@ execute if score Spend.Type abilityData matches 1 store result score Spend.Charg
 execute if score Spend.Type abilityData matches 1 store result score Spend.Charge.Amount abilityData run data get storage kitpvp:ability-data abilityData.Spend.Charge.Amount
 
 execute store result score oldTimestamp abilityData run data get storage kitpvp:ability-data abilityData.Timestamp
+execute store result score Use.SoftCD abilityData run data get storage kitpvp:ability-data abilityData.Use.SoftCD
 
 execute store result score HudID abilityData run data get storage kitpvp:ability-data abilityData.HudId
