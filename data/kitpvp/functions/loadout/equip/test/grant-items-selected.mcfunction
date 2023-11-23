@@ -1,6 +1,6 @@
 function kitpvp:generic/uuid/get-uuid
 
-function kitpvp:loadout/equip/revoke-items
+function kitpvp:loadout/equip/test/revoke-items
 function kitpvp:loadout/edit/edit/revoke-edit
 
 function kitpvp:entity/player/custom/999-ability-tracker/destroy
