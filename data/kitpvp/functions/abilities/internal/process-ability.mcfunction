@@ -10,8 +10,10 @@ execute store result score newTimestamp abilityData run time query gametime
 scoreboard players operation timePassed abilityData = newTimestamp abilityData
 scoreboard players operation timePassed abilityData -= oldTimestamp abilityData
 
+# Cancel if we are faster than soft cooldown
 execute if score SoftCD abilityData > timePassed abilityData run return 0
 
+# Spend(1) (CD/Charges) Calculate cooldowns
 execute if score Spend.Type abilityData matches 1 run function kitpvp:abilities/internal/calculate-ticked
 
 # Do we meet the requerments to activate abilities that have a "cost"?
@@ -25,9 +27,23 @@ execute if score Use.Type abilityData matches 0 run scoreboard players operation
 scoreboard players set Sneaking abilityData 0
 execute if predicate utilities:is_sneaking run scoreboard players set Sneaking abilityData 1
 
+# Activate effect
 function kitpvp:abilities/internal/effect
 
+# Set ability data
 function kitpvp:abilities/internal/ability-data/set/data
 
-#execute if score Valid abilityData matches 1 if score isHotbar abilityData matches 1 run function kitpvp:abilities/ability-data/set/mainhand-data
-#execute if score Valid abilityData matches 1 if score isHotbar abilityData matches 0 run function kitpvp:abilities/ability-data/set/offhand-data
+# HUD updates
+scoreboard players operation id temp = HudID abilityData
+scoreboard players set icon temp -1
+
+scoreboard players set manual temp 0
+
+# (CD-Charges)
+execute if score Spend.Type abilityData matches 1 run scoreboard players operation cd.length temp = Spend.CD.Max abilityData
+execute if score Spend.Type abilityData matches 1 run scoreboard players operation cd.time temp = Spend.CD.Amount abilityData
+
+execute if score Spend.Type abilityData matches 1 run scoreboard players operation count.max temp = Spend.Charge.Max abilityData
+execute if score Spend.Type abilityData matches 1 run scoreboard players operation count.amount temp = Spend.Charge.Amount abilityData
+
+function kitpvp:abilities/hud-display/external/update

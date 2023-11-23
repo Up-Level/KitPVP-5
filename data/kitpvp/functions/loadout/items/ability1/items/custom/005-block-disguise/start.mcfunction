@@ -6,4 +6,4 @@ execute store result storage kitpvp:ability-data Id int 1 run scoreboard players
 
 function kitpvp:loadout/items/ability1/items/custom/005-block-disguise/give-macro with storage kitpvp:ability-data
 
-function kitpvp:abilities/internal/ability-data/register
+function kitpvp:abilities/external/ability-data/assign

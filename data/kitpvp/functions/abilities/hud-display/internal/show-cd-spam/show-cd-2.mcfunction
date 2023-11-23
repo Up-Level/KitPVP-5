@@ -9,4 +9,4 @@ scoreboard players operation cd.time temp = @s hud.ability.2.CD.Time
 scoreboard players operation count.max temp = @s hud.ability.2.Count.Max
 scoreboard players operation count.amount temp = @s hud.ability.2.Count.Amount
 
-function kitpvp:abilities/internal/hud-display/internal/show-cd-spam/add
+function kitpvp:abilities/hud-display/internal/show-cd-spam/add

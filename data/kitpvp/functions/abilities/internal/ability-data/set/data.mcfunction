@@ -18,19 +18,3 @@ execute store result storage kitpvp:ability-data abilityData.Timestamp int 1 run
 
 function kitpvp:abilities/internal/ability-data/set/data-macro with storage kitpvp:ability-data
 
-# HUD
-
-scoreboard players operation id temp = HudID abilityData
-scoreboard players set icon temp -1
-
-scoreboard players set manual temp 0
-
-# (CD-Charges)
-execute if score Spend.Type abilityData matches 1 run scoreboard players operation cd.length temp = Spend.CD.Max abilityData
-execute if score Spend.Type abilityData matches 1 run scoreboard players operation cd.time temp = Spend.CD.Amount abilityData
-
-execute if score Spend.Type abilityData matches 1 run scoreboard players operation count.max temp = Spend.Charge.Max abilityData
-execute if score Spend.Type abilityData matches 1 run scoreboard players operation count.amount temp = Spend.Charge.Amount abilityData
-
-function kitpvp:abilities/internal/hud-display/external/update
-

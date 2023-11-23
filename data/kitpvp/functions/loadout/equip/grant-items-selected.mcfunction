@@ -6,7 +6,7 @@ function kitpvp:loadout/edit/edit/revoke-edit
 function kitpvp:entity/player/custom/999-ability-tracker/destroy
 function kitpvp:entity/player/custom/999-ability-tracker/create
 
-function kitpvp:abilities/internal/hud-display/external/reset-cd
+function kitpvp:abilities/hud-display/external/reset-cd
 
 function kitpvp:loadout/edit/set-normal-from-selected
 
