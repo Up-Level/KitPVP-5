@@ -11,7 +11,7 @@ execute as @e[tag=playerEntity] run function kitpvp:entity/player/internal/tick
 
 execute as @a run function kitpvp:effects/internal/tick
 
-execute as @a[scores={l.give=1}] run function kitpvp:loadout/items/all/tick
+execute as @a[scores={l.give=1}] at @s run function kitpvp:loadout/items/all/tick
 execute as @a[scores={l.e=1}] run function kitpvp:loadout/edit/edit/trigger-tick
 
 execute as @e[scores={bin.carrot=1..}] at @s run function kitpvp:abilities/external/activator/use-ability-item
