@@ -14,3 +14,6 @@ execute if score effect abilityData matches 11 run function kitpvp:abilities/int
 execute if score effect abilityData matches 12 run function kitpvp:abilities/internal/effects/012-anvil/click
 execute if score effect abilityData matches 13 run function kitpvp:abilities/internal/effects/013-channel-alert/click
 execute if score effect abilityData matches 14 run function kitpvp:abilities/internal/effects/014-respawn/click
+execute if score effect abilityData matches 15 run function kitpvp:abilities/internal/effects/015-channel-rocket/click
+execute if score effect abilityData matches 16 run function kitpvp:abilities/internal/effects/016-rocket-launch/click
+
