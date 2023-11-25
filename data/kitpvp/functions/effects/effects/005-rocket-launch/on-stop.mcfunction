@@ -1,1 +1,1 @@
-effect clear @s levitation
+effect clear @s minecraft:levitation
