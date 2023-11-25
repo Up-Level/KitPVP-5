@@ -23,7 +23,8 @@ execute if score Spend.Type abilityData matches 1 if score Spend.Charge.Amount a
 
 # Set the effect to the one we are using depending on the type of use it is
 execute if score Use.Type abilityData matches 0 run scoreboard players operation effect abilityData = Use.Effect abilityData
-execute if score Use.Type abilityData matches 1 run function kitpvp:abilities/internal/specific/use/channel/channel
+execute if score Use.Type abilityData matches 1 if score canSpend abilityData matches 1 run function kitpvp:abilities/internal/specific/use/channel/channel
+execute if score Use.Type abilityData matches 1 if score canSpend abilityData matches 0 run scoreboard players set effect abilityData 0
 
 scoreboard players set Sneaking abilityData 0
 execute if predicate utilities:is_sneaking run scoreboard players set Sneaking abilityData 1
