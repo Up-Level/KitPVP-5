@@ -5,13 +5,13 @@ execute store result storage kitpvp:ability-data abilityData.Use.Type int 1 run 
 execute if score Use.Type abilityData matches 0 store result storage kitpvp:ability-data abilityData.Use.Effect int 1 run scoreboard players get Use.Effect abilityData
 
 # Use(1) (Channel)
-execute if score Use.Type abilityData matches 0 store result storage kitpvp:ability-data abilityData.Use.FullEffect int 1 run scoreboard players get Use.FullEffect abilityData
-execute if score Use.Type abilityData matches 0 store result storage kitpvp:ability-data abilityData.Use.Effect int 1 run scoreboard players get Use.Effect abilityData
+execute if score Use.Type abilityData matches 1 store result storage kitpvp:ability-data abilityData.Use.FullEffect int 1 run scoreboard players get Use.FullEffect abilityData
+execute if score Use.Type abilityData matches 1 store result storage kitpvp:ability-data abilityData.Use.Effect int 1 run scoreboard players get Use.Effect abilityData
 
-execute if score Use.Type abilityData matches 0 store result storage kitpvp:ability-data abilityData.Use.CancelTime int 1 run scoreboard players get Use.CancelTime abilityData
+execute if score Use.Type abilityData matches 1 store result storage kitpvp:ability-data abilityData.Use.CancelTime int 1 run scoreboard players get Use.CancelTime abilityData
 
-execute if score Use.Type abilityData matches 0 store result storage kitpvp:ability-data abilityData.Use.Channel.Max int 1 run scoreboard players get Use.Channel.Max abilityData
-execute if score Use.Type abilityData matches 0 store result storage kitpvp:ability-data abilityData.Use.Channel.Amount int 1 run scoreboard players get Use.Channel.Amount abilityData
+execute if score Use.Type abilityData matches 1 store result storage kitpvp:ability-data abilityData.Use.Channel.Max int 1 run scoreboard players get Use.Channel.Max abilityData
+execute if score Use.Type abilityData matches 1 store result storage kitpvp:ability-data abilityData.Use.Channel.Amount int 1 run scoreboard players get Use.Channel.Amount abilityData
 
 # Spend
 execute store result storage kitpvp:ability-data abilityData.Spend.Type int 1 run scoreboard players get Spend.Type abilityData
