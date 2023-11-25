@@ -1,1 +1,1 @@
-effect give @s minecraft:levitation infinite 0 true
+effect clear @s levitation
