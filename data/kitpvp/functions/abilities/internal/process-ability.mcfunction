@@ -32,6 +32,9 @@ execute if predicate utilities:is_sneaking run scoreboard players set Sneaking a
 # Activate effect
 function kitpvp:abilities/internal/effect
 
+# lmao trash fix
+execute if score Use.Type abilityData matches 1 if score canSpend abilityData matches 0 run return 0
+
 # Set ability data
 function kitpvp:abilities/internal/ability-data/set/data
 
@@ -39,7 +42,7 @@ function kitpvp:abilities/internal/ability-data/set/data
 scoreboard players operation id temp = HudID abilityData
 scoreboard players set icon temp -1
 
-scoreboard players set manual temp 0
+scoreboard players set manual temp -1
 
 # (CD-Charges)
 execute if score Spend.Type abilityData matches 1 run scoreboard players operation cd.length temp = Spend.CD.Max abilityData
