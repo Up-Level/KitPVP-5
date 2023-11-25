@@ -9,5 +9,5 @@ execute if score Use.Channel.Amount abilityData < Use.Channel.Max abilityData ru
 
 tellraw @s ["",{"score":{"name":"Use.Channel.Amount","objective":"abilityData"}},"/",{"score":{"name":"Use.Channel.Max","objective":"abilityData"}}]
 
-execute if score Use.Channel.Amount abilityData >= Use.Channel.Max abilityData run function kitpvp:abilities/internal/specific/use/channel/reset-channel
+execute if score Use.Channel.Amount abilityData >= Use.Channel.Max abilityData run function kitpvp:abilities/internal/specific/use/channel/reset-channel-full
 scoreboard players operation Use.Channel.Amount abilityData += timePassedClamped abilityData
