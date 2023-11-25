@@ -14,15 +14,16 @@ scoreboard players operation timePassed abilityData -= oldTimestamp abilityData
 execute if score SoftCD abilityData > timePassed abilityData run return 0
 
 # Spend(1) (CD/Charges) Calculate cooldowns
-execute if score Spend.Type abilityData matches 1 run function kitpvp:abilities/internal/calculate-ticked
+execute if score Spend.Type abilityData matches 1 run function kitpvp:abilities/internal/specific/spend/cooldown-charges
 
 # Do we meet the requerments to activate abilities that have a "cost"?
-scoreboard players set Success abilityData 0
-execute if score Spend.Type abilityData matches 0 run scoreboard players set Success abilityData 1
-execute if score Spend.Type abilityData matches 1 if score Spend.Charge.Amount abilityData matches 1.. run scoreboard players set Success abilityData 1
+scoreboard players set canSpend abilityData 0
+execute if score Spend.Type abilityData matches 0 run scoreboard players set canSpend abilityData 1
+execute if score Spend.Type abilityData matches 1 if score Spend.Charge.Amount abilityData matches 1.. run scoreboard players set canSpend abilityData 1
 
 # Set the effect to the one we are using depending on the type of use it is
 execute if score Use.Type abilityData matches 0 run scoreboard players operation effect abilityData = Use.Effect abilityData
+execute if score Use.Type abilityData matches 1 run function kitpvp:abilities/internal/specific/use/channel/channel
 
 scoreboard players set Sneaking abilityData 0
 execute if predicate utilities:is_sneaking run scoreboard players set Sneaking abilityData 1

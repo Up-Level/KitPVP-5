@@ -10,8 +10,17 @@ execute store result score HudID abilityData run data get storage kitpvp:ability
 # Use
 execute store result score Use.Type abilityData run data get storage kitpvp:ability-data abilityData.Use.Type
 
-# Use (Impusle)
+# Use(0) (Impusle)
 execute if score Use.Type abilityData matches 0 store result score Use.Effect abilityData run data get storage kitpvp:ability-data abilityData.Use.Effect
+
+# Use(1) (Channel)
+execute if score Use.Type abilityData matches 1 store result score Use.FullEffect abilityData run data get storage kitpvp:ability-data abilityData.Use.FullEffect
+execute if score Use.Type abilityData matches 1 store result score Use.Effect abilityData run data get storage kitpvp:ability-data abilityData.Use.Effect
+
+execute if score Use.Type abilityData matches 1 store result score Use.CancelTime abilityData run data get storage kitpvp:ability-data abilityData.Use.CancelTime
+
+execute if score Use.Type abilityData matches 1 store result score Use.Channel.Max abilityData run data get storage kitpvp:ability-data abilityData.Use.Channel.Max
+execute if score Use.Type abilityData matches 1 store result score Use.Channel.Amount abilityData run data get storage kitpvp:ability-data abilityData.Use.Channel.Amount
 
 # Spend
 execute store result score Spend.Type abilityData run data get storage kitpvp:ability-data abilityData.Spend.Type
