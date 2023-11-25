@@ -1,2 +1,1 @@
-execute store result storage kitpvp:ability-data Id int 1 run scoreboard players get @s a.0
-function kitpvp:abilities/external/activator/use-ability-id
+execute if predicate utilities:is_sneaking unless predicate utilities:in_lava unless predicate utilities:in_water run function kitpvp:loadout/items/armor/items/005-elytra/ability

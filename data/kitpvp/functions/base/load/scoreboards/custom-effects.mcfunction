@@ -10,3 +10,6 @@ scoreboard objectives add effects.regeneration dummy
 
 scoreboard objectives remove effects.armorbreak
 scoreboard objectives add effects.armorbreak dummy
+
+scoreboard objectives remove effects.rocketLaunch
+scoreboard objectives add effects.rocketLaunch dummy
