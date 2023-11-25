@@ -1,2 +1,2 @@
 item replace entity @s armor.chest with minecraft:elytra{Unbreakable:1b,ItemType:"armor",Tags:["Bound"],HideFlags:4,Enchantments:[{id:"binding_curse",lvl:1}]} 1
-item replace entity @s armor.feet with minecraft:netherite_boots{Unbreakable:1b,ItemType:"armor",Tags:["Bound"],HideFlags:4,Enchantments:[{id:"feather_falling",lvl:10},{id:"binding_curse",lvl:1}]} 1
+item replace entity @s armor.feet with minecraft:netherite_boots{Unbreakable:1b,ItemType:"armor",Tags:["Bound"],HideFlags:4,Enchantments:[{id:"feather_falling",lvl:10},{id:"binding_curse",lvl:1}],display: {Name: '[{"text":"Rocket Boots","italic":false}]'}} 1
