@@ -5,7 +5,7 @@ execute if score Use.CancelTime abilityData < timePassed abilityData run functio
 
 scoreboard players operation Use.Channel.Amount abilityData += timePassedClamped abilityData
 
-tellraw @s ["",{"score":{"name":"Use.Channel.Amount","objective":"abilityData"}},"/",{"score":{"name":"Use.Channel.Max","objective":"abilityData"}}]
+execute if score debug abilityData matches 1 run tellraw @s ["",{"score":{"name":"Use.Channel.Amount","objective":"abilityData"}},"/",{"score":{"name":"Use.Channel.Max","objective":"abilityData"}}]
 
 # Get % (0-100)
 scoreboard players operation channelPercentage abilityData = Use.Channel.Amount abilityData

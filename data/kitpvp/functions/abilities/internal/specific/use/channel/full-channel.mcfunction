@@ -1,3 +1,3 @@
 scoreboard players operation effect abilityData = Use.FullEffect abilityData
 
-tellraw @s "We are full"
+execute if score debug abilityData matches 1 run tellraw @s "We are full"
