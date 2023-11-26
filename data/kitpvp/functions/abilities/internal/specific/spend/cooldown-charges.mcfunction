@@ -1,3 +1,6 @@
+# Return if we are full :)
+execute if score Spend.Charge.Amount abilityData >= Spend.Charge.Max abilityData run return 0
+
 # Max time passed allowed
 scoreboard players operation timePassedClamped abilityData = timePassed abilityData
 
